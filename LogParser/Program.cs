@@ -16,29 +16,9 @@ namespace LogParser
 
         static void Main(string[] args)
         {
-            //string line = @"[26.05.2021 11:25:25.070] - [172.17.1.204] - SessionID:[2jvd0m14u4r0e1v23jwmyldj] - ClientID:[] - Login:[] - AuthorisationSessionID:[]";
-            //string line2 = @"	ActionName: [Успешный вход в систему] ";
-            //string line3 = @"		Description: [Успешный вход в систему: ClientId = 100000000; Login = special; IP=172.17.1.204]";
-            //string resultLine = line + line2 + line3;
-            //Match match = Regex.Match(resultLine,
-            //    @"\[(.*?)\](.*?)\[(.*?)\](.*?)\[(.*?)\](.*?)ActionName: \[(.*?)\](.*?)ClientId = (.*?);(.*?)Login = (.*?);(.*?)IP=(.*?)\]");
-            //if (match.Success)
-            //{
-            //    string date = match.Groups[1].Value.ToString();
-            //    string ip = match.Groups[3].Value.ToString();
-            //    string session = match.Groups[5].Value.ToString();
-            //    string actionName = match.Groups[7].Value.ToString();
-            //    string clientId = match.Groups[9].Value.ToString();
-            //    string login = match.Groups[11].Value.ToString();
-            //    string descIP = match.Groups[13].Value.ToString();
-            //}
-
-            #region WorkWithFile
-
             HashSet<Logger> LoggerList = new HashSet<Logger>();
             string line1, line2, line3, resultLine;
             Match match;
-
 
             try
             {
@@ -147,8 +127,6 @@ namespace LogParser
                 }
                 Console.WriteLine("Запись выполнена");
             }
-
-            #endregion
 
         }
 
