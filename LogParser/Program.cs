@@ -1,16 +1,12 @@
 ﻿using LogParser.Utils;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace LogParser
 {
+
     class Program
     {
 
@@ -99,35 +95,20 @@ namespace LogParser
             }
 
             string writePath = $"C:/report_log_{DateTime.Today.ToShortDateString()}.txt";
+            LoggerWriter lw = new LoggerWriter(writePath);
 
-            using (StreamWriter sw = new StreamWriter(writePath,false,System.Text.Encoding.Default))
+            try
             {
-                string str = "";
-                foreach (var item in LoggerList.OrderBy(x=>x.LogDate))
+                if (lw.Save(LoggerList))
                 {
-                    try
-                    {
-                        str = String.Format("{0}\t\t{1}\t\t{2}\t\t\t{3}\t\t{4}\t\t{5}\t\t{6}"
-
-                            , item.LogDate
-                            , item.Session
-                            , item.Login
-                            , item.ActionName
-                            , item.FirmID
-                            , item.ClientID
-                            , item.Description
-                            );
-                        //Console.WriteLine(str);
-                        sw.WriteLine(str);
-                    }
-                    catch(Exception ex)
-                    {
-                        Console.WriteLine(ex.Message);
-                    }
+                    Console.WriteLine("Запись выполнена");
                 }
-                Console.WriteLine("Запись выполнена");
             }
-
+            catch (Exception ex)
+            {
+                Console.WriteLine("Ошибка при записи");
+                Console.WriteLine(ex.Message);
+            }
         }
 
 
