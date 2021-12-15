@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MFKSHelper", "MFKSHelper\MF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogParser", "LogParser\LogParser.csproj", "{DF66B5CB-15C5-4AB2-A4F0-E6678A51BC9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructureParserConsoleApp", "StructureParserConsoleApp\StructureParserConsoleApp.csproj", "{6572B61F-879E-4FF4-BEDC-6DCD75AA6FE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DF66B5CB-15C5-4AB2-A4F0-E6678A51BC9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF66B5CB-15C5-4AB2-A4F0-E6678A51BC9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF66B5CB-15C5-4AB2-A4F0-E6678A51BC9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6572B61F-879E-4FF4-BEDC-6DCD75AA6FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6572B61F-879E-4FF4-BEDC-6DCD75AA6FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6572B61F-879E-4FF4-BEDC-6DCD75AA6FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6572B61F-879E-4FF4-BEDC-6DCD75AA6FE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
