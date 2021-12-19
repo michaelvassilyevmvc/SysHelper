@@ -1,27 +1,28 @@
-﻿using System;
-using System.Text.RegularExpressions;
+﻿using DocumentFormat.OpenXml.Packaging;
+using DocumentFormat.OpenXml.Wordprocessing;
 using System.Collections.Generic;
 using System.IO;
-using DocumentFormat.OpenXml.Packaging;
-using DocumentFormat.OpenXml.Wordprocessing;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace StructureParserConsoleApp
 {
     class Program
     {
-        public static List<StructureItem> Chapters { get; set; }
-        public static List<StructureItem> KindOfSportList { get; set; }
+        private static int _levelValue = 0;
+        private static bool _predRowTitle = true;
 
+
+        //public static List<StructureItem> Chapters { get; set; }
+        //public static List<StructureItem> KindOfSportList { get; set; }
         public static List<StructureItem> StructureList { get; set; }
-
         public static StructureItem LastChapterItem { get; set; }
 
         static void Main(string[] args)
         {
             string filePath = @"c:\doc_source.docx";
-            Chapters = new List<StructureItem>();
-            KindOfSportList = new List<StructureItem>();
+            //Chapters = new List<StructureItem>();
+            //KindOfSportList = new List<StructureItem>();
             StructureList = new List<StructureItem>();
 
             int _id = 1;
@@ -40,7 +41,15 @@ namespace StructureParserConsoleApp
                         {
                             IEnumerable<TableCell> cells = row.Descendants<TableCell>().ToList();
 
-                            if (IsCaption(cells) || cells.Count() > 1) continue;
+                            if (IsCaption(cells) || cells.Count() > 1)
+                            {
+                                if (_predRowTitle) _levelValue++;
+                                _predRowTitle = false;
+                                continue;
+                            }
+
+                            if (!_predRowTitle) _levelValue--;
+
 
                             if (isChapter(row.InnerText))
                             {
@@ -53,6 +62,7 @@ namespace StructureParserConsoleApp
                                     Name = GetChapterName(row.InnerText),
                                     StructureNodeType = StructureNodeType.Chapter
                                 });
+
                                 continue;
                             }
 
@@ -61,8 +71,8 @@ namespace StructureParserConsoleApp
                                 StructureList.Add(new StructureItem
                                 {
                                     ID = _id++,
-                                    Level = 1,
-                                    ParentNode = StructureList.Where(x=>x.Level == 0).Last(),
+                                    Level = _levelValue,
+                                    ParentNode = StructureList.Where(x => x.Level == 0).Last(),
                                     OriginalName = row.InnerText,
                                     Name = GetKindOfSportName(row.InnerText),
                                     StructureNodeType = StructureNodeType.CommonKindOfSport
@@ -73,13 +83,9 @@ namespace StructureParserConsoleApp
                                 continue;
                             }
 
-                            
 
-                            StructureList.Add(new StructureItem { 
-                                ID = _id++,
-                                Level = StructureList.Last().Level+1,
-                                ParentNode = StructureList.Where(x=>x.Level == )
-                            });
+
+
 
 
                         }
@@ -87,8 +93,6 @@ namespace StructureParserConsoleApp
                 }
             }
 
-            var tmpChapters = Chapters;
-            var tmpKindOfSportList = KindOfSportList;
 
         }
 
@@ -118,7 +122,7 @@ namespace StructureParserConsoleApp
         {
             if (cells.Any(x => x.InnerText.ToLower().Trim() == @"Организатор".Trim().ToLower())) return true;
 
-            string result = string.Join(null,cells.Select(x => x.InnerText.Trim()));
+            string result = string.Join(null, cells.Select(x => x.InnerText.Trim()));
             if (result == "123456789") return true;
 
             return false;
