@@ -9,20 +9,13 @@ namespace StructureParserConsoleApp
 {
     class Program
     {
-        private static int _levelValue = 0;
-        private static bool _predRowTitle = true;
-
-
-        //public static List<StructureItem> Chapters { get; set; }
-        //public static List<StructureItem> KindOfSportList { get; set; }
         public static List<StructureItem> StructureList { get; set; }
-        public static StructureItem LastChapterItem { get; set; }
+        public static StructureItem LastItem { get; set; }
 
         static void Main(string[] args)
         {
-            string filePath = @"c:\doc_source.docx";
-            //Chapters = new List<StructureItem>();
-            //KindOfSportList = new List<StructureItem>();
+            string filePath = @"c:\doc_source_light.docx";
+            
             StructureList = new List<StructureItem>();
 
             int _id = 1;
@@ -39,16 +32,35 @@ namespace StructureParserConsoleApp
                         IEnumerable<TableRow> rows = table.Elements<TableRow>();
                         foreach (TableRow row in rows)
                         {
-                            IEnumerable<TableCell> cells = row.Descendants<TableCell>().ToList();
+                            List<TableCell> cells = row.Descendants<TableCell>().ToList();
 
-                            if (IsCaption(cells) || cells.Count() > 1)
+                            if (IsCaption(cells))
                             {
-                                if (_predRowTitle) _levelValue++;
-                                _predRowTitle = false;
                                 continue;
                             }
 
-                            if (!_predRowTitle) _levelValue--;
+                            if (cells.Count() == 9)
+                            {
+                                Compitation compitation = new Compitation
+                                {
+                                    Name = cells[0].InnerText.Trim(),
+                                    DateAndPlace = cells[1].InnerText.Trim(),
+                                    CompetitorFirm = cells[2].InnerText.Trim(),
+                                    Count = cells[3].InnerText.Trim(),
+                                    AthleteCount = cells[4].InnerText.Trim(),
+                                    TrainerCount = cells[5].InnerText.Trim(),
+                                    JudgeCount = cells[6].InnerText.Trim(),
+                                    OrganizerFirm = cells[7].InnerText.Trim(),
+                                    SendingFirm = cells[8].InnerText.Trim()
+                                };
+
+                                if (LastItem.Compitations == null) LastItem.Compitations = new List<Compitation>();
+                                LastItem.Compitations.Add(compitation);
+                                continue;
+                            }
+
+                            //todo: get 
+
 
 
                             if (isChapter(row.InnerText))
@@ -61,36 +73,54 @@ namespace StructureParserConsoleApp
                                     OriginalName = row.InnerText,
                                     Name = GetChapterName(row.InnerText),
                                     StructureNodeType = StructureNodeType.Chapter
+                                    
                                 });
 
+                                LastItem = StructureList.Last();
                                 continue;
                             }
 
                             if (isKindOfSport(row.InnerText))
                             {
+                                if(LastItem.StructureNodeType == StructureNodeType.NotUndefined && StructureList.Any(x=>x.StructureNodeType == StructureNodeType.CommonKindOfSport))
+                                {
+                                    LastItem = StructureList.Last(x => x.StructureNodeType == StructureNodeType.CommonKindOfSport);
+                                }
+
                                 StructureList.Add(new StructureItem
                                 {
                                     ID = _id++,
-                                    Level = _levelValue,
-                                    ParentNode = StructureList.Where(x => x.Level == 0).Last(),
+                                    Level = LastItem.Level == 0 ? LastItem.Level+1 : LastItem.Level,
+                                    ParentNode = LastItem.Level == 0 ? LastItem : LastItem.ParentNode,
                                     OriginalName = row.InnerText,
                                     Name = GetKindOfSportName(row.InnerText),
                                     StructureNodeType = StructureNodeType.CommonKindOfSport
                                 });
 
+                                LastItem = StructureList.Last();
                                 //Сделать проверку на вид спорта
 
                                 continue;
                             }
 
-
-
-
-
+                            StructureList.Add(new StructureItem
+                            {
+                                ID = _id++,
+                                Level = LastItem.Level + 1,
+                                ParentNode = LastItem,
+                                OriginalName = row.InnerText,
+                                Name = row.InnerText,
+                                StructureNodeType = StructureNodeType.NotUndefined
+                            });
 
                         }
                     }
                 }
+            }
+
+            foreach (var item in StructureList)
+            {
+                System.Console.WriteLine(item);
             }
 
 
