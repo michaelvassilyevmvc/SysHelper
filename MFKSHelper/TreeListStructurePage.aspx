@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TreeListStructurePage.aspx.cs" Inherits="MFKSHelper.TreeListStructurePage" %>
 
+<%@ Register Assembly="DevExpress.Web.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+
 <%@ Register Assembly="DevExpress.Web.ASPxTreeList.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxTreeList" TagPrefix="dx" %>
 
 <!DOCTYPE html>
@@ -46,6 +48,7 @@
                 OnDataBinding="tlStructure_DataBinding"
                 OnProcessDragNode="tlStructure_ProcessDragNode"
                 OnHtmlDataCellPrepared="tlStructure_HtmlDataCellPrepared"
+                ClientSideEvents-FocusedNodeChanged='<%# "function(s,e){"+gvData.ClientID+".Refresh();}" %>'
                 >
                 <ClientSideEvents StartDragNode="OnStartDragNode" />
                 <Columns>
@@ -79,7 +82,27 @@
                 <SettingsBehavior AllowFocusedNode="true" AllowDragDrop="true" />
                 <SettingsEditing AllowNodeDragDrop="true"></SettingsEditing>
                 <SettingsSelection Enabled="true" />
+                <Settings GridLines="Both" />
             </dx:aspxtreelist>
+
+            <h2>Данные по текущей структуре</h2>
+            <dx:ASPxGridView ID="gvData" ClientInstanceName="gvData" KeyFieldName="Name" runat="server" AutoGenerateColumns="False" OnDataBinding="gvData_DataBinding">
+                <Columns>
+                    <dx:GridViewDataTextColumn FieldName="Name" Caption="Наименование" VisibleIndex="0"></dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="DateAndPlace" Caption="Сроки и место проведения" VisibleIndex="1"></dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="CompetitorFirm" Caption="Организации, участвующие в спортивно-массовых мероприятиях" VisibleIndex="2"></dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="Count" Caption="Состав команды" VisibleIndex="3"></dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="AthleteCount" Caption="Кол-во спортсменов" VisibleIndex="4"></dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="TrainerCount" Caption="Кол-во тренеров" VisibleIndex="5"></dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="JudgeCount" Caption="Кол-во судей" VisibleIndex="6"></dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="OrganizerFirm" Caption="Организатор" VisibleIndex="7"></dx:GridViewDataTextColumn>
+                    <dx:GridViewDataTextColumn FieldName="SendingFirm" Caption="Командирующие организации" VisibleIndex="8"></dx:GridViewDataTextColumn>
+                </Columns>
+                <Styles>
+                    <Cell HorizontalAlign="Center"></Cell>
+                </Styles>
+            </dx:ASPxGridView>
+
         </div>
     </form>
 </body>

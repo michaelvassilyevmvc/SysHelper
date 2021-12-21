@@ -31,5 +31,14 @@ namespace MFKSHelper
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::DevExpress.Web.ASPxTreeList.ASPxTreeList tlStructure;
+
+        /// <summary>
+        /// gvData элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxGridView gvData;
     }
 }

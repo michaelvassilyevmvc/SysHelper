@@ -9,6 +9,7 @@ using DocumentFormat.OpenXml.Wordprocessing;
 using System.IO;
 using MFKSHelper.Helpers;
 using DevExpress.Web.ASPxTreeList;
+using DevExpress.Web;
 
 namespace MFKSHelper
 {
@@ -76,14 +77,16 @@ namespace MFKSHelper
                                         SendingFirm = cells[8].InnerText.Trim()
                                     };
 
-                                    if (LastItem.Compitations == null) LastItem.Compitations = new List<Compitation>();
-                                    LastItem.Compitations.Add(compitation);
+                                    if (LastItem.Compitations == null) 
+                                        LastItem.Compitations = new List<Compitation>();
+
+                                    var lstItm = StructureList.Last();
+
+                                    if (lstItm.Compitations == null) lstItm.Compitations = new List<Compitation>();
+
+                                    lstItm.Compitations.Add(compitation);
                                     continue;
                                 }
-
-                                //todo: get 
-
-
 
                                 if (StructureHelpers.isChapter(row.InnerText))
                                 {
@@ -146,6 +149,7 @@ namespace MFKSHelper
             if (StructureList != null && StructureList.Count() > 0)
             {
                 tlStructure.DataBind();
+                gvData.DataBind();
             }
         }
 
@@ -171,6 +175,20 @@ namespace MFKSHelper
         protected void tlStructure_HtmlDataCellPrepared(object sender, TreeListHtmlDataCellEventArgs e)
         {
             e.Cell.CssClass = "customClass";
+        }
+
+        protected void gvData_DataBinding(object sender, EventArgs e)
+        {
+            ASPxGridView grid = sender as ASPxGridView;
+            if(tlStructure.FocusedNode == null)
+            {
+                grid.DataSource = null;
+            }
+            else
+            {
+                var node = StructureList.Find(x => x.ID.ToString() == tlStructure.FocusedNode.Key);
+                grid.DataSource = node.Compitations;
+            }
         }
     }
 }

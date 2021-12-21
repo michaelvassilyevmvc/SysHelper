@@ -17,7 +17,7 @@ namespace MFKSHelper.Helpers
 
         public static bool isKindOfSport(string line)
         {
-            Match match = Regex.Match(line, @"^(\s*\d+.\s*)(.*)");
+            Match match = Regex.Match(line, @"^(\s*\d+[.]\s*)(.*)");
             return match.Success;
         }
 
@@ -28,7 +28,7 @@ namespace MFKSHelper.Helpers
 
         public static string GetKindOfSportName(string line)
         {
-            return Regex.Match(line, @"^(\s*\d+.\s*)(.*)").Groups[2].Value.Trim();
+            return Regex.Match(line, @"^(\s*\d+[.]\s*)(.*)").Groups[2].Value.Trim();
         }
 
         public static bool IsCaption(IEnumerable<TableCell> cells)
