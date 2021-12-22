@@ -190,5 +190,72 @@ namespace MFKSHelper
                 grid.DataSource = node.Compitations;
             }
         }
+
+        protected void gvData_RowDeleting(object sender, DevExpress.Web.Data.ASPxDataDeletingEventArgs e)
+        {
+            var node = StructureList.Find(x => x.ID.ToString() == tlStructure.FocusedNode.Key);
+            node.Compitations = node.Compitations.Where(x => x.Name != e.Values["Name"].ToString()).ToList();
+            e.Cancel = true;
+        }
+
+        protected void gvData_RowUpdating(object sender, DevExpress.Web.Data.ASPxDataUpdatingEventArgs e)
+        {
+            ASPxGridView grid = sender as ASPxGridView;
+            string oldName = e.OldValues["Name"].ToString();
+            var node = StructureList.Find(x => x.ID.ToString() == tlStructure.FocusedNode.Key);
+            var compitations = node.Compitations;
+            var oldCompitation = compitations.Find(x => x.Name == oldName);
+                oldCompitation.Name = e.NewValues["Name"]?.ToString();
+                oldCompitation.AthleteCount = e.NewValues["AthleteCount"]?.ToString();
+                oldCompitation.CompetitorFirm = e.NewValues["CompetitorFirm"]?.ToString() ;
+                oldCompitation.Count = e.NewValues["Count"]?.ToString();
+                oldCompitation.DateAndPlace = e.NewValues["DateAndPlace"]?.ToString();
+                oldCompitation.JudgeCount = e.NewValues["JudgeCount"]?.ToString();
+                oldCompitation.OrganizerFirm = e.NewValues["OrganizerFirm"]?.ToString() ;
+                oldCompitation.SendingFirm = e.NewValues["SendingFirm"]?.ToString();
+                oldCompitation.TrainerCount = e.NewValues["TrainerCount"]?.ToString();
+               
+            grid.CancelEdit();
+            e.Cancel = true;
+            
+        }
+
+        protected void gvData_RowInserting(object sender, DevExpress.Web.Data.ASPxDataInsertingEventArgs e)
+        {
+            ASPxGridView grid = sender as ASPxGridView;
+            var node = StructureList.Find(x => x.ID.ToString() == tlStructure.FocusedNode.Key);
+            if (node.Compitations == null) node.Compitations = new List<Compitation>();
+            node.Compitations.Add(new Compitation
+                {
+                    Name = e.NewValues["Name"]?.ToString(),
+                    AthleteCount = e.NewValues["AthleteCount"]?.ToString(),
+                    CompetitorFirm = e.NewValues["CompetitorFirm"]?.ToString(),
+                    Count = e.NewValues["Count"]?.ToString(),
+                    DateAndPlace = e.NewValues["DateAndPlace"]?.ToString(),
+                    JudgeCount = e.NewValues["JudgeCount"]?.ToString(),
+                    OrganizerFirm = e.NewValues["OrganizerFirm"]?.ToString(),
+                    SendingFirm = e.NewValues["SendingFirm"]?.ToString(),
+                    TrainerCount = e.NewValues["TrainerCount"]?.ToString()
+            });
+
+            grid.CancelEdit();
+            e.Cancel = true;
+        }
+
+        protected void tlStructure_NodeDeleting(object sender, DevExpress.Web.Data.ASPxDataDeletingEventArgs e)
+        {
+            StructureList = StructureList.Where(x => x.ID.ToString() != e.Values["ID"].ToString()).ToList();
+            e.Cancel = true;
+        }
+
+        protected void tlStructure_NodeUpdating(object sender, DevExpress.Web.Data.ASPxDataUpdatingEventArgs e)
+        {
+            ASPxTreeList tree = sender as ASPxTreeList;
+            var node = StructureList.Find(x => x.ID.ToString() == tree.FocusedNode.Key);
+            node.Name = e.NewValues["Name"].ToString();
+
+            tree.CancelEdit();
+            e.Cancel = true;
+        }
     }
 }
