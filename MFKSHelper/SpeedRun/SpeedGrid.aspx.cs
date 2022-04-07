@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.Web;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,7 +13,7 @@ namespace MFKSHelper.SpeedRun
         public int AthleteID { get; set; } = 100013808;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            lblTime.Text = DateTime.Now.ToString();
         }
 
         protected void dsAthleteKindOfSportList_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
@@ -40,6 +41,13 @@ namespace MFKSHelper.SpeedRun
             e.Command.Parameters["@AthleteID"].Value = AthleteID;
             e.Command.Parameters["@KindOfSportID"].Value = 0;
             e.Command.Parameters["@Lang"].Value = "Rus";
+        }
+        protected void cbKindOfSportList_Validation(object sender, ValidationEventArgs e)
+        {
+            ASPxComboBox combo = sender as ASPxComboBox;
+            if (combo.SelectedItem == null)
+                e.IsValid = false;
+            e.ErrorText = "Обязательное поле";
         }
     }
 }

@@ -13,6 +13,8 @@
     <form id="form1" runat="server">
         <div>
 
+			<dx:ASPxLabel ID="lblTime" runat="server" Text=""></dx:ASPxLabel>
+
             <dx:ASPxGridView 
 						ID="gvTrainerListByAthlete" 
 						ClientInstanceName="gvTrainerListByAthlete" 
@@ -189,12 +191,23 @@
                                 <PropertiesComboBox DataSourceID="dsAllKindOfSportData" TextField="Name" ValueField="ID">
                                 </PropertiesComboBox>
                                 <EditFormSettings Visible="True" />
-                                <EditItemTemplate>
-                                    <dx:ASPxComboBox ID="cbAthleteKindOfSportList" runat="server" DataSourceID="dsAthleteKindOfSportList"
+                               <EditItemTemplate>
+                                    <dx:ASPxComboBox 
+										ID="cbKindOfSportList" 
+										ClientInstanceName="cbKindOfSportList" 
+										runat="server" DataSourceID="dsAthleteKindOfSportList"
                                         Value='<%# Bind("KindOfSportID") %>' TextField="Name" ValueField="KindOfSportID"
-                                        ValueType="System.Int32">
+                                        ValueType="System.Int32" Width="100%" OnValidation="cbKindOfSportList_Validation" ValidationSettings-ValidationGroup="<%# Container.ValidationGroup %>">
+										<ValidationSettings
+                                            Display="Dynamic"
+                                            ErrorDisplayMode="ImageWithText"
+                                            ErrorTextPosition="Bottom">
+                                            <RequiredField ErrorText="Выберите вид спорта" IsRequired="True" />
+										 </ValidationSettings>
+										<CaptionSettings Position="Top" />
                                     </dx:ASPxComboBox>
-                                </EditItemTemplate>
+								</EditItemTemplate>
+								<EditFormSettings CaptionLocation="Top"   />
                             </dx:GridViewDataComboBoxColumn>
 
 						</Columns>

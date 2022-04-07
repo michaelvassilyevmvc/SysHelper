@@ -24,6 +24,15 @@ namespace MFKSHelper.SpeedRun
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// lblTime элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxLabel lblTime;
+
+        /// <summary>
         /// gvTrainerListByAthlete элемент управления.
         /// </summary>
         /// <remarks>
