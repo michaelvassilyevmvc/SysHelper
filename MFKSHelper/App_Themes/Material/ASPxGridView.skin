@@ -1,0 +1,91 @@
+﻿<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web" Assembly="DevExpress.Web.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+
+<dx:ASPxGridView runat="server" CssFilePath="{0}/styles.css" CssPostfix="Material">
+	<SettingsPager  CurrentPageNumberFormat="{0}" NumericButtonCount="5" Mode="ShowPager" Position="TopAndBottom">
+		<FirstPageButton Visible="true">
+			<Image ToolTip="%%Первая%%" AlternateText="&laquo;"></Image>
+		</FirstPageButton>
+		<LastPageButton Visible="true">
+			<Image ToolTip="%%Последняя%%" AlternateText="&raquo;"></Image>
+		</LastPageButton>
+		<PrevPageButton>
+			<Image ToolTip="%%Предыдущая%%" AlternateText="&lt;"></Image>
+		</PrevPageButton>
+		<NextPageButton>
+			<Image ToolTip="%%Следующая%%" AlternateText="&gt;"></Image>
+		</NextPageButton>
+		<Summary AllPagesText="%%Страницы: [{0}] - [{1}] (Всего строк: [{2}])%%" 
+			Text="%%Страница: [{0}] / [{1}] (Всего строк: [{2}])%%" 
+			EmptyText="%%Нет данных для разбиения на страницы%%" />
+		<PageSizeItemSettings Visible="true" ShowPopupShadow="True" Caption="%%Строк на странице%%:" />
+	</SettingsPager>
+	<SettingsText EmptyDataRow="%%Нет данных для отображения%%" 
+		GroupContinuedOnNextPage="(%%Продолжение на следующей странице%%)" 
+		ConfirmDelete="%%Вы действительно хотите удалить эту запись?%%" />
+	<SettingsLoadingPanel Text="%%Загрузка%%…" />
+	<Settings AutoFilterCondition="Contains"   />
+	<SettingsCommandButton RenderMode="Image">
+		<NewButton Text="%%Добавить%%">
+			<Image AlternateText="%%Добавить%%" IconID="actions_add_32x32gray">
+			</Image>
+		</NewButton>
+		<UpdateButton Text="%%Сохранить%%">
+			<Image AlternateText="%%Сохранить%%" IconID="actions_apply_32x32gray">
+			</Image>
+		</UpdateButton>
+		<CancelButton Text="%%Отмена%%">
+			<Image AlternateText="%%Отмена%%" IconID="actions_cancel_32x32gray">
+			</Image>
+		</CancelButton>
+		<EditButton Text="%%Редактировать%%">
+			<Image AlternateText="%%Редактировать%%" Url="Web/1x1.gif" Height="32px" Width="32px">
+			</Image>
+			<Styles>
+				<Style>
+					<DisabledStyle>
+						<BackgroundImage ImageUrl="GridView/pencil_disabled.png" />
+					</DisabledStyle>
+					<BackgroundImage ImageUrl="GridView/pencil_gray.png" />
+				</Style>
+			</Styles>
+		</EditButton>
+		<DeleteButton Text="%%Удалить%%">
+			<Image AlternateText="%%Удалить%%" IconID="edit_delete_32x32gray">
+			</Image>
+		</DeleteButton>
+		<ClearFilterButton Text="%%Очистить фильтр%%">
+			<Image AlternateText="%%Очистить фильтр%%" IconID="filter_ignoremasterfilter_32x32office2013">
+			</Image>
+		</ClearFilterButton>
+	</SettingsCommandButton>
+	<Images SpriteCssFilePath="{0}/sprite.css">
+	</Images>
+	<Styles CssPostfix="Material" CssFilePath="{0}/styles.css" AdaptiveDetailButtonWidth="52">
+		<Header Wrap="True" HorizontalAlign="Center"></Header>
+		<Row Wrap="True"></Row>
+		<Footer HorizontalAlign="Left"></Footer>
+		<CommandColumn Paddings-Padding="2px"></CommandColumn>
+        <CommandColumnItem Paddings-Padding="2px"></CommandColumnItem>
+		<Cell Paddings-PaddingBottom="0" Paddings-PaddingTop="0" Paddings-PaddingLeft="10"></Cell>
+	</Styles>
+	<StylesPager>
+		<Pager ItemSpacing="0px" Spacing="50px" />
+	</StylesPager>
+	<StylesEditors>
+		<Calendar>
+			<Border BorderColor="Silver" BorderStyle="Solid" BorderWidth="1px" />
+		</Calendar>
+	</StylesEditors>
+	<SettingsPopup>
+		<HeaderFilter MinWidth="230px" MinHeight="150px"></HeaderFilter>
+		<CustomizationWindow MinWidth="240px" MinHeight="250px"  />
+	</SettingsPopup>
+	<StylesPopup>
+		<HeaderFilter Footer-CssClass="headerFilterPopupFooter">
+		</HeaderFilter>
+	</StylesPopup>
+	<SettingsBehavior ConfirmDelete="True" AllowSort="false" />
+</dx:ASPxGridView>
+
+

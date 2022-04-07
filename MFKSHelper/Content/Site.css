@@ -29,3 +29,66 @@ textarea {
         padding: 0;
     }
 }
+
+.CurrentFirmName {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.dxDisabledStyle {
+    color: #484848;
+}
+
+.dxeDisabled_Material {
+    color: #686868 !important;
+    /*border-color: #DCDCDC;*/
+}
+
+.tab-pages {
+    box-sizing: border-box;
+    border: solid;
+    border-width: 1px;
+    padding: 10px;
+}
+
+.group-edit-buttons {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: right;
+}
+
+.dvLearning_groups_special_performance_card {
+    max-width: 1260px;
+    overflow-x: auto;
+}
+
+.null-text-horizont-align {
+    text-align: center;
+}
+
+.only-caption-visible ~ td table {
+    display: none
+}
+
+.sfp_notification {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.trainer-modal {
+    max-width: 1024px !important;
+    width: 1024px !important;
+    padding: 20px;
+}
+/*.sfp_notification div{
+	width:100%;
+}
+.toolbox-item{
+	width:200px;
+	min-width:200px;
+}*/

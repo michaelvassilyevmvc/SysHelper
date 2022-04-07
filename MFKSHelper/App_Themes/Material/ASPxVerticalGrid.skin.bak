@@ -1,0 +1,59 @@
+﻿<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web" Assembly="DevExpress.Web.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %> 
+
+<dx:ASPxVerticalGrid runat="server" CssFilePath="{0}/styles.css" CssPostfix="Material">
+	<SettingsPager CurrentPageNumberFormat="{0}">
+		<PageSizeItemSettings ShowPopupShadow="true" />
+	</SettingsPager>
+	<SettingsText EmptyRecord="%%Нет данных для отображения%%" 
+		ConfirmDelete="%%Вы действительно хотите удалить эту запись?%%" />
+	<SettingsLoadingPanel Text="%%Загрузка%%…" />
+	<SettingsCommandButton RenderMode="Image">
+		<NewButton Text="%%Добавить%%">
+			<Image AlternateText="%%Добавить%%" IconID="actions_add_32x32gray">
+			</Image>
+		</NewButton>
+		<UpdateButton Text="%%Сохранить%%">
+			<Image AlternateText="%%Сохранить%%" IconID="actions_apply_32x32gray">
+			</Image>
+		</UpdateButton>
+		<CancelButton Text="%%Отмена%%">
+			<Image AlternateText="%%Отмена%%" IconID="actions_cancel_32x32gray">
+			</Image>
+		</CancelButton>
+		<EditButton Text="%%Редактировать%%">
+			<Image AlternateText="%%Редактировать%%" Url="Web/1x1.gif" Height="32px" Width="32px">
+			</Image>
+			<Styles>
+				<Style>
+					<DisabledStyle>
+						<BackgroundImage ImageUrl="GridView/pencil_disabled.png" />
+					</DisabledStyle>
+					<BackgroundImage ImageUrl="GridView/pencil_gray.png" />
+				</Style>
+			</Styles>
+		</EditButton>
+		<DeleteButton Text="%%Удалить%%">
+			<Image AlternateText="%%Удалить%%" IconID="edit_delete_32x32gray">
+			</Image>
+		</DeleteButton>
+	</SettingsCommandButton>
+	<Images SpriteCssFilePath="{0}/sprite.css" />
+	<Styles CssPostfix="Material" CssFilePath="{0}/styles.css" IndentWidth="32">
+		<Header Wrap="True"></Header>
+		<Category Wrap="True"></Category>
+	</Styles>
+	<StylesPager>
+		<Pager ItemSpacing="0px" Spacing="0px" />
+	</StylesPager>
+	<StylesEditors>
+		<Calendar>
+			<Border BorderColor="Silver" BorderStyle="Solid" BorderWidth="1px" />
+		</Calendar>
+	</StylesEditors>
+	<SettingsPopup>
+		<HeaderFilter MinWidth="230px" MinHeight="150px"></HeaderFilter>
+	</SettingsPopup>
+	<SettingsBehavior ConfirmDelete="True" AllowSort="False" />
+</dx:ASPxVerticalGrid>
+

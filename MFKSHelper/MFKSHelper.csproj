@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MFKSHelper</RootNamespace>
     <AssemblyName>MFKSHelper</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,6 +45,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.123\lib\net461\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Data.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -55,14 +59,47 @@
     <Reference Include="DocumentFormat.OpenXml, Version=2.15.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
       <HintPath>..\packages\DocumentFormat.OpenXml.2.15.0\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="ServiceStack.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Common.6.0.2\lib\net472\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Interfaces.6.0.2\lib\net472\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis, Version=6.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Redis.6.0.2\lib\net472\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=6.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Text.6.0.2\lib\net472\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
@@ -94,6 +131,7 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -118,6 +156,195 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AdditionalSportTest.aspx" />
+    <Content Include="App_Themes\Material\CardView\cvLoadingOnStatusBar.gif" />
+    <Content Include="App_Themes\Material\CardView\dt_sprite.png" />
+    <Content Include="App_Themes\Material\CardView\dt_spriteAccessible.png" />
+    <Content Include="App_Themes\Material\CardView\sprite.css" />
+    <Content Include="App_Themes\Material\CardView\sprite.svg" />
+    <Content Include="App_Themes\Material\CardView\spriteAccessible.css" />
+    <Content Include="App_Themes\Material\CardView\styles.css" />
+    <Content Include="App_Themes\Material\CardView\stylesCompact.css" />
+    <Content Include="App_Themes\Material\Chart\Loading.gif" />
+    <Content Include="App_Themes\Material\Chart\styles.css" />
+    <Content Include="App_Themes\Material\Editors\dt_sprite.png" />
+    <Content Include="App_Themes\Material\Editors\dt_spriteAccessible.png" />
+    <Content Include="App_Themes\Material\Editors\edtBinaryImageDesign.gif" />
+    <Content Include="App_Themes\Material\Editors\edtButtonBack.gif" />
+    <Content Include="App_Themes\Material\Editors\edtButtonHoverBack.gif" />
+    <Content Include="App_Themes\Material\Editors\edtCalendarButtonBack.gif" />
+    <Content Include="App_Themes\Material\Editors\edtCalendarButtonHBack.gif" />
+    <Content Include="App_Themes\Material\Editors\edtCalendarDayInRange.svg" />
+    <Content Include="App_Themes\Material\Editors\edtCalendarSelected.svg" />
+    <Content Include="App_Themes\Material\Editors\edtCalendarToday.svg" />
+    <Content Include="App_Themes\Material\Editors\edtCalendarTodayInRange.svg" />
+    <Content Include="App_Themes\Material\Editors\edtCalendarTodaySelected.svg" />
+    <Content Include="App_Themes\Material\Editors\edtDropDownBack.gif" />
+    <Content Include="App_Themes\Material\Editors\edtDropDownButtonHoverBack.gif" />
+    <Content Include="App_Themes\Material\Editors\edtSpinDecBtnBack.gif" />
+    <Content Include="App_Themes\Material\Editors\edtSpinIncBtnBack.gif" />
+    <Content Include="App_Themes\Material\Editors\edtTrackBarDoubleLargeTickH.svg" />
+    <Content Include="App_Themes\Material\Editors\edtTrackBarDoubleLargeTickV.svg" />
+    <Content Include="App_Themes\Material\Editors\edtTrackBarDoubleSmallTickH.svg" />
+    <Content Include="App_Themes\Material\Editors\edtTrackBarDoubleSmallTickV.svg" />
+    <Content Include="App_Themes\Material\Editors\edtTrackBarLargeTickH.svg" />
+    <Content Include="App_Themes\Material\Editors\edtTrackBarLargeTickV.svg" />
+    <Content Include="App_Themes\Material\Editors\edtTrackBarSmallTickH.svg" />
+    <Content Include="App_Themes\Material\Editors\edtTrackBarSmallTickV.svg" />
+    <Content Include="App_Themes\Material\Editors\edtTrackBarTrackH.svg" />
+    <Content Include="App_Themes\Material\Editors\edtTrackBarTrackV.svg" />
+    <Content Include="App_Themes\Material\Editors\sprite.css" />
+    <Content Include="App_Themes\Material\Editors\sprite.svg" />
+    <Content Include="App_Themes\Material\Editors\spriteAccessible.css" />
+    <Content Include="App_Themes\Material\Editors\styles.css" />
+    <Content Include="App_Themes\Material\Editors\stylesCompact.css" />
+    <Content Include="App_Themes\Material\GridView\Add.png" />
+    <Content Include="App_Themes\Material\GridView\Cancel.png" />
+    <Content Include="App_Themes\Material\GridView\Delete.png" />
+    <Content Include="App_Themes\Material\GridView\dt_sprite.png" />
+    <Content Include="App_Themes\Material\GridView\dt_spriteAccessible.png" />
+    <Content Include="App_Themes\Material\GridView\Edit.png" />
+    <Content Include="App_Themes\Material\GridView\FullCollapse.png" />
+    <Content Include="App_Themes\Material\GridView\FullExpand.png" />
+    <Content Include="App_Themes\Material\GridView\gvLoadingOnStatusBar.gif" />
+    <Content Include="App_Themes\Material\GridView\pencil_disabled.png" />
+    <Content Include="App_Themes\Material\GridView\pencil_gray.png" />
+    <Content Include="App_Themes\Material\GridView\Refresh.png" />
+    <Content Include="App_Themes\Material\GridView\Save.png" />
+    <Content Include="App_Themes\Material\GridView\spacer.gif" />
+    <Content Include="App_Themes\Material\GridView\sprite.css" />
+    <Content Include="App_Themes\Material\GridView\sprite.svg" />
+    <Content Include="App_Themes\Material\GridView\spriteAccessible.css" />
+    <Content Include="App_Themes\Material\GridView\styles.css" />
+    <Content Include="App_Themes\Material\GridView\stylesCompact.css" />
+    <Content Include="App_Themes\Material\HtmlEditor\dt_sprite.png" />
+    <Content Include="App_Themes\Material\HtmlEditor\dt_spriteAccessible.png" />
+    <Content Include="App_Themes\Material\HtmlEditor\dxheAudio.svg" />
+    <Content Include="App_Themes\Material\HtmlEditor\dxheFlash.svg" />
+    <Content Include="App_Themes\Material\HtmlEditor\dxheFoldMarker.png" />
+    <Content Include="App_Themes\Material\HtmlEditor\dxheNotSupported.svg" />
+    <Content Include="App_Themes\Material\HtmlEditor\dxheVideo.svg" />
+    <Content Include="App_Themes\Material\HtmlEditor\dxheYoutube.svg" />
+    <Content Include="App_Themes\Material\HtmlEditor\heFoldGutterFolded.svg" />
+    <Content Include="App_Themes\Material\HtmlEditor\heFoldGutterOpen.svg" />
+    <Content Include="App_Themes\Material\HtmlEditor\sprite.css" />
+    <Content Include="App_Themes\Material\HtmlEditor\sprite.svg" />
+    <Content Include="App_Themes\Material\HtmlEditor\spriteAccessible.css" />
+    <Content Include="App_Themes\Material\HtmlEditor\styles.css" />
+    <Content Include="App_Themes\Material\PivotGrid\-1.png" />
+    <Content Include="App_Themes\Material\PivotGrid\0.png" />
+    <Content Include="App_Themes\Material\PivotGrid\1.png" />
+    <Content Include="App_Themes\Material\PivotGrid\dt_sprite.png" />
+    <Content Include="App_Themes\Material\PivotGrid\dt_spriteAccessible.png" />
+    <Content Include="App_Themes\Material\PivotGrid\pgCustomizationFormBackground.gif" />
+    <Content Include="App_Themes\Material\PivotGrid\pgTVNodeLoading.gif" />
+    <Content Include="App_Themes\Material\PivotGrid\sprite.css" />
+    <Content Include="App_Themes\Material\PivotGrid\sprite.svg" />
+    <Content Include="App_Themes\Material\PivotGrid\spriteAccessible.css" />
+    <Content Include="App_Themes\Material\PivotGrid\styles.css" />
+    <Content Include="App_Themes\Material\RichEdit\dt_sprite.png" />
+    <Content Include="App_Themes\Material\RichEdit\dt_spriteAccessible.png" />
+    <Content Include="App_Themes\Material\RichEdit\reLoadingOnStatusBar.gif" />
+    <Content Include="App_Themes\Material\RichEdit\sprite.css" />
+    <Content Include="App_Themes\Material\RichEdit\sprite.svg" />
+    <Content Include="App_Themes\Material\RichEdit\spriteAccessible.css" />
+    <Content Include="App_Themes\Material\RichEdit\styles.css" />
+    <Content Include="App_Themes\Material\Scheduler\ButtonBack.gif" />
+    <Content Include="App_Themes\Material\Scheduler\ButtonBackHover.gif" />
+    <Content Include="App_Themes\Material\Scheduler\dt_sprite.png" />
+    <Content Include="App_Themes\Material\Scheduler\dt_spriteAccessible.png" />
+    <Content Include="App_Themes\Material\Scheduler\sprite.css" />
+    <Content Include="App_Themes\Material\Scheduler\sprite.svg" />
+    <Content Include="App_Themes\Material\Scheduler\spriteAccessible.css" />
+    <Content Include="App_Themes\Material\Scheduler\styles.css" />
+    <Content Include="App_Themes\Material\Scheduler\stylesCompact.css" />
+    <Content Include="App_Themes\Material\Scheduler\ViewSelectorButtonBack.gif" />
+    <Content Include="App_Themes\Material\Scheduler\ViewSelectorButtonBackHover.gif" />
+    <Content Include="App_Themes\Material\SpellChecker\scErrorUnderline.gif" />
+    <Content Include="App_Themes\Material\SpellChecker\styles.css" />
+    <Content Include="App_Themes\Material\Spreadsheet\dt_sprite.png" />
+    <Content Include="App_Themes\Material\Spreadsheet\dt_spriteAccessible.png" />
+    <Content Include="App_Themes\Material\Spreadsheet\sprite.css" />
+    <Content Include="App_Themes\Material\Spreadsheet\sprite.svg" />
+    <Content Include="App_Themes\Material\Spreadsheet\spriteAccessible.css" />
+    <Content Include="App_Themes\Material\Spreadsheet\styles.css" />
+    <Content Include="App_Themes\Material\Spreadsheet\TouchResize.svg" />
+    <Content Include="App_Themes\Material\TreeList\collapsed.png" />
+    <Content Include="App_Themes\Material\TreeList\dt_sprite.png" />
+    <Content Include="App_Themes\Material\TreeList\dt_spriteAccessible.png" />
+    <Content Include="App_Themes\Material\TreeList\expanded.png" />
+    <Content Include="App_Themes\Material\TreeList\sprite.css" />
+    <Content Include="App_Themes\Material\TreeList\sprite.svg" />
+    <Content Include="App_Themes\Material\TreeList\spriteAccessible.css" />
+    <Content Include="App_Themes\Material\TreeList\styles.css" />
+    <Content Include="App_Themes\Material\VerticalGrid\dt_sprite.png" />
+    <Content Include="App_Themes\Material\VerticalGrid\dt_spriteAccessible.png" />
+    <Content Include="App_Themes\Material\VerticalGrid\sprite.css" />
+    <Content Include="App_Themes\Material\VerticalGrid\sprite.svg" />
+    <Content Include="App_Themes\Material\VerticalGrid\spriteAccessible.css" />
+    <Content Include="App_Themes\Material\VerticalGrid\styles.css" />
+    <Content Include="App_Themes\Material\Web\1x1.gif" />
+    <Content Include="App_Themes\Material\Web\currentPage.svg" />
+    <Content Include="App_Themes\Material\Web\dt_sprite.png" />
+    <Content Include="App_Themes\Material\Web\dt_spriteAccessible.png" />
+    <Content Include="App_Themes\Material\Web\fmFile.png" />
+    <Content Include="App_Themes\Material\Web\fmFileCheck.png" />
+    <Content Include="App_Themes\Material\Web\fmFilePdf.png" />
+    <Content Include="App_Themes\Material\Web\fmFilePlainText.png" />
+    <Content Include="App_Themes\Material\Web\fmFilePresentation.png" />
+    <Content Include="App_Themes\Material\Web\fmFileRichText.png" />
+    <Content Include="App_Themes\Material\Web\fmFileSpreadsheet.png" />
+    <Content Include="App_Themes\Material\Web\fmSplitterSeparator.gif" />
+    <Content Include="App_Themes\Material\Web\igLoading.gif" />
+    <Content Include="App_Themes\Material\Web\igNavBtnsBack.png" />
+    <Content Include="App_Themes\Material\Web\isLoading.gif" />
+    <Content Include="App_Themes\Material\Web\Loading.gif" />
+    <Content Include="App_Themes\Material\Web\mPopupBack.gif" />
+    <Content Include="App_Themes\Material\Web\ncGotoBack.svg" />
+    <Content Include="App_Themes\Material\Web\pcModalBack.gif" />
+    <Content Include="App_Themes\Material\Web\pDropDownButtonBack.gif" />
+    <Content Include="App_Themes\Material\Web\pDropDownButtonHoverBack.gif" />
+    <Content Include="App_Themes\Material\Web\rcMapImage.svg" />
+    <Content Include="App_Themes\Material\Web\splResizingPointer.gif" />
+    <Content Include="App_Themes\Material\Web\sprite.css" />
+    <Content Include="App_Themes\Material\Web\sprite.svg" />
+    <Content Include="App_Themes\Material\Web\spriteAccessible.css" />
+    <Content Include="App_Themes\Material\Web\styles.css" />
+    <Content Include="App_Themes\Material\Web\stylesCompact.css" />
+    <Content Include="App_Themes\Material\Web\tcScrollBtnBack.gif" />
+    <Content Include="App_Themes\Material\Web\tcScrollBtnDisabledBack.gif" />
+    <Content Include="App_Themes\Material\Web\tcScrollBtnHoverBack.gif" />
+    <Content Include="App_Themes\Material\Web\tcTabBack.gif" />
+    <Content Include="App_Themes\Material\Web\tiGotoBack.svg" />
+    <Content Include="App_Themes\Material\Web\tvElbow.gif" />
+    <Content Include="App_Themes\Material\Web\tvElbowRtl.gif" />
+    <Content Include="App_Themes\Material\Web\tvLine.gif" />
+    <Content Include="App_Themes\Material\Web\tvNodeLoading.gif" />
+    <Content Include="App_Themes\Material\Web\ucButtonBack.gif" />
+    <Content Include="App_Themes\Material\Web\ucButtonHoverBack.gif" />
+    <Content Include="App_Themes\Material\Web\ucSlLogo.png" />
+    <Content Include="App_Themes\Material\XtraReports\dt_sprite.png" />
+    <Content Include="App_Themes\Material\XtraReports\dt_spriteAccessible.png" />
+    <Content Include="App_Themes\Material\XtraReports\Loading.gif" />
+    <Content Include="App_Themes\Material\XtraReports\pageBottomBorder.svg" />
+    <Content Include="App_Themes\Material\XtraReports\pageLeftBorder.svg" />
+    <Content Include="App_Themes\Material\XtraReports\pageRightBorder.svg" />
+    <Content Include="App_Themes\Material\XtraReports\pageTopBorder.svg" />
+    <Content Include="App_Themes\Material\XtraReports\sprite.css" />
+    <Content Include="App_Themes\Material\XtraReports\sprite.svg" />
+    <Content Include="App_Themes\Material\XtraReports\spriteAccessible.css" />
+    <Content Include="App_Themes\Material\XtraReports\styles.css" />
+    <Content Include="Athletes\AthleteCard.aspx" />
+    <Content Include="Athletes\AthleteTrainerList.aspx" />
+    <Content Include="Athletes\Elements\AthleteTrainerList.ascx" />
+    <Content Include="CachTest\CachingInCode.aspx" />
+    <Content Include="CachTest\FragmentCach2.aspx" />
+    <Content Include="CachTest\FragmentCach.aspx" />
+    <Content Include="CachTest\MultipleResponseSingleWebform.aspx" />
+    <Content Include="CachTest\MultiversionUserControl.aspx" />
+    <Content Include="CachTest\SimpleCach.aspx" />
+    <Content Include="CachTest\UserControl\UCAthletesControl.ascx" />
+    <Content Include="CachTest\UserControl\UCProductsControl.ascx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -137,7 +364,188 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="db.config" />
+    <Content Include="Groups.aspx" />
+    <Content Include="HandlebarsSample.aspx" />
+    <Content Include="md5\Authorize.aspx" />
+    <Content Include="md5\Md5Test.ascx" />
+    <Content Include="Scripts\handlebars.amd.js" />
+    <Content Include="Scripts\handlebars.amd.min.js" />
+    <Content Include="Scripts\handlebars.js" />
+    <Content Include="Scripts\handlebars.min.js" />
+    <Content Include="Scripts\handlebars.runtime.amd.js" />
+    <Content Include="Scripts\handlebars.runtime.amd.min.js" />
+    <Content Include="Scripts\handlebars.runtime.js" />
+    <Content Include="Scripts\handlebars.runtime.min.js" />
+    <Content Include="Scripts\LearningGroupsComposition.js" />
+    <Content Include="Scripts\md5.js" />
+    <Content Include="SpeedRun\SpeedGrid.aspx" />
+    <Content Include="TreeListSample.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="App_Themes\Material\ASPxBinaryImage.skin" />
+    <Content Include="App_Themes\Material\ASPxBinaryImage.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxButton.skin" />
+    <Content Include="App_Themes\Material\ASPxButton.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxButtonEdit.skin" />
+    <Content Include="App_Themes\Material\ASPxButtonEdit.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxCalendar.skin" />
+    <Content Include="App_Themes\Material\ASPxCalendar.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxCallbackPanel.skin" />
+    <Content Include="App_Themes\Material\ASPxCallbackPanel.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxCaptcha.skin" />
+    <Content Include="App_Themes\Material\ASPxCaptcha.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxCardView.skin" />
+    <Content Include="App_Themes\Material\ASPxCardView.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxCheckBox.skin" />
+    <Content Include="App_Themes\Material\ASPxCheckBox.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxCheckBoxList.skin" />
+    <Content Include="App_Themes\Material\ASPxCheckBoxList.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxCloudControl.skin" />
+    <Content Include="App_Themes\Material\ASPxCloudControl.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxColorEdit.skin" />
+    <Content Include="App_Themes\Material\ASPxColorEdit.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxComboBox.skin" />
+    <Content Include="App_Themes\Material\ASPxComboBox.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxDataView.skin" />
+    <Content Include="App_Themes\Material\ASPxDataView.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxDateEdit.skin" />
+    <Content Include="App_Themes\Material\ASPxDateEdit.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxDateNavigator.skin" />
+    <Content Include="App_Themes\Material\ASPxDateNavigator.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxDockPanel.skin" />
+    <Content Include="App_Themes\Material\ASPxDockPanel.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxDocumentViewer.skin" />
+    <Content Include="App_Themes\Material\ASPxDocumentViewer.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxDropDownEdit.skin" />
+    <Content Include="App_Themes\Material\ASPxDropDownEdit.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxFileManager.skin" />
+    <Content Include="App_Themes\Material\ASPxFileManager.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxFilterControl.skin" />
+    <Content Include="App_Themes\Material\ASPxFilterControl.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxFormLayout.skin" />
+    <Content Include="App_Themes\Material\ASPxFormLayout.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxGridLookup.skin" />
+    <Content Include="App_Themes\Material\ASPxGridLookup.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxGridView.skin" />
+    <Content Include="App_Themes\Material\ASPxGridView.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxHeadline.skin" />
+    <Content Include="App_Themes\Material\ASPxHeadline.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxHint.skin" />
+    <Content Include="App_Themes\Material\ASPxHint.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxHtmlEditor.skin" />
+    <Content Include="App_Themes\Material\ASPxHtmlEditor.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxHyperLink.skin" />
+    <Content Include="App_Themes\Material\ASPxHyperLink.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxImage.skin" />
+    <Content Include="App_Themes\Material\ASPxImage.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxImageGallery.skin" />
+    <Content Include="App_Themes\Material\ASPxImageGallery.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxImageSlider.skin" />
+    <Content Include="App_Themes\Material\ASPxImageSlider.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxImageZoom.skin" />
+    <Content Include="App_Themes\Material\ASPxImageZoom.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxImageZoomNavigator.skin" />
+    <Content Include="App_Themes\Material\ASPxImageZoomNavigator.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxLabel.skin" />
+    <Content Include="App_Themes\Material\ASPxLabel.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxListBox.skin" />
+    <Content Include="App_Themes\Material\ASPxListBox.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxLoadingPanel.skin" />
+    <Content Include="App_Themes\Material\ASPxLoadingPanel.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxMemo.skin" />
+    <Content Include="App_Themes\Material\ASPxMemo.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxMenu.skin" />
+    <Content Include="App_Themes\Material\ASPxMenu.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxNavBar.skin" />
+    <Content Include="App_Themes\Material\ASPxNavBar.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxNewsControl.skin" />
+    <Content Include="App_Themes\Material\ASPxNewsControl.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxPageControl.skin" />
+    <Content Include="App_Themes\Material\ASPxPageControl.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxPager.skin" />
+    <Content Include="App_Themes\Material\ASPxPager.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxPanel.skin" />
+    <Content Include="App_Themes\Material\ASPxPanel.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxPivotGrid.skin" />
+    <Content Include="App_Themes\Material\ASPxPivotGrid.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxPopupControl.skin" />
+    <Content Include="App_Themes\Material\ASPxPopupControl.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxPopupMenu.skin" />
+    <Content Include="App_Themes\Material\ASPxPopupMenu.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxProgressBar.skin" />
+    <Content Include="App_Themes\Material\ASPxProgressBar.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxRadioButton.skin" />
+    <Content Include="App_Themes\Material\ASPxRadioButton.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxRadioButtonList.skin" />
+    <Content Include="App_Themes\Material\ASPxRadioButtonList.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxRatingControl.skin" />
+    <Content Include="App_Themes\Material\ASPxRatingControl.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxRibbon.skin" />
+    <Content Include="App_Themes\Material\ASPxRibbon.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxRichEdit.skin" />
+    <Content Include="App_Themes\Material\ASPxRichEdit.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxRoundPanel.skin" />
+    <Content Include="App_Themes\Material\ASPxRoundPanel.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxScheduler.skin" />
+    <Content Include="App_Themes\Material\ASPxScheduler.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxSiteMapControl.skin" />
+    <Content Include="App_Themes\Material\ASPxSiteMapControl.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxSpellChecker.skin" />
+    <Content Include="App_Themes\Material\ASPxSpellChecker.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxSpinEdit.skin" />
+    <Content Include="App_Themes\Material\ASPxSpinEdit.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxSplitter.skin" />
+    <Content Include="App_Themes\Material\ASPxSplitter.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxSpreadsheet.skin" />
+    <Content Include="App_Themes\Material\ASPxSpreadsheet.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxTabControl.skin" />
+    <Content Include="App_Themes\Material\ASPxTabControl.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxTextBox.skin" />
+    <Content Include="App_Themes\Material\ASPxTextBox.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxTimeEdit.skin" />
+    <Content Include="App_Themes\Material\ASPxTimeEdit.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxTitleIndex.skin" />
+    <Content Include="App_Themes\Material\ASPxTitleIndex.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxTokenBox.skin" />
+    <Content Include="App_Themes\Material\ASPxTokenBox.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxTrackBar.skin" />
+    <Content Include="App_Themes\Material\ASPxTrackBar.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxTreeList.skin" />
+    <Content Include="App_Themes\Material\ASPxTreeList.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxTreeView.skin" />
+    <Content Include="App_Themes\Material\ASPxTreeView.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxUploadControl.skin" />
+    <Content Include="App_Themes\Material\ASPxUploadControl.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxValidationSummary.skin" />
+    <Content Include="App_Themes\Material\ASPxValidationSummary.skin.bak" />
+    <Content Include="App_Themes\Material\ASPxVerticalGrid.skin" />
+    <Content Include="App_Themes\Material\ASPxVerticalGrid.skin.bak" />
+    <Content Include="App_Themes\Material\Fonts\Roboto-Medium.ttf" />
+    <Content Include="App_Themes\Material\Fonts\Roboto-Regular.ttf" />
+    <Content Include="App_Themes\Material\MonthEdit.skin" />
+    <Content Include="App_Themes\Material\MonthEdit.skin.bak" />
+    <Content Include="App_Themes\Material\Parameters.config" />
+    <Content Include="App_Themes\Material\RecurrenceTypeEdit.skin" />
+    <Content Include="App_Themes\Material\RecurrenceTypeEdit.skin.bak" />
+    <Content Include="App_Themes\Material\ReportDocumentMap.skin" />
+    <Content Include="App_Themes\Material\ReportDocumentMap.skin.bak" />
+    <Content Include="App_Themes\Material\ReportParametersPanel.skin" />
+    <Content Include="App_Themes\Material\ReportParametersPanel.skin.bak" />
+    <Content Include="App_Themes\Material\ReportToolbar.skin" />
+    <Content Include="App_Themes\Material\ReportToolbar.skin.bak" />
+    <Content Include="App_Themes\Material\ReportViewer.skin" />
+    <Content Include="App_Themes\Material\ReportViewer.skin.bak" />
+    <Content Include="App_Themes\Material\WebChartControl.skin" />
+    <Content Include="App_Themes\Material\WebChartControl.skin.bak" />
+    <Content Include="App_Themes\Material\WeekDaysEdit.skin" />
+    <Content Include="App_Themes\Material\WeekDaysEdit.skin.bak" />
+    <Content Include="App_Themes\Material\WeekOfMonthEdit.skin" />
+    <Content Include="App_Themes\Material\WeekOfMonthEdit.skin.bak" />
+    <Content Include="App_Readme\Handlebarsjs_release-notes.md" />
+    <Content Include="App_Readme\Handlebarsjs_README.md" />
+    <Content Include="App_Readme\Handlebarsjs_LICENSE" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Images\pencil_disabled.png" />
+    <Content Include="Images\pencil_gray.png" />
     <Content Include="LogParser.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -178,6 +586,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdditionalSportTest.aspx.cs">
+      <DependentUpon>AdditionalSportTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdditionalSportTest.aspx.designer.cs">
+      <DependentUpon>AdditionalSportTest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -187,6 +602,83 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Athletes\AthleteCard.aspx.cs">
+      <DependentUpon>AthleteCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Athletes\AthleteCard.aspx.designer.cs">
+      <DependentUpon>AthleteCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Athletes\AthleteTrainerList.aspx.cs">
+      <DependentUpon>AthleteTrainerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Athletes\AthleteTrainerList.aspx.designer.cs">
+      <DependentUpon>AthleteTrainerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Athletes\Elements\AthleteTrainerList.ascx.cs">
+      <DependentUpon>AthleteTrainerList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Athletes\Elements\AthleteTrainerList.ascx.designer.cs">
+      <DependentUpon>AthleteTrainerList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CachTest\CachingInCode.aspx.cs">
+      <DependentUpon>CachingInCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CachTest\CachingInCode.aspx.designer.cs">
+      <DependentUpon>CachingInCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CachTest\FragmentCach2.aspx.cs">
+      <DependentUpon>FragmentCach2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CachTest\FragmentCach2.aspx.designer.cs">
+      <DependentUpon>FragmentCach2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CachTest\FragmentCach.aspx.cs">
+      <DependentUpon>FragmentCach.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CachTest\FragmentCach.aspx.designer.cs">
+      <DependentUpon>FragmentCach.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CachTest\MultipleResponseSingleWebform.aspx.cs">
+      <DependentUpon>MultipleResponseSingleWebform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CachTest\MultipleResponseSingleWebform.aspx.designer.cs">
+      <DependentUpon>MultipleResponseSingleWebform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CachTest\MultiversionUserControl.aspx.cs">
+      <DependentUpon>MultiversionUserControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CachTest\MultiversionUserControl.aspx.designer.cs">
+      <DependentUpon>MultiversionUserControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CachTest\SimpleCach.aspx.cs">
+      <DependentUpon>SimpleCach.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CachTest\SimpleCach.aspx.designer.cs">
+      <DependentUpon>SimpleCach.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CachTest\UserControl\UCAthletesControl.ascx.cs">
+      <DependentUpon>UCAthletesControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CachTest\UserControl\UCAthletesControl.ascx.designer.cs">
+      <DependentUpon>UCAthletesControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CachTest\UserControl\UCProductsControl.ascx.cs">
+      <DependentUpon>UCProductsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CachTest\UserControl\UCProductsControl.ascx.designer.cs">
+      <DependentUpon>UCProductsControl.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -204,6 +696,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Groups.aspx.cs">
+      <DependentUpon>Groups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Groups.aspx.designer.cs">
+      <DependentUpon>Groups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HandlebarsSample.aspx.cs">
+      <DependentUpon>HandlebarsSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HandlebarsSample.aspx.designer.cs">
+      <DependentUpon>HandlebarsSample.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Helpers\StructureHelpers.cs" />
     <Compile Include="LogParser.aspx.cs">
       <DependentUpon>LogParser.aspx</DependentUpon>
@@ -212,10 +718,30 @@
     <Compile Include="LogParser.aspx.designer.cs">
       <DependentUpon>LogParser.aspx</DependentUpon>
     </Compile>
+    <Compile Include="md5\Authorize.aspx.cs">
+      <DependentUpon>Authorize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="md5\Authorize.aspx.designer.cs">
+      <DependentUpon>Authorize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="md5\Md5Test.ascx.cs">
+      <DependentUpon>Md5Test.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="md5\Md5Test.ascx.designer.cs">
+      <DependentUpon>Md5Test.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Caching.cs" />
     <Compile Include="Models\Compitation.cs" />
+    <Compile Include="Models\Dto\AthleteAdditionalSportDto.cs" />
+    <Compile Include="Models\Dto\KindOfSportDto.cs" />
+    <Compile Include="Models\Events_YearlyPlan.cs" />
+    <Compile Include="Models\Events_YearlyPlanSection.cs" />
     <Compile Include="Models\StructureItem.cs" />
     <Compile Include="Models\StructureNodeType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Repository.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -229,6 +755,22 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SpeedRun\Models\KindOfSport.cs" />
+    <Compile Include="SpeedRun\Repository\Repository.cs" />
+    <Compile Include="SpeedRun\SpeedGrid.aspx.cs">
+      <DependentUpon>SpeedGrid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SpeedRun\SpeedGrid.aspx.designer.cs">
+      <DependentUpon>SpeedGrid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TreeListSample.aspx.cs">
+      <DependentUpon>TreeListSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TreeListSample.aspx.designer.cs">
+      <DependentUpon>TreeListSample.aspx</DependentUpon>
     </Compile>
     <Compile Include="TreeListStructurePage.aspx.cs">
       <DependentUpon>TreeListStructurePage.aspx</DependentUpon>
@@ -244,6 +786,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

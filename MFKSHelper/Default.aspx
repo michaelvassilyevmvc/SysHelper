@@ -59,7 +59,7 @@
                         </SelectParameters>
                     </asp:SqlDataSource>
                     <asp:SqlDataSource ID="dsTrainers" runat="server" ConnectionString='<%$ ConnectionStrings:MFKSConnectionString %>' 
-                        SelectCommand="SELECT [ID], [Last_name], [First_name], [Pat_name], CONCAT([Last_name],[First_name],) [FirmID] FROM [Trainers]"></asp:SqlDataSource>
+                        SelectCommand="SELECT [ID], [Last_name], [First_name], [Pat_name], CONCAT([Last_name],[First_name]) [FirmID] FROM [Trainers]"></asp:SqlDataSource>
                     <asp:SqlDataSource ID="dsAthletes" runat="server" ConnectionString='<%$ ConnectionStrings:MFKSConnectionString %>' SelectCommand="SELECT [ID], [Last_name], [First_name], [Pat_name] FROM [Athletes]"></asp:SqlDataSource>
 
                     <asp:SqlDataSource 
@@ -97,6 +97,59 @@
                             <asp:Parameter Name="Period" Type="Int32"></asp:Parameter>
                             <asp:Parameter Name="ID" Type="Int64"></asp:Parameter>
                         </UpdateParameters>
+                    </asp:SqlDataSource>
+
+
+                    <dx:ASPxGridView ID="ASPxGridView1" runat="server" DataSourceID="dsLearningGroupsList"></dx:ASPxGridView>
+
+
+                    <asp:SqlDataSource
+                        ID="dsLearningGroupsList"
+                        runat="server"
+                        ConnectionString="<%$ ConnectionStrings:MFKSConnectionString %>"
+                        SelectCommand="SELECT 
+	  A.ID
+	, A.FirmID
+	, A.Year
+	, A.Type
+	, A.Period
+	, A.[KindsOfSportsID]
+	, A.TrainerID
+	, IIF(A.rnk &gt; 1,CONCAT(A.Name,' (',A.rnk,')') ,A.Name) as Name
+	, A.State
+	, ISNULL(A.Trainer_FIO, '-') AS Trainer_FIO
+	, A.RegionID
+	, A.Regions_Name
+	, A.Firm_Name
+	, A.Firm_IsClient
+	, A.KindOfSportTypeName
+	, A.StartDate
+	, A.EndDate
+	, A.KindOfSportTypeID
+	, A.KindsOfSports_Name
+FROM LearnGroups.[GetLearningGroupsListByRegion](@FirmID,@Year,@Lang) as A
+WHERE ID IS NOT NULL
+ORDER BY  A.Period, A.Type,  A.KindOfSportTypeID, A.KindsOfSports_Name, IIF(A.rnk &gt; 1,CONCAT(A.Name,' (',A.rnk,')') ,A.Name)"
+                        
+                        InsertCommand="[dbo].[Learning_groups_WithKindOfSportType_Insert]" InsertCommandType="StoredProcedure" >
+                        <InsertParameters>
+                            <asp:Parameter Name="FirmID" />
+                            <asp:Parameter Name="Year" />
+                            <asp:Parameter Name="Type" />
+                            <asp:Parameter Name="Period" />
+                            <asp:Parameter Name="KindsOfSportsID" />
+                            <asp:Parameter Name="TrainerID" />
+                            <asp:Parameter Name="Name" />
+                            <asp:Parameter Name="StartDate" />
+                            <asp:Parameter Name="EndDate" />
+                            <asp:Parameter Name="KindOfSportTypeID" />
+                        </InsertParameters>
+                        <SelectParameters>
+                            <asp:Parameter Name="Lang" DefaultValue="Rus" />
+                            <asp:Parameter Name="FirmID" DefaultValue="1" />
+                            <asp:Parameter Name="KindsOfSportsID" DefaultValue="0" />
+                            <asp:Parameter Name="Year" DefaultValue="0" />
+                        </SelectParameters>
                     </asp:SqlDataSource>
                 </dx:PanelContent>
             </PanelCollection>

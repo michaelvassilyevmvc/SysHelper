@@ -1,0 +1,930 @@
+.dxeButtonEditButtonHover_Material .dxEditors_edtClear_Material,
+.dxeButtonEditButtonHover_Material .dxEditors_edtDropDown_Material,
+.dxeButtonEditButtonHover_Material .dxEditors_edtEllipsis_Material,
+.dxeButtonEditButtonPressed_Material .dxEditors_edtDropDown_Material,
+.dxeButtonEditButtonPressed_Material .dxEditors_edtEllipsis_Material,
+.dxEditors_caRefresh_Material,
+.dxEditors_edtBinaryImageDelete_Material,
+.dxEditors_edtBinaryImageOpenDialog_Material,
+.dxEditors_edtCalendarFastNavBackToPrevMode_Material,
+.dxEditors_edtCalendarFastNavBackToPrevModeRtl_Material,
+.dxEditors_edtCalendarFNNextPeriod_Material,
+.dxEditors_edtCalendarFNNextYear_Material,
+.dxEditors_edtCalendarFNPrevPeriod_Material,
+.dxEditors_edtCalendarFNPrevYear_Material,
+.dxEditors_edtCalendarNextMonth_Material,
+.dxEditors_edtCalendarNextMonthDisabled_Material,
+.dxEditors_edtCalendarNextYear_Material,
+.dxEditors_edtCalendarNextYearDisabled_Material,
+.dxEditors_edtCalendarPrevMonth_Material,
+.dxEditors_edtCalendarPrevMonthDisabled_Material,
+.dxEditors_edtCalendarPrevYear_Material,
+.dxEditors_edtCalendarPrevYearDisabled_Material,
+.dxEditors_edtClear_Material,
+.dxEditors_edtDETSClockFace_Material,
+.dxEditors_edtDETSHourHand_Material,
+.dxEditors_edtDETSMinuteHand_Material,
+.dxEditors_edtDETSSecondHand_Material,
+.dxEditors_edtDropDown_Material,
+.dxEditors_edtDropDownDisabled_Material,
+.dxEditors_edtEllipsis_Material,
+.dxEditors_edtEllipsisDisabled_Material,
+.dxEditors_edtError_Material,
+.dxEditors_edtListBoxFilterBtn_Material,
+.dxEditors_edtListBoxFilterBtnDisabled_Material,
+.dxEditors_edtListBoxHideFilterBtn_Material,
+.dxEditors_edtListBoxHideFilterBtnDisabled_Material,
+.dxEditors_edtListBoxHideFilterBtnRtl_Material,
+.dxEditors_edtListBoxHideFilterBtnRtlDisabled_Material,
+.dxEditors_edtRadioButtonChecked_Material,
+.dxEditors_edtRadioButtonCheckedDisabled_Material,
+.dxEditors_edtRadioButtonUnchecked_Material,
+.dxEditors_edtRadioButtonUncheckedDisabled_Material,
+.dxEditors_edtSpinEditDecrementImage_Material,
+.dxEditors_edtSpinEditDecrementImageDisabled_Material,
+.dxEditors_edtSpinEditIncrementImage_Material,
+.dxEditors_edtSpinEditIncrementImageDisabled_Material,
+.dxEditors_edtSpinEditLargeDecImage_Material,
+.dxEditors_edtSpinEditLargeDecImageDisabled_Material,
+.dxEditors_edtSpinEditLargeIncImage_Material,
+.dxEditors_edtSpinEditLargeIncImageDisabled_Material,
+.dxEditors_edtTBDecBtn_Material,
+.dxEditors_edtTBIncBtn_Material,
+.dxEditors_edtTokenBoxTokenRemoveButton_Material,
+.dxEditors_edtTokenBoxTokenRemoveButtonDisabled_Material,
+.dxEditors_fcadd_Material,
+.dxEditors_fcaddhot_Material,
+.dxEditors_fcgroupaddcondition_Material,
+.dxEditors_fcgroupaddgroup_Material,
+.dxEditors_fcgroupand_Material,
+.dxEditors_fcgroupnotand_Material,
+.dxEditors_fcgroupnotor_Material,
+.dxEditors_fcgroupor_Material,
+.dxEditors_fcgroupremove_Material,
+.dxEditors_fcopany_Material,
+.dxEditors_fcopavg_Material,
+.dxEditors_fcopbegin_Material,
+.dxEditors_fcopbetween_Material,
+.dxEditors_fcopblank_Material,
+.dxEditors_fcopcontain_Material,
+.dxEditors_fcopcount_Material,
+.dxEditors_fcopend_Material,
+.dxEditors_fcopequal_Material,
+.dxEditors_fcopexists_Material,
+.dxEditors_fcopgreater_Material,
+.dxEditors_fcopgreaterorequal_Material,
+.dxEditors_fcopless_Material,
+.dxEditors_fcoplessorequal_Material,
+.dxEditors_fcoplike_Material,
+.dxEditors_fcopmax_Material,
+.dxEditors_fcopmin_Material,
+.dxEditors_fcopnotany_Material,
+.dxEditors_fcopnotbetween_Material,
+.dxEditors_fcopnotblank_Material,
+.dxEditors_fcopnotcontain_Material,
+.dxEditors_fcopnotequal_Material,
+.dxEditors_fcopnotlike_Material,
+.dxEditors_fcopsum_Material,
+.dxEditors_fcoptypefield_Material,
+.dxEditors_fcoptypefieldhot_Material,
+.dxEditors_fcoptypevalue_Material,
+.dxEditors_fcoptypevaluehot_Material,
+.dxEditors_fcremove_Material,
+.dxEditors_fcremovehot_Material,
+.dxeSpinDecButtonHover_Material .dxEditors_edtSpinEditDecrementImage_Material,
+.dxeSpinDecButtonPressed_Material .dxEditors_edtSpinEditDecrementImage_Material,
+.dxeSpinIncButtonHover_Material .dxEditors_edtSpinEditIncrementImage_Material,
+.dxeSpinIncButtonPressed_Material .dxEditors_edtSpinEditIncrementImage_Material,
+.dxeSpinLargeDecButtonHover_Material .dxEditors_edtSpinEditLargeDecImage_Material,
+.dxeSpinLargeDecButtonPressed_Material .dxEditors_edtSpinEditLargeDecImage_Material,
+.dxeSpinLargeIncButtonHover_Material .dxEditors_edtSpinEditLargeIncImage_Material,
+.dxeSpinLargeIncButtonPressed_Material .dxEditors_edtSpinEditLargeIncImage_Material,
+.dxeTBDecBtnHover_Material.dxEditors_edtTBDecBtn_Material,
+.dxeTBDecBtnPressed_Material.dxEditors_edtTBDecBtn_Material,
+.dxeTBIncBtnHover_Material.dxEditors_edtTBIncBtn_Material,
+.dxeTBIncBtnPressed_Material.dxEditors_edtTBIncBtn_Material,
+.dxeTrackBar_Material.dxeDisabled_Material .dxEditors_edtTBDecBtn_Material,
+.dxeTrackBar_Material.dxeDisabled_Material .dxEditors_edtTBIncBtn_Material,
+.dxgvFocusedRow_Material .dxEditors_edtRadioButtonChecked_Material {
+    background-image: url('sprite.svg');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: auto;
+}
+.dxIE .dx-acc-r .dxeButtonEditButtonHover_Material .dxEditors_edtClear_Material::before,
+.dxIE .dx-acc-r .dxeButtonEditButtonHover_Material .dxEditors_edtDropDown_Material::before,
+.dxIE .dx-acc-r .dxeButtonEditButtonHover_Material .dxEditors_edtEllipsis_Material::before,
+.dxIE .dx-acc-r .dxeButtonEditButtonPressed_Material .dxEditors_edtDropDown_Material::before,
+.dxIE .dx-acc-r .dxeButtonEditButtonPressed_Material .dxEditors_edtEllipsis_Material::before,
+.dxIE .dx-acc-r .dxEditors_caRefresh_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtBinaryImageDelete_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtBinaryImageOpenDialog_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtCalendarFastNavBackToPrevMode_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtCalendarFastNavBackToPrevModeRtl_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtCalendarFNNextPeriod_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtCalendarFNNextYear_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtCalendarFNPrevPeriod_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtCalendarFNPrevYear_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtCalendarNextMonth_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtCalendarNextMonthDisabled_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtCalendarNextYear_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtCalendarNextYearDisabled_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtCalendarPrevMonth_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtCalendarPrevMonthDisabled_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtCalendarPrevYear_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtCalendarPrevYearDisabled_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtClear_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtDETSClockFace_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtDETSHourHand_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtDETSMinuteHand_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtDETSSecondHand_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtDropDown_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtDropDownDisabled_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtEllipsis_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtEllipsisDisabled_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtError_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtListBoxFilterBtn_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtListBoxFilterBtnDisabled_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtListBoxHideFilterBtn_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtListBoxHideFilterBtnDisabled_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtListBoxHideFilterBtnRtl_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtListBoxHideFilterBtnRtlDisabled_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtRadioButtonChecked_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtRadioButtonCheckedDisabled_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtRadioButtonUnchecked_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtRadioButtonUncheckedDisabled_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtSpinEditDecrementImage_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtSpinEditDecrementImageDisabled_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtSpinEditIncrementImage_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtSpinEditIncrementImageDisabled_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtSpinEditLargeDecImage_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtSpinEditLargeDecImageDisabled_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtSpinEditLargeIncImage_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtSpinEditLargeIncImageDisabled_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtTBDecBtn_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtTBIncBtn_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtTokenBoxTokenRemoveButton_Material::before,
+.dxIE .dx-acc-r .dxEditors_edtTokenBoxTokenRemoveButtonDisabled_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcadd_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcaddhot_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcgroupaddcondition_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcgroupaddgroup_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcgroupand_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcgroupnotand_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcgroupnotor_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcgroupor_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcgroupremove_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopany_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopavg_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopbegin_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopbetween_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopblank_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopcontain_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopcount_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopend_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopequal_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopexists_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopgreater_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopgreaterorequal_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopless_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcoplessorequal_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcoplike_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopmax_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopmin_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopnotany_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopnotbetween_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopnotblank_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopnotcontain_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopnotequal_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopnotlike_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcopsum_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcoptypefield_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcoptypefieldhot_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcoptypevalue_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcoptypevaluehot_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcremove_Material::before,
+.dxIE .dx-acc-r .dxEditors_fcremovehot_Material::before,
+.dxIE .dx-acc-r .dxeSpinDecButtonHover_Material .dxEditors_edtSpinEditDecrementImage_Material::before,
+.dxIE .dx-acc-r .dxeSpinDecButtonPressed_Material .dxEditors_edtSpinEditDecrementImage_Material::before,
+.dxIE .dx-acc-r .dxeSpinIncButtonHover_Material .dxEditors_edtSpinEditIncrementImage_Material::before,
+.dxIE .dx-acc-r .dxeSpinIncButtonPressed_Material .dxEditors_edtSpinEditIncrementImage_Material::before,
+.dxIE .dx-acc-r .dxeSpinLargeDecButtonHover_Material .dxEditors_edtSpinEditLargeDecImage_Material::before,
+.dxIE .dx-acc-r .dxeSpinLargeDecButtonPressed_Material .dxEditors_edtSpinEditLargeDecImage_Material::before,
+.dxIE .dx-acc-r .dxeSpinLargeIncButtonHover_Material .dxEditors_edtSpinEditLargeIncImage_Material::before,
+.dxIE .dx-acc-r .dxeSpinLargeIncButtonPressed_Material .dxEditors_edtSpinEditLargeIncImage_Material::before,
+.dxIE .dx-acc-r .dxeTBDecBtnHover_Material.dxEditors_edtTBDecBtn_Material::before,
+.dxIE .dx-acc-r .dxeTBDecBtnPressed_Material.dxEditors_edtTBDecBtn_Material::before,
+.dxIE .dx-acc-r .dxeTBIncBtnHover_Material.dxEditors_edtTBIncBtn_Material::before,
+.dxIE .dx-acc-r .dxeTBIncBtnPressed_Material.dxEditors_edtTBIncBtn_Material::before,
+.dxIE .dx-acc-r .dxeTrackBar_Material.dxeDisabled_Material .dxEditors_edtTBDecBtn_Material::before,
+.dxIE .dx-acc-r .dxeTrackBar_Material.dxeDisabled_Material .dxEditors_edtTBIncBtn_Material::before,
+.dxIE .dx-acc-r .dxgvFocusedRow_Material .dxEditors_edtRadioButtonChecked_Material::before{
+    width: 447px;
+}
+.dxeButtonEditButtonHover_Material .dxEditors_edtClear_Material
+{
+    background-position: -394px -31px;
+    width: 20px;
+    height: 20px;
+}
+.dxeButtonEditButtonHover_Material .dxEditors_edtDropDown_Material
+{
+    background-position: -411px -234px;
+    width: 10px;
+    height: 10px;
+}
+.dxeButtonEditButtonHover_Material .dxEditors_edtEllipsis_Material
+{
+    background-position: -34px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxeButtonEditButtonPressed_Material .dxEditors_edtDropDown_Material
+{
+    background-position: -423px -217px;
+    width: 10px;
+    height: 10px;
+}
+.dxeButtonEditButtonPressed_Material .dxEditors_edtEllipsis_Material
+{
+    background-position: -102px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_caRefresh_Material
+{
+    background-position: -394px -110px;
+    width: 28px;
+    height: 28px;
+}
+.dxEditors_edtBinaryImageDelete_Material
+{
+    background-position: -425px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_edtBinaryImageOpenDialog_Material
+{
+    background-position: -423px -21px;
+    width: 20px;
+    height: 20px;
+}
+.dxEditors_edtCalendarFastNavBackToPrevMode_Material
+{
+    background-position: -413px -298px;
+    width: 18px;
+    height: 18px;
+}
+.dxEditors_edtCalendarFastNavBackToPrevModeRtl_Material
+{
+    background-position: -413px -317px;
+    width: 18px;
+    height: 18px;
+}
+.dxEditors_edtCalendarFNNextPeriod_Material
+{
+    background-position: -433px -333px;
+    width: 12px;
+    height: 12px;
+}
+.dxEditors_edtCalendarFNNextYear_Material
+{
+    background-position: -166px -411px;
+    width: 12px;
+    height: 12px;
+}
+.dxEditors_edtCalendarFNPrevPeriod_Material
+{
+    background-position: -432px -320px;
+    width: 12px;
+    height: 12px;
+}
+.dxEditors_edtCalendarFNPrevYear_Material
+{
+    background-position: -205px -411px;
+    width: 12px;
+    height: 12px;
+}
+.dxEditors_edtCalendarNextMonth_Material
+{
+    background-position: -218px -411px;
+    width: 12px;
+    height: 12px;
+}
+.dxEditors_edtCalendarNextMonthDisabled_Material
+{
+    background-position: -244px -411px;
+    width: 12px;
+    height: 12px;
+}
+.dxEditors_edtCalendarNextYear_Material
+{
+    background-position: -432px -307px;
+    width: 12px;
+    height: 12px;
+}
+.dxEditors_edtCalendarNextYearDisabled_Material
+{
+    background-position: -192px -411px;
+    width: 12px;
+    height: 12px;
+}
+.dxEditors_edtCalendarPrevMonth_Material
+{
+    background-position: -257px -411px;
+    width: 12px;
+    height: 12px;
+}
+.dxEditors_edtCalendarPrevMonthDisabled_Material
+{
+    background-position: -231px -411px;
+    width: 12px;
+    height: 12px;
+}
+.dxEditors_edtCalendarPrevYear_Material
+{
+    background-position: -153px -411px;
+    width: 12px;
+    height: 12px;
+}
+.dxEditors_edtCalendarPrevYearDisabled_Material
+{
+    background-position: -179px -411px;
+    width: 12px;
+    height: 12px;
+}
+.dxEditors_edtClear_Material
+{
+    background-position: -423px -42px;
+    width: 20px;
+    height: 20px;
+}
+.dxEditors_edtDETSClockFace_Material
+{
+    background-position: -197px -197px;
+    width: 196px;
+    height: 196px;
+}
+.dxEditors_edtDETSHourHand_Material
+{
+    background-position: 0px 0px;
+    width: 196px;
+    height: 196px;
+}
+.dxEditors_edtDETSMinuteHand_Material
+{
+    background-position: -197px 0px;
+    width: 196px;
+    height: 196px;
+}
+.dxEditors_edtDETSSecondHand_Material
+{
+    background-position: 0px -197px;
+    width: 196px;
+    height: 196px;
+}
+.dxEditors_edtDropDown_Material
+{
+    background-position: -281px -411px;
+    width: 10px;
+    height: 10px;
+}
+.dxEditors_edtDropDownDisabled_Material
+{
+    background-position: -270px -411px;
+    width: 10px;
+    height: 10px;
+}
+.dxEditors_edtEllipsis_Material
+{
+    background-position: -394px -228px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_edtEllipsisDisabled_Material
+{
+    background-position: -306px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_edtError_Material
+{
+    background-position: -17px -411px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_edtListBoxFilterBtn_Material
+{
+    background-position: -394px -279px;
+    width: 18px;
+    height: 18px;
+}
+.dxEditors_edtListBoxFilterBtnDisabled_Material
+{
+    background-position: -394px -317px;
+    width: 18px;
+    height: 18px;
+}
+.dxEditors_edtListBoxHideFilterBtn_Material
+{
+    background-position: -394px -298px;
+    width: 18px;
+    height: 18px;
+}
+.dxEditors_edtListBoxHideFilterBtnDisabled_Material
+{
+    background-position: -423px -197px;
+    width: 18px;
+    height: 18px;
+}
+.dxEditors_edtListBoxHideFilterBtnRtl_Material
+{
+    background-position: -423px -346px;
+    width: 18px;
+    height: 18px;
+}
+.dxEditors_edtListBoxHideFilterBtnRtlDisabled_Material
+{
+    background-position: -399px -375px;
+    width: 18px;
+    height: 18px;
+}
+.dxEditors_edtRadioButtonChecked_Material
+{
+    background-position: -423px -126px;
+    width: 20px;
+    height: 20px;
+}
+.dxEditors_edtRadioButtonCheckedDisabled_Material
+{
+    background-position: -397px -176px;
+    width: 20px;
+    height: 20px;
+}
+.dxEditors_edtRadioButtonUnchecked_Material
+{
+    background-position: -423px -105px;
+    width: 20px;
+    height: 20px;
+}
+.dxEditors_edtRadioButtonUncheckedDisabled_Material
+{
+    background-position: -423px 0px;
+    width: 20px;
+    height: 20px;
+}
+.dxEditors_edtSpinEditDecrementImage_Material
+{
+    background-position: -332px -411px;
+    width: 9px;
+    height: 9px;
+}
+.dxEditors_edtSpinEditDecrementImageDisabled_Material
+{
+    background-position: -312px -411px;
+    width: 9px;
+    height: 9px;
+}
+.dxEditors_edtSpinEditIncrementImage_Material
+{
+    background-position: -322px -411px;
+    width: 9px;
+    height: 9px;
+}
+.dxEditors_edtSpinEditIncrementImageDisabled_Material
+{
+    background-position: -382px -411px;
+    width: 9px;
+    height: 9px;
+}
+.dxEditors_edtSpinEditLargeDecImage_Material
+{
+    background-position: -352px -411px;
+    width: 9px;
+    height: 9px;
+}
+.dxEditors_edtSpinEditLargeDecImageDisabled_Material
+{
+    background-position: -292px -411px;
+    width: 9px;
+    height: 9px;
+}
+.dxEditors_edtSpinEditLargeIncImage_Material
+{
+    background-position: -362px -411px;
+    width: 9px;
+    height: 9px;
+}
+.dxEditors_edtSpinEditLargeIncImageDisabled_Material
+{
+    background-position: -372px -411px;
+    width: 9px;
+    height: 9px;
+}
+.dxEditors_edtTBDecBtn_Material
+{
+    background-position: -418px -365px;
+    width: 28px;
+    height: 28px;
+}
+.dxEditors_edtTBIncBtn_Material
+{
+    background-position: -418px -168px;
+    width: 28px;
+    height: 28px;
+}
+.dxEditors_edtTokenBoxTokenRemoveButton_Material
+{
+    background-position: -423px -84px;
+    width: 20px;
+    height: 20px;
+}
+.dxEditors_edtTokenBoxTokenRemoveButtonDisabled_Material
+{
+    background-position: -423px -147px;
+    width: 20px;
+    height: 20px;
+}
+.dxEditors_fcadd_Material
+{
+    background-position: -85px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcaddhot_Material
+{
+    background-position: -323px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcgroupaddcondition_Material
+{
+    background-position: -187px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcgroupaddgroup_Material
+{
+    background-position: -374px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcgroupand_Material
+{
+    background-position: -17px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcgroupnotand_Material
+{
+    background-position: -51px -411px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcgroupnotor_Material
+{
+    background-position: -394px -262px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcgroupor_Material
+{
+    background-position: -34px -411px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcgroupremove_Material
+{
+    background-position: -408px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopany_Material
+{
+    background-position: -413px -281px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopavg_Material
+{
+    background-position: -238px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopbegin_Material
+{
+    background-position: -68px -411px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopbetween_Material
+{
+    background-position: -391px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopblank_Material
+{
+    background-position: -423px -228px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopcontain_Material
+{
+    background-position: -204px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopcount_Material
+{
+    background-position: -221px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopend_Material
+{
+    background-position: -394px -245px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopequal_Material
+{
+    background-position: 0px -411px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopexists_Material
+{
+    background-position: -428px -262px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopgreater_Material
+{
+    background-position: -119px -411px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopgreaterorequal_Material
+{
+    background-position: 0px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopless_Material
+{
+    background-position: -68px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcoplessorequal_Material
+{
+    background-position: -411px -245px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcoplike_Material
+{
+    background-position: -136px -411px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopmax_Material
+{
+    background-position: -272px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopmin_Material
+{
+    background-position: -340px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopnotany_Material
+{
+    background-position: -85px -411px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopnotbetween_Material
+{
+    background-position: -289px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopnotblank_Material
+{
+    background-position: -102px -411px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopnotcontain_Material
+{
+    background-position: -411px -262px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopnotequal_Material
+{
+    background-position: -428px -245px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopnotlike_Material
+{
+    background-position: -430px -281px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcopsum_Material
+{
+    background-position: -255px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcoptypefield_Material
+{
+    background-position: -51px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcoptypefieldhot_Material
+{
+    background-position: -153px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcoptypevalue_Material
+{
+    background-position: -357px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcoptypevaluehot_Material
+{
+    background-position: -136px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcremove_Material
+{
+    background-position: -119px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxEditors_fcremovehot_Material
+{
+    background-position: -170px -394px;
+    width: 16px;
+    height: 16px;
+}
+.dxeSpinDecButtonHover_Material .dxEditors_edtSpinEditDecrementImage_Material
+{
+    background-position: -402px -411px;
+    width: 9px;
+    height: 9px;
+}
+.dxeSpinDecButtonPressed_Material .dxEditors_edtSpinEditDecrementImage_Material
+{
+    background-position: -394px -365px;
+    width: 9px;
+    height: 9px;
+}
+.dxeSpinIncButtonHover_Material .dxEditors_edtSpinEditIncrementImage_Material
+{
+    background-position: -404px -365px;
+    width: 9px;
+    height: 9px;
+}
+.dxeSpinIncButtonPressed_Material .dxEditors_edtSpinEditIncrementImage_Material
+{
+    background-position: -342px -411px;
+    width: 9px;
+    height: 9px;
+}
+.dxeSpinLargeDecButtonHover_Material .dxEditors_edtSpinEditLargeDecImage_Material
+{
+    background-position: -423px -336px;
+    width: 9px;
+    height: 9px;
+}
+.dxeSpinLargeDecButtonPressed_Material .dxEditors_edtSpinEditLargeDecImage_Material
+{
+    background-position: -302px -411px;
+    width: 9px;
+    height: 9px;
+}
+.dxeSpinLargeIncButtonHover_Material .dxEditors_edtSpinEditLargeIncImage_Material
+{
+    background-position: -434px -216px;
+    width: 9px;
+    height: 9px;
+}
+.dxeSpinLargeIncButtonPressed_Material .dxEditors_edtSpinEditLargeIncImage_Material
+{
+    background-position: -392px -411px;
+    width: 9px;
+    height: 9px;
+}
+.dxeTBDecBtnHover_Material.dxEditors_edtTBDecBtn_Material
+{
+    background-position: -394px 0px;
+    width: 28px;
+    height: 28px;
+}
+.dxeTBDecBtnPressed_Material.dxEditors_edtTBDecBtn_Material
+{
+    background-position: -394px -52px;
+    width: 28px;
+    height: 28px;
+}
+.dxeTBIncBtnHover_Material.dxEditors_edtTBIncBtn_Material
+{
+    background-position: -394px -197px;
+    width: 28px;
+    height: 28px;
+}
+.dxeTBIncBtnPressed_Material.dxEditors_edtTBIncBtn_Material
+{
+    background-position: -394px -336px;
+    width: 28px;
+    height: 28px;
+}
+.dxeTrackBar_Material.dxeDisabled_Material .dxEditors_edtTBDecBtn_Material
+{
+    background-position: -394px -139px;
+    width: 28px;
+    height: 28px;
+}
+.dxeTrackBar_Material.dxeDisabled_Material .dxEditors_edtTBIncBtn_Material
+{
+    background-position: -394px -81px;
+    width: 28px;
+    height: 28px;
+}
+.dxgvFocusedRow_Material .dxEditors_edtRadioButtonChecked_Material
+{
+    background-position: -423px -63px;
+    width: 20px;
+    height: 20px;
+}
+.dxeTBVSys .dxEditors_edtTBMainDHPressed_Material,
+.dxeTBVSys .dxEditors_edtTBSecondaryDHPressed_Material,
+.dxeTBHSys .dxEditors_edtTBMainDHPressed_Material,
+.dxeTBHSys .dxEditors_edtTBSecondaryDHPressed_Material
+{
+	z-index: 7;
+}
+.dxEditors_edtError_Material,
+.dxEditors_edtCalendarPrevYear_Material,
+.dxEditors_edtCalendarPrevYearDisabled_Material,
+.dxEditors_edtCalendarPrevMonth_Material,
+.dxEditors_edtCalendarPrevMonthDisabled_Material,
+.dxEditors_edtCalendarNextMonth_Material,
+.dxEditors_edtCalendarNextMonthDisabled_Material,
+.dxEditors_edtCalendarNextYear_Material,
+.dxEditors_edtCalendarNextYearDisabled_Material,
+.dxEditors_edtCalendarFNPrevYear_Material,
+.dxEditors_edtCalendarFNNextYear_Material,
+.dxEditors_edtCalendarFNPrevPeriod_Material,
+.dxEditors_edtCalendarFNNextPeriod_Material,
+.dxEditors_edtEllipsis_Material,
+.dxEditors_edtEllipsisDisabled_Material,
+.dxEditors_edtDropDown_Material,
+.dxEditors_edtDropDownDisabled_Material,
+.dxEditors_edtSpinEditIncrementImage_Material,
+.dxEditors_edtSpinEditIncrementImageDisabled_Material,
+.dxEditors_edtSpinEditDecrementImage_Material,
+.dxEditors_edtSpinEditDecrementImageDisabled_Material,
+.dxEditors_edtSpinEditLargeIncImage_Material,
+.dxEditors_edtSpinEditLargeIncImageDisabled_Material,
+.dxEditors_edtSpinEditLargeDecImage_Material,
+.dxEditors_edtSpinEditLargeDecImageDisabled_Material
+{
+	display:block;
+	margin:auto;
+}
+.dxEditors_edtCalendarFNPrevYear_Material
+{
+    margin-right: 8px;
+}
+.dxEditors_edtCalendarFNNextYear_Material
+{
+    margin-left: 8px;
+}
+.dxEditors_edtCalendarFastNavBackToPrevMode_Material,
+.dxEditors_edtCalendarFastNavBackToPrevModeRtl_Material {
+    margin-top: 2px;
+    margin-bottom: -2px;
+}
+.dxEditors_edtTBIncBtn_Material,
+.dxEditors_edtTBDecBtn_Material 
+{
+    -webkit-box-shadow: 0px 2px 2.82px 0.18px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 2px 2.82px 0.18px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 2px 2.82px 0.18px rgba(0, 0, 0, 0.24);
+}
+.dxEditors_edtDETSHourHand_Material {
+    z-index:9;
+}

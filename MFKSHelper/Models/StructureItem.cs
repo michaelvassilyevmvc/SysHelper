@@ -12,6 +12,8 @@ namespace MFKSHelper.Models
         public int Level { get; set; }
         public StructureNodeType StructureNodeType { get; set; }
         public List<Compitation> Compitations { get; set; }
+        public int MfksID { get; set; } = 0;
+        public int MfksParentID { get; set; } = 0;
 
         public override string ToString()
         {

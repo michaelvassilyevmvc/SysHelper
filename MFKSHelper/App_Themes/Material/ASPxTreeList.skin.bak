@@ -1,0 +1,60 @@
+﻿<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxTreeList" Assembly="DevExpress.Web.ASPxTreeList.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+
+<dx:ASPxTreeList runat="server" CssFilePath="{0}/styles.css" CssPostfix="Material">
+	<Settings ShowTreeLines="False" />
+	<SettingsPager EnableAdaptivity="true" CurrentPageNumberFormat="{0}">
+		<FirstPageButton Visible="true">
+			<Image ToolTip="%%Первая%%" AlternateText="«"></Image>
+		</FirstPageButton>
+		<LastPageButton Visible="true">
+			<Image ToolTip="%%Последняя%%" AlternateText="»"></Image>
+		</LastPageButton>
+		<PrevPageButton>
+			<Image ToolTip="%%Предыдущая%%" AlternateText="&lt;"></Image>
+		</PrevPageButton>
+		<NextPageButton>
+			<Image ToolTip="%%Следующая%%" AlternateText="&gt;"></Image>
+		</NextPageButton>
+		<Summary AllPagesText="%%Страницы: [{0}] - [{1}] (Всего строк: [{2}])%%" 
+			Text="%%Страница: [{0}] / [{1}] (Всего строк: [{2}])%%" 
+			EmptyText="%%Нет данных для разбиения на страницы%%" />
+		<PageSizeItemSettings Visible="true" ShowPopupShadow="True" Caption="%%Строк на странице%%:" />
+	</SettingsPager>
+	<SettingsText LoadingPanelText="%%Загрузка%%…" 
+		ConfirmDelete="%%Вы действительно хотите удалить эту запись?%%" />
+	<SettingsLoadingPanel Text="%%Загрузка%%…" />
+	<Settings AutoFilterCondition="Contains" />
+	<Images SpriteCssFilePath="{0}/sprite.css">
+		<CollapsedButton AlternateText="%%Раскрыть%%" ToolTip="%%Раскрыть%%" Url="TreeList/collapsed.png">
+		</CollapsedButton>
+		<ExpandedButton AlternateText="%%Свернуть%%" ToolTip="%%Свернуть%%" Url="TreeList/expanded.png">
+		</ExpandedButton>
+	</Images>
+	<Styles CssPostfix="Material" CssFilePath="{0}/styles.css">
+		<AlternatingNode Enabled="True"></AlternatingNode>
+		<Header Wrap="True" HorizontalAlign="Center"></Header>
+		<Cell Wrap="True"></Cell>
+		<EditFormColumnCaption Wrap="True"></EditFormColumnCaption>
+	</Styles>
+	<StylesPager>
+		<Pager ItemSpacing="1px" Spacing="1px" />
+	</StylesPager>
+	<StylesEditors>
+		<Calendar>
+			<Border BorderColor="Silver" BorderStyle="Solid" BorderWidth="1px" />
+		</Calendar>
+	</StylesEditors>
+	<SettingsCustomizationWindow PopupWidth="220px" PopupHeight="245px" PopupHorizontalAlign="RightSides" PopupVerticalAlign="BottomSides" />
+	<SettingsEditing Mode="EditFormAndDisplayNode" />
+	<SettingsPopupEditForm VerticalOffset="-1"></SettingsPopupEditForm>
+	<SettingsPopup>
+		<EditForm VerticalOffset="-1"></EditForm>
+		<HeaderFilter MinWidth="230px" MinHeight="150px" />
+		<CustomizationWindow MinWidth="240px" MinHeight="350px"  />
+	</SettingsPopup>
+	<SettingsBehavior DisablePartialUpdate="True" FocusNodeOnExpandButtonClick="False" FocusNodeOnLoad="False" AllowSort="False">
+	</SettingsBehavior>
+</dx:ASPxTreeList>
+
+

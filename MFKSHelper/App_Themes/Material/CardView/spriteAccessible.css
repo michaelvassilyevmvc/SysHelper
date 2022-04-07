@@ -1,0 +1,294 @@
+.dx-acc-r .dxCardView_CTClearFilter_Material:before,
+.dx-acc-r .dxCardView_CTClearFilterDisabled_Material:before,
+.dx-acc-r .dxCardView_CTDeleteRow_Material:before,
+.dx-acc-r .dxCardView_CTDeleteRowDisabled_Material:before,
+.dx-acc-r .dxCardView_CTEditRow_Material:before,
+.dx-acc-r .dxCardView_CTEditRowDisabled_Material:before,
+.dx-acc-r .dxCardView_CTExportCsv_Material:before,
+.dx-acc-r .dxCardView_CTExportCsvDisabled_Material:before,
+.dx-acc-r .dxCardView_CTExportDocx_Material:before,
+.dx-acc-r .dxCardView_CTExportDocxDisabled_Material:before,
+.dx-acc-r .dxCardView_CTExportPdf_Material:before,
+.dx-acc-r .dxCardView_CTExportPdfDisabled_Material:before,
+.dx-acc-r .dxCardView_CTExportRtf_Material:before,
+.dx-acc-r .dxCardView_CTExportRtfDisabled_Material:before,
+.dx-acc-r .dxCardView_CTExportXls_Material:before,
+.dx-acc-r .dxCardView_CTExportXlsDisabled_Material:before,
+.dx-acc-r .dxCardView_CTExportXlsx_Material:before,
+.dx-acc-r .dxCardView_CTExportXlsxDisabled_Material:before,
+.dx-acc-r .dxCardView_CTNewRow_Material:before,
+.dx-acc-r .dxCardView_CTNewRowDisabled_Material:before,
+.dx-acc-r .dxCardView_CTRefresh_Material:before,
+.dx-acc-r .dxCardView_CTRefreshDisabled_Material:before,
+.dx-acc-r .dxCardView_CTShowCustomizationWindow_Material:before,
+.dx-acc-r .dxCardView_CTShowCustomizationWindowDisabled_Material:before,
+.dx-acc-r .dxCardView_CTShowFilterEditor_Material:before,
+.dx-acc-r .dxCardView_CTShowFilterEditorDisabled_Material:before,
+.dx-acc-r .dxCardView_CTShowSearchPanel_Material:before,
+.dx-acc-r .dxCardView_CTShowSearchPanelDisabled_Material:before,
+.dx-acc-r .dxCardView_gvCellError_Material:before,
+.dx-acc-r .dxCardView_gvFilterRowButton_Material:before,
+.dx-acc-r .dxCardView_gvHeaderFilter_Material:before,
+.dx-acc-r .dxCardView_gvHeaderFilterActive_Material:before,
+.dx-acc-r .dxCardView_gvHeaderSortDown_Material:before,
+.dx-acc-r .dxCardView_gvHeaderSortUp_Material:before,
+.dx-acc-r .dxm-checked .dxCardView_CTShowCustomizationWindow_Material:before,
+.dx-acc-r .dxm-checked .dxCardView_CTShowSearchPanel_Material:before
+
+{
+    content: url('sprite.svg');
+
+}
+.dx-acc-r .dxCardView_CTClearFilter_Material:before
+
+{
+    left: 0px;
+    top: 0px;
+
+}
+.dx-acc-r .dxCardView_CTClearFilterDisabled_Material:before
+
+{
+    left: 0px;
+    top: -34px;
+
+}
+.dx-acc-r .dxCardView_CTDeleteRow_Material:before
+
+{
+    left: -34px;
+    top: 0px;
+
+}
+.dx-acc-r .dxCardView_CTDeleteRowDisabled_Material:before
+
+{
+    left: 0px;
+    top: -51px;
+
+}
+.dx-acc-r .dxCardView_CTEditRow_Material:before
+
+{
+    left: -51px;
+    top: -17px;
+
+}
+.dx-acc-r .dxCardView_CTEditRowDisabled_Material:before
+
+{
+    left: -68px;
+    top: -34px;
+
+}
+.dx-acc-r .dxCardView_CTExportCsv_Material:before
+
+{
+    left: -17px;
+    top: 0px;
+
+}
+.dx-acc-r .dxCardView_CTExportCsvDisabled_Material:before
+
+{
+    left: -102px;
+    top: 0px;
+
+}
+.dx-acc-r .dxCardView_CTExportDocx_Material:before
+
+{
+    left: -85px;
+    top: -17px;
+
+}
+.dx-acc-r .dxCardView_CTExportDocxDisabled_Material:before
+
+{
+    left: -85px;
+    top: -34px;
+
+}
+.dx-acc-r .dxCardView_CTExportPdf_Material:before
+
+{
+    left: -34px;
+    top: -17px;
+
+}
+.dx-acc-r .dxCardView_CTExportPdfDisabled_Material:before
+
+{
+    left: -17px;
+    top: -17px;
+
+}
+.dx-acc-r .dxCardView_CTExportRtf_Material:before
+
+{
+    left: -51px;
+    top: 0px;
+
+}
+.dx-acc-r .dxCardView_CTExportRtfDisabled_Material:before
+
+{
+    left: -17px;
+    top: -51px;
+
+}
+.dx-acc-r .dxCardView_CTExportXls_Material:before
+
+{
+    left: -68px;
+    top: -17px;
+
+}
+.dx-acc-r .dxCardView_CTExportXlsDisabled_Material:before
+
+{
+    left: -68px;
+    top: 0px;
+
+}
+.dx-acc-r .dxCardView_CTExportXlsx_Material:before
+
+{
+    left: -51px;
+    top: -51px;
+
+}
+.dx-acc-r .dxCardView_CTExportXlsxDisabled_Material:before
+
+{
+    left: -102px;
+    top: -34px;
+
+}
+.dx-acc-r .dxCardView_CTNewRow_Material:before
+
+{
+    left: -51px;
+    top: -34px;
+
+}
+.dx-acc-r .dxCardView_CTNewRowDisabled_Material:before
+
+{
+    left: -68px;
+    top: -51px;
+
+}
+.dx-acc-r .dxCardView_CTRefresh_Material:before
+
+{
+    left: -102px;
+    top: -17px;
+
+}
+.dx-acc-r .dxCardView_CTRefreshDisabled_Material:before
+
+{
+    left: 0px;
+    top: -17px;
+
+}
+.dx-acc-r .dxCardView_CTShowCustomizationWindow_Material:before
+
+{
+    left: -34px;
+    top: -34px;
+
+}
+.dx-acc-r .dxCardView_CTShowCustomizationWindowDisabled_Material:before
+
+{
+    left: -17px;
+    top: -34px;
+
+}
+.dx-acc-r .dxCardView_CTShowFilterEditor_Material:before
+
+{
+    left: 0px;
+    top: -68px;
+
+}
+.dx-acc-r .dxCardView_CTShowFilterEditorDisabled_Material:before
+
+{
+    left: -75px;
+    top: -68px;
+
+}
+.dx-acc-r .dxCardView_CTShowSearchPanel_Material:before
+
+{
+    left: -15px;
+    top: -68px;
+
+}
+.dx-acc-r .dxCardView_CTShowSearchPanelDisabled_Material:before
+
+{
+    left: -85px;
+    top: 0px;
+
+}
+.dx-acc-r .dxCardView_gvCellError_Material:before
+
+{
+    left: -30px;
+    top: -68px;
+
+}
+.dx-acc-r .dxCardView_gvFilterRowButton_Material:before
+
+{
+    left: -85px;
+    top: -51px;
+
+}
+.dx-acc-r .dxCardView_gvHeaderFilter_Material:before
+
+{
+    left: -100px;
+    top: -51px;
+
+}
+.dx-acc-r .dxCardView_gvHeaderFilterActive_Material:before
+
+{
+    left: -60px;
+    top: -68px;
+
+}
+.dx-acc-r .dxCardView_gvHeaderSortDown_Material:before
+
+{
+    left: -103px;
+    top: -68px;
+
+}
+.dx-acc-r .dxCardView_gvHeaderSortUp_Material:before
+
+{
+    left: -90px;
+    top: -68px;
+
+}
+.dx-acc-r .dxm-checked .dxCardView_CTShowCustomizationWindow_Material:before
+
+{
+    left: -34px;
+    top: -51px;
+
+}
+.dx-acc-r .dxm-checked .dxCardView_CTShowSearchPanel_Material:before
+
+{
+    left: -45px;
+    top: -68px;
+
+}
+

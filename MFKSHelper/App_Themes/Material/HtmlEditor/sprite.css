@@ -1,0 +1,224 @@
+.dxeListBoxItemSelected_Material .dxHtmlEditor_heEnumIcon_Material,
+.dxeListBoxItemSelected_Material .dxHtmlEditor_heEventIcon_Material,
+.dxeListBoxItemSelected_Material .dxHtmlEditor_heFieldIcon_Material,
+.dxeListBoxItemSelected_Material .dxHtmlEditor_heXmlItemIcon_Material,
+.dxHtmlEditor_heConstrainProportionsBottom_Material,
+.dxHtmlEditor_heConstrainProportionsBottomRtl_Material,
+.dxHtmlEditor_heConstrainProportionsMiddleOff_Material,
+.dxHtmlEditor_heConstrainProportionsMiddleOffRtl_Material,
+.dxHtmlEditor_heConstrainProportionsMiddleOn_Material,
+.dxHtmlEditor_heConstrainProportionsMiddleOnRtl_Material,
+.dxHtmlEditor_heConstrainProportionsTop_Material,
+.dxHtmlEditor_heConstrainProportionsTopRtl_Material,
+.dxHtmlEditor_heEnumIcon_Material,
+.dxHtmlEditor_heErrorFrameCloseButton_Material,
+.dxHtmlEditor_heEventIcon_Material,
+.dxHtmlEditor_heFieldIcon_Material,
+.dxHtmlEditor_heReset_Material,
+.dxHtmlEditor_heSizeGrip_Material,
+.dxHtmlEditor_heSizeGripRtl_Material,
+.dxHtmlEditor_heTagInspectorChangeButton_Material,
+.dxHtmlEditor_heTagInspectorRemoveButton_Material,
+.dxHtmlEditor_heTagInspectorSeparator_Material,
+.dxHtmlEditor_heToolbarPopOut_Material,
+.dxHtmlEditor_heXmlItemIcon_Material,
+.dxm-hovered .dxHtmlEditor_heToolbarPopOut_Material {
+    background-image: url('sprite.svg');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: auto;
+}
+.dxIE .dx-acc-r .dxeListBoxItemSelected_Material .dxHtmlEditor_heEnumIcon_Material::before,
+.dxIE .dx-acc-r .dxeListBoxItemSelected_Material .dxHtmlEditor_heEventIcon_Material::before,
+.dxIE .dx-acc-r .dxeListBoxItemSelected_Material .dxHtmlEditor_heFieldIcon_Material::before,
+.dxIE .dx-acc-r .dxeListBoxItemSelected_Material .dxHtmlEditor_heXmlItemIcon_Material::before,
+.dxIE .dx-acc-r .dxHtmlEditor_heConstrainProportionsBottom_Material::before,
+.dxIE .dx-acc-r .dxHtmlEditor_heConstrainProportionsBottomRtl_Material::before,
+.dxIE .dx-acc-r .dxHtmlEditor_heConstrainProportionsMiddleOff_Material::before,
+.dxIE .dx-acc-r .dxHtmlEditor_heConstrainProportionsMiddleOffRtl_Material::before,
+.dxIE .dx-acc-r .dxHtmlEditor_heConstrainProportionsMiddleOn_Material::before,
+.dxIE .dx-acc-r .dxHtmlEditor_heConstrainProportionsMiddleOnRtl_Material::before,
+.dxIE .dx-acc-r .dxHtmlEditor_heConstrainProportionsTop_Material::before,
+.dxIE .dx-acc-r .dxHtmlEditor_heConstrainProportionsTopRtl_Material::before,
+.dxIE .dx-acc-r .dxHtmlEditor_heEnumIcon_Material::before,
+.dxIE .dx-acc-r .dxHtmlEditor_heErrorFrameCloseButton_Material::before,
+.dxIE .dx-acc-r .dxHtmlEditor_heEventIcon_Material::before,
+.dxIE .dx-acc-r .dxHtmlEditor_heFieldIcon_Material::before,
+.dxIE .dx-acc-r .dxHtmlEditor_heReset_Material::before,
+.dxIE .dx-acc-r .dxHtmlEditor_heSizeGrip_Material::before,
+.dxIE .dx-acc-r .dxHtmlEditor_heSizeGripRtl_Material::before,
+.dxIE .dx-acc-r .dxHtmlEditor_heTagInspectorChangeButton_Material::before,
+.dxIE .dx-acc-r .dxHtmlEditor_heTagInspectorRemoveButton_Material::before,
+.dxIE .dx-acc-r .dxHtmlEditor_heTagInspectorSeparator_Material::before,
+.dxIE .dx-acc-r .dxHtmlEditor_heToolbarPopOut_Material::before,
+.dxIE .dx-acc-r .dxHtmlEditor_heXmlItemIcon_Material::before,
+.dxIE .dx-acc-r .dxm-hovered .dxHtmlEditor_heToolbarPopOut_Material::before{
+    width: 299px;
+}
+.dxeListBoxItemSelected_Material .dxHtmlEditor_heEnumIcon_Material
+{
+    background-position: -85px 0px;
+    width: 16px;
+    height: 16px;
+}
+.dxeListBoxItemSelected_Material .dxHtmlEditor_heEventIcon_Material
+{
+    background-position: -17px 0px;
+    width: 16px;
+    height: 16px;
+}
+.dxeListBoxItemSelected_Material .dxHtmlEditor_heFieldIcon_Material
+{
+    background-position: 0px 0px;
+    width: 16px;
+    height: 16px;
+}
+.dxeListBoxItemSelected_Material .dxHtmlEditor_heXmlItemIcon_Material
+{
+    background-position: -68px 0px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_heConstrainProportionsBottom_Material
+{
+    background-position: -290px -10px;
+    width: 8px;
+    height: 6px;
+}
+.dxHtmlEditor_heConstrainProportionsBottomRtl_Material
+{
+    background-position: -272px -10px;
+    width: 8px;
+    height: 6px;
+}
+.dxHtmlEditor_heConstrainProportionsMiddleOff_Material
+{
+    background-position: -217px 0px;
+    width: 7px;
+    height: 13px;
+}
+.dxHtmlEditor_heConstrainProportionsMiddleOffRtl_Material
+{
+    background-position: -241px 0px;
+    width: 7px;
+    height: 13px;
+}
+.dxHtmlEditor_heConstrainProportionsMiddleOn_Material
+{
+    background-position: -225px 0px;
+    width: 7px;
+    height: 13px;
+}
+.dxHtmlEditor_heConstrainProportionsMiddleOnRtl_Material
+{
+    background-position: -233px 0px;
+    width: 7px;
+    height: 13px;
+}
+.dxHtmlEditor_heConstrainProportionsTop_Material
+{
+    background-position: -286px 0px;
+    width: 8px;
+    height: 6px;
+}
+.dxHtmlEditor_heConstrainProportionsTopRtl_Material
+{
+    background-position: -281px -10px;
+    width: 8px;
+    height: 6px;
+}
+.dxHtmlEditor_heEnumIcon_Material
+{
+    background-position: -136px 0px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_heErrorFrameCloseButton_Material
+{
+    background-position: -249px 0px;
+    width: 10px;
+    height: 10px;
+}
+.dxHtmlEditor_heEventIcon_Material
+{
+    background-position: -51px 0px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_heFieldIcon_Material
+{
+    background-position: -102px 0px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_heReset_Material
+{
+    background-position: -153px 0px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_heSizeGrip_Material
+{
+    background-position: -187px 0px;
+    width: 14px;
+    height: 14px;
+}
+.dxHtmlEditor_heSizeGripRtl_Material
+{
+    background-position: -202px 0px;
+    width: 14px;
+    height: 14px;
+}
+.dxHtmlEditor_heTagInspectorChangeButton_Material
+{
+    background-position: -34px 0px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_heTagInspectorRemoveButton_Material
+{
+    background-position: -170px 0px;
+    width: 16px;
+    height: 16px;
+}
+.dxHtmlEditor_heTagInspectorSeparator_Material
+{
+    background-position: -280px 0px;
+    width: 5px;
+    height: 8px;
+}
+.dxHtmlEditor_heToolbarPopOut_Material
+{
+    background-position: -260px 0px;
+    width: 9px;
+    height: 9px;
+}
+.dxHtmlEditor_heXmlItemIcon_Material
+{
+    background-position: -119px 0px;
+    width: 16px;
+    height: 16px;
+}
+.dxm-hovered .dxHtmlEditor_heToolbarPopOut_Material
+{
+    background-position: -270px 0px;
+    width: 9px;
+    height: 9px;
+}
+.dxHtmlEditor_heConstrainProportionsMiddleOn_Material,
+.dxHtmlEditor_heConstrainProportionsMiddleOff_Material,
+.dxHtmlEditor_heConstrainProportionsBottom_Material,
+.dxHtmlEditor_heConstrainProportionsTop_Material,
+.dxHtmlEditor_RoundPanel_herpHeaderTopLeftCorner_Material,
+.dxHtmlEditor_RoundPanel_herpHeaderTopRightCorner_Material,
+.dxHtmlEditor_RoundPanel_herpBottomLeftCorner_Material,
+.dxHtmlEditor_RoundPanel_herpBottomRightCorner_Material,
+.dxHtmlEditor_RoundPanel_herpTopLeftCorner_Material,
+.dxHtmlEditor_RoundPanel_herpTopRightCorner_Material,
+.dxHtmlEditor_RoundPanel_herpGroupBoxBottomLeftCorner_Material,
+.dxHtmlEditor_RoundPanel_herpGroupBoxBottomRightCorner_Material,
+.dxHtmlEditor_RoundPanel_herpGroupBoxTopLeftCorner_Material,
+.dxHtmlEditor_RoundPanel_herpGroupBoxTopRightCorner_Material
+{
+	display:block;
+}

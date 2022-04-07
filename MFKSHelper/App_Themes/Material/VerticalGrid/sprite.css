@@ -1,0 +1,304 @@
+.dxm-checked .dxVerticalGrid_CTShowSearchPanel_Material,
+.dxVerticalGrid_CategoryCollapsed_Material,
+.dxVerticalGrid_CategoryExpanded_Material,
+.dxVerticalGrid_CollapsedButton_Material,
+.dxVerticalGrid_CTClearFilter_Material,
+.dxVerticalGrid_CTClearFilterDisabled_Material,
+.dxVerticalGrid_CTDeleteRow_Material,
+.dxVerticalGrid_CTDeleteRowDisabled_Material,
+.dxVerticalGrid_CTEditRow_Material,
+.dxVerticalGrid_CTEditRowDisabled_Material,
+.dxVerticalGrid_CTExportCsv_Material,
+.dxVerticalGrid_CTExportCsvDisabled_Material,
+.dxVerticalGrid_CTExportDocx_Material,
+.dxVerticalGrid_CTExportDocxDisabled_Material,
+.dxVerticalGrid_CTExportPdf_Material,
+.dxVerticalGrid_CTExportPdfDisabled_Material,
+.dxVerticalGrid_CTExportRtf_Material,
+.dxVerticalGrid_CTExportRtfDisabled_Material,
+.dxVerticalGrid_CTExportXls_Material,
+.dxVerticalGrid_CTExportXlsDisabled_Material,
+.dxVerticalGrid_CTExportXlsx_Material,
+.dxVerticalGrid_CTExportXlsxDisabled_Material,
+.dxVerticalGrid_CTNewRow_Material,
+.dxVerticalGrid_CTNewRowDisabled_Material,
+.dxVerticalGrid_CTRefresh_Material,
+.dxVerticalGrid_CTRefreshDisabled_Material,
+.dxVerticalGrid_CTShowFilterEditor_Material,
+.dxVerticalGrid_CTShowFilterEditorDisabled_Material,
+.dxVerticalGrid_CTShowSearchPanel_Material,
+.dxVerticalGrid_CTShowSearchPanelDisabled_Material,
+.dxVerticalGrid_ExpandedButton_Material,
+.dxVerticalGrid_gvCellError_Material,
+.dxVerticalGrid_gvFilterRowButton_Material,
+.dxVerticalGrid_gvHeaderFilter_Material,
+.dxVerticalGrid_gvHeaderFilterActive_Material,
+.dxVerticalGrid_gvHeaderSortDown_Material,
+.dxVerticalGrid_gvHeaderSortUp_Material {
+    background-image: url('sprite.svg');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: auto;
+}
+.dxIE .dx-acc-r .dxm-checked .dxVerticalGrid_CTShowSearchPanel_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CategoryCollapsed_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CategoryExpanded_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CollapsedButton_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTClearFilter_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTClearFilterDisabled_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTDeleteRow_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTDeleteRowDisabled_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTEditRow_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTEditRowDisabled_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTExportCsv_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTExportCsvDisabled_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTExportDocx_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTExportDocxDisabled_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTExportPdf_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTExportPdfDisabled_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTExportRtf_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTExportRtfDisabled_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTExportXls_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTExportXlsDisabled_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTExportXlsx_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTExportXlsxDisabled_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTNewRow_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTNewRowDisabled_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTRefresh_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTRefreshDisabled_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTShowFilterEditor_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTShowFilterEditorDisabled_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTShowSearchPanel_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_CTShowSearchPanelDisabled_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_ExpandedButton_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_gvCellError_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_gvFilterRowButton_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_gvHeaderFilter_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_gvHeaderFilterActive_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_gvHeaderSortDown_Material::before,
+.dxIE .dx-acc-r .dxVerticalGrid_gvHeaderSortUp_Material::before{
+    width: 69px;
+}
+.dxm-checked .dxVerticalGrid_CTShowSearchPanel_Material
+{
+    background-position: -30px -102px;
+    width: 14px;
+    height: 14px;
+}
+.dxVerticalGrid_CategoryCollapsed_Material
+{
+    background-position: -13px -132px;
+    width: 12px;
+    height: 12px;
+}
+.dxVerticalGrid_CategoryExpanded_Material
+{
+    background-position: -26px -132px;
+    width: 12px;
+    height: 12px;
+}
+.dxVerticalGrid_CollapsedButton_Material
+{
+    background-position: -39px -132px;
+    width: 12px;
+    height: 12px;
+}
+.dxVerticalGrid_CTClearFilter_Material
+{
+    background-position: 0px -51px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTClearFilterDisabled_Material
+{
+    background-position: 0px 0px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTDeleteRow_Material
+{
+    background-position: -51px -17px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTDeleteRowDisabled_Material
+{
+    background-position: -17px -34px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTEditRow_Material
+{
+    background-position: -17px -85px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTEditRowDisabled_Material
+{
+    background-position: -17px -51px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTExportCsv_Material
+{
+    background-position: -51px -34px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTExportCsvDisabled_Material
+{
+    background-position: -34px 0px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTExportDocx_Material
+{
+    background-position: 0px -68px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTExportDocxDisabled_Material
+{
+    background-position: 0px -85px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTExportPdf_Material
+{
+    background-position: 0px -17px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTExportPdfDisabled_Material
+{
+    background-position: -17px 0px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTExportRtf_Material
+{
+    background-position: -34px -17px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTExportRtfDisabled_Material
+{
+    background-position: -51px 0px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTExportXls_Material
+{
+    background-position: -34px -51px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTExportXlsDisabled_Material
+{
+    background-position: -34px -85px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTExportXlsx_Material
+{
+    background-position: -51px -68px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTExportXlsxDisabled_Material
+{
+    background-position: -34px -34px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTNewRow_Material
+{
+    background-position: -17px -68px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTNewRowDisabled_Material
+{
+    background-position: -51px -51px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTRefresh_Material
+{
+    background-position: -17px -17px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTRefreshDisabled_Material
+{
+    background-position: -34px -68px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_CTShowFilterEditor_Material
+{
+    background-position: -30px -117px;
+    width: 14px;
+    height: 14px;
+}
+.dxVerticalGrid_CTShowFilterEditorDisabled_Material
+{
+    background-position: -45px -102px;
+    width: 14px;
+    height: 14px;
+}
+.dxVerticalGrid_CTShowSearchPanel_Material
+{
+    background-position: -51px -85px;
+    width: 14px;
+    height: 14px;
+}
+.dxVerticalGrid_CTShowSearchPanelDisabled_Material
+{
+    background-position: 0px -34px;
+    width: 16px;
+    height: 16px;
+}
+.dxVerticalGrid_ExpandedButton_Material
+{
+    background-position: -45px -117px;
+    width: 12px;
+    height: 12px;
+}
+.dxVerticalGrid_gvCellError_Material
+{
+    background-position: 0px -102px;
+    width: 14px;
+    height: 14px;
+}
+.dxVerticalGrid_gvFilterRowButton_Material
+{
+    background-position: 0px -117px;
+    width: 14px;
+    height: 14px;
+}
+.dxVerticalGrid_gvHeaderFilter_Material
+{
+    background-position: -15px -102px;
+    width: 14px;
+    height: 14px;
+}
+.dxVerticalGrid_gvHeaderFilterActive_Material
+{
+    background-position: -15px -117px;
+    width: 14px;
+    height: 14px;
+}
+.dxVerticalGrid_gvHeaderSortDown_Material
+{
+    background-position: -52px -132px;
+    width: 12px;
+    height: 12px;
+}
+.dxVerticalGrid_gvHeaderSortUp_Material
+{
+    background-position: 0px -132px;
+    width: 12px;
+    height: 12px;
+}
+

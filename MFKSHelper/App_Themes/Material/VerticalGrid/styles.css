@@ -1,0 +1,587 @@
+.dxvgControl_Material,
+.dxvgDisabled_Material
+{
+    font: 14px 'Roboto Regular', Helvetica, 'Droid Sans', Tahoma, Geneva, sans-serif;
+    background-color: White;
+    color: #484848;
+    cursor: default;
+}
+.dxvgDisabled_Material
+{
+    color: #b8b8b8;
+}
+.dxvgControl_Material a
+{
+    color: #009688;
+    text-decoration: none;
+}
+.dxvgControl_Material a:hover
+{
+    text-decoration: underline;
+}
+.dxvgControl_Material a:hover.dxbDisabled_Material
+{
+    color: #BBBBBB;
+    text-decoration: none;
+}
+.dxvgDisabled_Material a
+{
+    color: #b8b8b8;
+}
+.dxvgTable_Material
+{
+    background-color: White;
+    border: 1px solid #DFDFDF;
+    border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-collapse: separate !important;
+    overflow: hidden;
+    table-layout: fixed;
+}
+.dxvgTable_Material .dxvgHEC
+{
+    background-color: White;
+    border-width: 0;
+    overflow: hidden;
+}
+.dxvgControl_Material .dxvgCSD
+{
+    border-right: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+}
+.dxvgCSD .dxvgTable_Material
+{
+    border-right: 0;
+}
+.dxvgControl_Material .dxvgFCW + .dxvgTable_Material
+{
+    border-top: 0;
+}
+.dxvgControl_Material .dxvgCSD .dxvgTable_Material,
+.dxvgControl_Material table[id$='DXFixedTable']
+{
+    border-bottom: 0;
+}
+.dxvgControl_Material .dxvgCSD + .dxvgSummaryPanel_Material,
+.dxvgControl_Material .dxvgCSD + .dxvgPagerBottomPanel_Material,
+.dxvgControl_Material .dxvgCSD + .dxvgFilterBar_Material,
+.dxvgControl_Material .dxvgCSD + .dxvgStatusBar_Material,
+.dxvgTable_Material + .dxvgSummaryPanel_Material,
+.dxvgTable_Material + .dxvgPagerBottomPanel_Material,
+.dxvgTable_Material + .dxvgFilterBar_Material,
+.dxvgTable_Material + .dxvgStatusBar_Material
+{
+    border-top: 0;
+}
+.dxvgHeader_Material
+{
+    cursor: pointer;
+    color: black;
+    font: 14px 'Roboto Medium', Helvetica, 'Droid Sans', Tahoma, Geneva, sans-serif;
+    text-align: left;
+    background-color: white;
+    padding: 21px 10px 17px;
+    border: 1px Solid #DCDCDC;
+    border-width: 0 1px 1px 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.dxvgCategory_Material
+{
+    color: #939393;
+    font: 14px 'Roboto Medium', Helvetica, 'Droid Sans', Tahoma, Geneva, sans-serif;
+    background-color: #f4f4f4;
+    padding: 30px 10px 30px;
+    border-bottom: 1px solid #DFDFDF;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.dxvgCSD .dxvgCategory_Material:not(.dxvg__I)
+{
+    border-right: 1px solid #DFDFDF;
+}
+.dxvgCategoryRow_Material.dxvgER .dxvgCategory_Material,
+.dxvgCategoryRow_Material.dxvgCR .dxvgCategory_Material
+{
+    cursor: pointer;
+}
+.dxvgCategoryRow_Material.dxvgER .dxvgCategory_Material.dxvg__I,
+.dxvgCategoryRow_Material.dxvgCR .dxvgCategory_Material.dxvg__I
+{
+    cursor: default;
+}
+.dxvgRecord_Material
+{
+    padding: 19px 10px 18px;
+    border: 1px solid #DFDFDF;
+    border-width: 0 1px 1px 0;
+    overflow: hidden;
+}
+.dxvgRecord_Material:last-child
+{
+    border-right-width: 0;
+}
+.dxvgRPFC .dxvgRecord_Material
+{
+    border-bottom: 1px Solid #DCDCDC;
+}
+.dxvgGLNV .dxvgRecord_Material
+{
+    border-right-width: 0;
+}
+.dxvgGLNH .dxvgRecord_Material
+{
+    border-bottom-width: 0;
+}
+.dxvgGLNH .dxvgRPFC .dxvgRecord_Material
+{
+    border-bottom-width: 1px;
+}
+.dxvgGLNH .dxvgRPFC.dxvgER .dxvgRecord_Material
+{
+    border-bottom-width: 0;
+}
+.dxvgFC .dxvgGLNH tr:last-child .dxvgRecord_Material
+{
+    border-bottom-width: 1px;
+}
+.dxvgRecordAlt_Material
+{
+    background-color: #f5f5f5;
+}
+/* Select, Hover */
+.dxvgSelectedRecord_Material,
+.dxvgSelectedRecord_Material.dxvgDataRowHover_Material
+{
+    background-color: #F1F1F1;
+}
+.dxvgDataRowHover_Material .dxvgRecord_Material
+{
+    background-color: #EEE;
+}
+/* Command Items */
+.dxvgCommandCell_Material
+{
+    padding: 8px 4px;
+}
+.dxvgCommandCell_Material a,
+.dxvgHeader_Material a.dxvgCommandItem_Material
+{
+    margin: 0 5px 0 0;
+}
+.dxvgHeader_Material a,
+.dxvgCommandCell_Material a
+{
+    color: #009688;
+}
+.dxbButton_Material[class~="dxvgCommandItem_Material"]
+{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.dxbButton_Material[class~="dxvgCommandItem_Material"] .dxb
+{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+/* Indents */
+.dxvgControl_Material .dxvg__I
+{
+    border-style: solid;
+    border-color: #DCDCDC;
+    border-width: 0 1px 0 0;
+    cursor: default;
+    box-shadow: none;
+}
+.dxvgControl_Material .dxvg__I.dxvg__BB
+{
+    border-bottom-width: 1px;
+}
+.dxvgControl_Material .dxvgER .dxvg__I.dxvg__BB
+{
+    border-bottom-width: 0;
+}
+.dxvgControl_Material .dxvgMHI .dxvg__I
+{
+    border-right-width: 0;
+}
+.dxvgControl_Material .dxvgMHI .dxvgER .dxvg__I.dxvg__BB
+{
+    border-bottom-width: 1px;
+}
+/* Title Panel, Status bar, Summary Panel */
+.dxvgTitlePanel_Material,
+.dxvgTable_Material caption
+{
+    font-size: 1.25em;
+    font-weight: normal;
+    padding: 3px 3px 5px;
+    text-align: center;
+    color: #999999;
+}
+.dxvgStatusBar_Material
+{
+    border-top: 1px solid #DFDFDF;
+}
+.dxvgStatusBar_Material tr.dxvg
+{
+    height: 20px;
+}
+.dxvgStatusBar_Material tr.dxvg > td
+{
+    padding: 24px 0;
+}
+.dxvgStatusBar_Material tr.dxvg span .dxbButtonSys:first-child
+{
+    margin-left: 20px;
+}
+.dxvgSummaryPanel_Material
+{
+    border: 1px solid #DFDFDF;
+    background-color: #f4f4f4;
+    color: #8e8e93;
+    padding: 8px 21px 8px;
+}
+.dxvgSummaryItem_Material
+{
+    display: inline-block;
+    margin: 5px 8px 5px 0;
+}
+/* Pager */
+.dxvgPagerTopPanel_Material,
+.dxvgPagerBottomPanel_Material
+{
+    padding: 9px 0 9px;
+}
+.dxvgPagerBottomPanel_Material
+{
+    background-color: white;
+    border-bottom: 1px solid #DFDFDF;
+    border-left: 1px solid #DFDFDF;
+    border-right: 1px solid #DFDFDF;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+    border-top: 1px solid #DFDFDF;
+}
+.dxvgSummaryPanel_Material + .dxvgPagerBottomPanel_Material
+{
+    border-top-width: 0;
+}
+.dxvgControl_Material .dxpLite_Material,
+.dxvgDisabled_Material .dxpLite_Material
+{
+    padding-top: 4px;
+}
+/* Filter Builder, Filter Bar */
+.dxvgFilterBar_Material
+{
+    margin-top: 16px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1), 0 2px 10px 0 rgba(0,0,0,0.1);
+    border-radius: 4px;
+    border: 1px solid #DFDFDF;
+    border-collapse: separate;
+}
+.dxvgFilterBar_Material a
+{
+    color: #009688;
+    text-decoration: none;
+}
+.dxvgFilterBar_Material a:hover
+{
+    text-decoration: underline;
+}
+.dxvgFilterBar_Material > tbody > tr > td
+{
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.dxvgFilterBarCheckBoxCell_Material
+{
+    padding-left: 20px;
+}
+*[dir="rtl"] .dxvgFilterBarCheckBoxCell_Material
+{
+    padding-right: 20px;
+}
+.dxvgFilterBarImageCell_Material
+{
+    padding: 0 8px 0 20px;
+    cursor: pointer;
+}
+*[dir="rtl"] .dxvgFilterBarImageCell_Material
+{
+    padding: 0 20px 0 8px;
+}
+.dxvgFilterBarImageCell_Material img
+{
+    margin-top: 3px;
+    margin-left: 0;
+}
+.dxvgFilterBarExpressionCell_Material
+{
+    padding: 5px 5px 8px 0;
+    white-space: nowrap;
+}
+.dxvgFilterBarClearButtonCell_Material
+{
+    padding: 5px 20px 8px 6px;
+}
+*[dir="rtl"] .dxvgFilterBarClearButtonCell_Material
+{
+    padding: 5px 6px 8px 20px;
+}
+.dxvgFilterBuilderMainArea_Material
+{
+    background: white none;
+    padding: 6px 2px;
+}
+.dxvgFilterBuilderButtonArea_Material
+{
+    border-top: 1px solid #eaeaea;
+    padding: 10px;
+    white-space: nowrap;
+}
+.dxvgFilterBuilderButtonArea_Material .dxbButton_Material
+{
+    margin-left: 8px;
+}
+/* Header Filter */
+.dxvgControl_Material .dxpcLite_Material .dxpc-footerContent > table
+{
+    margin: 13px 20px 11px 0px;
+}
+.dxvgControl_Material .dxpcLite_Material .dxpc-footerContent
+{
+    padding: 12px 20px 7px 12px;
+}
+.dxvgControl_Material .dxvgHFC
+{
+    padding-left: 4px;
+}
+.dxvgControl_Material .dxvgHFC .dxeCalendar_Material
+{
+    margin-top: 3px;
+    margin-left: 7px;
+}
+.dxvgControl_Material div[id$='DXEPLPC']
+{
+    height: 53px;
+}
+.dxvgControl_Material .dxvgHFSD
+{
+    height: 1px;
+    margin: 2px 0;
+}
+.dxvgControl_Material .dxvgHFDRC
+{
+    margin: 15px 15px 25px;
+}
+.dxvgControl_Material .dxvgHFDRP
+{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 9px 0 6px;
+}
+.dxvgControl_Material .dxvgHFDRP[id*="HFFDE"]
+{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.dxvgControl_Material .dxvgHFDRP[id*="HFTDE"]
+{
+    margin-bottom: 25px;
+}
+/* Batch Edit */
+.dxvgControl_Material td.dxvgBatchEditCell_Material
+{
+    padding: 0 2px;
+}
+.dxvgControl_Material td.dxvgBatchEditModifiedCell_Material
+{
+    background: #d7f9c7;
+}
+.dxvgBatchEditDeletedItem_Material,
+.dxvgBatchEditNewItem_Material.dxvgBatchEditDeletedItem_Material
+{
+    background: #EFEFEF;
+}
+td.dxvgBatchEditDeletedItem_Material:not(.dxvgCommandColumn_Material)
+{
+    color: rgba(0,0,0,0.5);
+}
+.dxvgBatchEditDeletedItem_Material.dxvgBatchEditModifiedCell_Material
+{
+    background: #eefbe7 !important;
+}
+.dxvgBatchEditNewItem_Material
+{
+    background: #F0FAEA;
+}
+.dxvgControl_Material .dxvgErrorCell
+{
+    padding-left: 5px;
+    width: 1px;
+}
+.dxvgControl_Material .dxvgErrorCell img
+{
+    margin: -3px 0;
+}
+.dxvgStatusBar_Material .dxbButton_Material
+{
+    margin-right: 10px;
+}
+.dxvgControl_Material td.dxvgBatchEditCell_Material .dxichCellSys
+{
+    padding-left: 0;
+}
+.dxvgRecordError_Material
+{
+    background-color: #FFC8C8;
+    color: #FF0000;
+    padding: 6px 10px;
+    height: 100%;
+}
+.dxvgERV .dxvgRecord_Material
+{
+    display: none;
+}
+.dxvgEmptyRecord_Material
+{
+    display: none;
+    text-align: center;
+}
+.dxvgERV .dxvgEmptyRecord_Material
+{
+    display: table-cell;
+}
+/* LoadingPanel */
+.dxvgLoadingPanel_Material
+{
+    background-color: white;
+    font: 14px 'Roboto Regular', Helvetica, 'Droid Sans', Tahoma, Geneva, sans-serif;
+    color: #484848;
+    -moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+}
+.dxvgLoadingPanel_Material td.dx
+{
+    font-size: 1.17em;
+    white-space: nowrap;
+    text-align: center;
+    padding: 10px 14px;
+}
+.dxvgLoadingPanel_Material .dxlp-loadingImage
+{
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+    animation: dxLoadSpinSys 1s linear infinite;
+    border: 4px solid #009688;
+    border-top: 4px solid #EEE;
+    width: 24px;
+    height: 24px;
+}
+html.dxIE.dxBrowserVersion-9 .dxvgLoadingPanel_Material .dxlp-loadingImage
+{
+    background-image: url('../Web/Loading.gif');
+    height: 32px;
+    width: 32px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: none;
+    border: none;
+    border-radius: 0;
+}
+.dxvgLoadingPanelStatusBar_Material
+{
+    background-color: Transparent;
+}
+.dxvgLoadingPanelStatusBar_Material td
+{
+    white-space: nowrap;
+    text-align: center;
+    padding: 0px 2px;
+}
+.dxvgLoadingPanelStatusBar_Material .dxlp-loadingImage
+{
+    background-image: url('../GridView/gvLoadingOnStatusBar.gif');
+    height: 16px;
+    width: 16px;
+}
+/* Search Panel */
+.dxvgSearchPanel_Material
+{
+    padding: 7px 0 16px;
+}
+.dxvgSearchPanel_Material > table
+{
+    width: 100%;
+}
+.dxvgSearchPanel_Material .dxeButtonEdit_Material
+{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1), 0 2px 10px 0 rgba(0,0,0,0.1);
+    width: 100%;
+}
+.dxvgSearchPanel_Material .dxeButtonEdit_Material,
+.dxvgSearchPanel_Material .dxeButtonEdit_Material input
+{
+    background-color: #FAFAFA;
+}
+.dxvgSearchPanel_Material .dxeButtonEdit_Material td.dxic
+{
+    padding: 15px 8px 17px 12px;
+}
+*[dir="rtl"] .dxvgSearchPanel_Material .dxeButtonEdit_Material td.dxic
+{
+    padding: 15px 12px 17px 8px;
+}
+.dxvgControl_Material .dxvgSearchPanel_Material .dxbButton_Material
+{
+    margin-left: 7px;
+    margin-right: 0;
+}
+*[dir="rtl"].dxvgControl_Material .dxvgSearchPanel_Material .dxbButton_Material
+{
+    margin-left: 0;
+    margin-right: 7px;
+}
+.dxvgControl_Material .dxvgHL
+{
+    background: #009688;
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+}
+/* Removes flicking in Material Safari*/
+.dxvgTable_Material
+{
+    -webkit-tap-highlight-color: transparent;
+}
+.dxvgRecord_Material .dxICheckBox_Material,
+.dxvgRecord_Material .dxeIRadioButton_Material
+{
+    margin: 0 10px 0 10px;
+}
+.dxvgFocusedCell_Material
+{
+    box-shadow: inset 2px 2px 0 #dfdfdf, inset -2px -2px 0 #dfdfdf;
+    -webkit-box-shadow: inset 2px 2px 0 #dfdfdf, inset -2px -2px 0 #dfdfdf;
+    -moz-box-shadow: inset 2px 2px 0 #dfdfdf, inset -2px -2px 0 #dfdfdf;
+}
+/* Ripple */
+.dxvgControl_Material .dxvgTable_Material .dxvgHeader_Material::before,
+.dxvgControl_Material .dxvgCustomization_Material .dxvgHeader_Material::before
+{
+    content: "dxRippleTarget";
+    display: none;
+}

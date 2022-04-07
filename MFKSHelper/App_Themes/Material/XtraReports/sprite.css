@@ -1,0 +1,291 @@
+.dxm-hovered .dxXtraReports_BtnFirstPage_Material,
+.dxm-hovered .dxXtraReports_BtnLastPage_Material,
+.dxm-hovered .dxXtraReports_BtnNextPage_Material,
+.dxm-hovered .dxXtraReports_BtnPrevPage_Material,
+.dxm-hovered .dxXtraReports_BtnPrint_Material,
+.dxm-hovered .dxXtraReports_BtnPrintPage_Material,
+.dxm-hovered .dxXtraReports_BtnSave_Material,
+.dxm-hovered .dxXtraReports_BtnSaveWindow_Material,
+.dxm-hovered .dxXtraReports_BtnSearch_Material,
+.dxXtraReports_BtnFirstPage_Material,
+.dxXtraReports_BtnFirstPageDisabled_Material,
+.dxXtraReports_BtnLastPage_Material,
+.dxXtraReports_BtnLastPageDisabled_Material,
+.dxXtraReports_BtnNextPage_Material,
+.dxXtraReports_BtnNextPageDisabled_Material,
+.dxXtraReports_BtnPrevPage_Material,
+.dxXtraReports_BtnPrevPageDisabled_Material,
+.dxXtraReports_BtnPrint_Material,
+.dxXtraReports_BtnPrintDisabled_Material,
+.dxXtraReports_BtnPrintPage_Material,
+.dxXtraReports_BtnPrintPageDisabled_Material,
+.dxXtraReports_BtnSave_Material,
+.dxXtraReports_BtnSaveDisabled_Material,
+.dxXtraReports_BtnSaveWindow_Material,
+.dxXtraReports_BtnSaveWindowDisabled_Material,
+.dxXtraReports_BtnSearch_Material,
+.dxXtraReports_BtnSearchDisabled_Material,
+.dxXtraReports_PageBorder_blc_Material,
+.dxXtraReports_PageBorder_brc_Material,
+.dxXtraReports_PageBorder_tlc_Material,
+.dxXtraReports_PageBorder_trc_Material {
+    background-image: url('sprite.svg');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: auto;
+}
+.dxIE .dx-acc-r .dxm-hovered .dxXtraReports_BtnFirstPage_Material::before,
+.dxIE .dx-acc-r .dxm-hovered .dxXtraReports_BtnLastPage_Material::before,
+.dxIE .dx-acc-r .dxm-hovered .dxXtraReports_BtnNextPage_Material::before,
+.dxIE .dx-acc-r .dxm-hovered .dxXtraReports_BtnPrevPage_Material::before,
+.dxIE .dx-acc-r .dxm-hovered .dxXtraReports_BtnPrint_Material::before,
+.dxIE .dx-acc-r .dxm-hovered .dxXtraReports_BtnPrintPage_Material::before,
+.dxIE .dx-acc-r .dxm-hovered .dxXtraReports_BtnSave_Material::before,
+.dxIE .dx-acc-r .dxm-hovered .dxXtraReports_BtnSaveWindow_Material::before,
+.dxIE .dx-acc-r .dxm-hovered .dxXtraReports_BtnSearch_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_BtnFirstPage_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_BtnFirstPageDisabled_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_BtnLastPage_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_BtnLastPageDisabled_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_BtnNextPage_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_BtnNextPageDisabled_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_BtnPrevPage_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_BtnPrevPageDisabled_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_BtnPrint_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_BtnPrintDisabled_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_BtnPrintPage_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_BtnPrintPageDisabled_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_BtnSave_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_BtnSaveDisabled_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_BtnSaveWindow_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_BtnSaveWindowDisabled_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_BtnSearch_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_BtnSearchDisabled_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_PageBorder_blc_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_PageBorder_brc_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_PageBorder_tlc_Material::before,
+.dxIE .dx-acc-r .dxXtraReports_PageBorder_trc_Material::before{
+    width: 107px;
+}
+.dxm-hovered .dxXtraReports_BtnFirstPage_Material
+{
+    background-position: -19px -38px;
+    width: 18px;
+    height: 18px;
+}
+.dxm-hovered .dxXtraReports_BtnLastPage_Material
+{
+    background-position: -76px -19px;
+    width: 18px;
+    height: 18px;
+}
+.dxm-hovered .dxXtraReports_BtnNextPage_Material
+{
+    background-position: -38px 0px;
+    width: 18px;
+    height: 18px;
+}
+.dxm-hovered .dxXtraReports_BtnPrevPage_Material
+{
+    background-position: -57px -19px;
+    width: 18px;
+    height: 18px;
+}
+.dxm-hovered .dxXtraReports_BtnPrint_Material
+{
+    background-position: -51px -57px;
+    width: 16px;
+    height: 16px;
+}
+.dxm-hovered .dxXtraReports_BtnPrintPage_Material
+{
+    background-position: -17px -74px;
+    width: 16px;
+    height: 16px;
+}
+.dxm-hovered .dxXtraReports_BtnSave_Material
+{
+    background-position: -85px -57px;
+    width: 16px;
+    height: 16px;
+}
+.dxm-hovered .dxXtraReports_BtnSaveWindow_Material
+{
+    background-position: -51px -74px;
+    width: 16px;
+    height: 16px;
+}
+.dxm-hovered .dxXtraReports_BtnSearch_Material
+{
+    background-position: 0px -57px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnFirstPage_Material
+{
+    background-position: 0px -38px;
+    width: 18px;
+    height: 18px;
+}
+.dxXtraReports_BtnFirstPageDisabled_Material
+{
+    background-position: -57px 0px;
+    width: 18px;
+    height: 18px;
+}
+.dxXtraReports_BtnLastPage_Material
+{
+    background-position: -76px 0px;
+    width: 18px;
+    height: 18px;
+}
+.dxXtraReports_BtnLastPageDisabled_Material
+{
+    background-position: 0px 0px;
+    width: 18px;
+    height: 18px;
+}
+.dxXtraReports_BtnNextPage_Material
+{
+    background-position: -19px 0px;
+    width: 18px;
+    height: 18px;
+}
+.dxXtraReports_BtnNextPageDisabled_Material
+{
+    background-position: 0px -19px;
+    width: 18px;
+    height: 18px;
+}
+.dxXtraReports_BtnPrevPage_Material
+{
+    background-position: -38px -19px;
+    width: 18px;
+    height: 18px;
+}
+.dxXtraReports_BtnPrevPageDisabled_Material
+{
+    background-position: -19px -19px;
+    width: 18px;
+    height: 18px;
+}
+.dxXtraReports_BtnPrint_Material
+{
+    background-position: -72px -38px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnPrintDisabled_Material
+{
+    background-position: -89px -38px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnPrintPage_Material
+{
+    background-position: 0px -74px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnPrintPageDisabled_Material
+{
+    background-position: -55px -38px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnSave_Material
+{
+    background-position: -34px -57px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnSaveDisabled_Material
+{
+    background-position: -68px -74px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnSaveWindow_Material
+{
+    background-position: -68px -57px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnSaveWindowDisabled_Material
+{
+    background-position: -34px -74px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnSearch_Material
+{
+    background-position: -38px -38px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_BtnSearchDisabled_Material
+{
+    background-position: -17px -57px;
+    width: 16px;
+    height: 16px;
+}
+.dxXtraReports_PageBorder_blc_Material
+{
+    background-position: -95px -19px;
+    width: 10px;
+    height: 10px;
+}
+.dxXtraReports_PageBorder_brc_Material
+{
+    background-position: -85px -74px;
+    width: 10px;
+    height: 10px;
+}
+.dxXtraReports_PageBorder_tlc_Material
+{
+    background-position: -95px 0px;
+    width: 10px;
+    height: 10px;
+}
+.dxXtraReports_PageBorder_trc_Material
+{
+    background-position: -96px -74px;
+    width: 10px;
+    height: 10px;
+}
+.dxXtraReports_PageBorder_t_Material,
+.dxXtraReports_PageBorder_l_Material,
+.dxXtraReports_PageBorder_r_Material,
+.dxXtraReports_PageBorder_b_Material {
+    padding: 0px;
+    background-color: transparent;
+}
+
+.dxXtraReports_PageBorder_t_Material {
+    background-image: url('pageTopBorder.svg');
+    background-repeat: repeat-x;
+    width: 1px;
+    height: 10px;
+}
+
+.dxXtraReports_PageBorder_l_Material {
+    background-image: url('pageLeftBorder.svg');
+    background-repeat: repeat-y;
+    width: 10px;
+    height: 1px;
+}
+
+.dxXtraReports_PageBorder_r_Material {
+    background-image: url('pageRightBorder.svg');
+    background-repeat: repeat-y;
+    width: 10px;
+    height: 1px;
+}
+
+.dxXtraReports_PageBorder_b_Material {
+    background-image: url('pageBottomBorder.svg');
+    background-repeat: repeat-x;
+    width: 1px;
+    height: 10px;
+}
+

@@ -1,0 +1,568 @@
+.dxssControl_Material
+{
+    border-style: none;
+    font: 14px 'Roboto Regular', Helvetica, 'Droid Sans', Tahoma, Geneva, sans-serif;
+}
+.dxssControl_Material .dxss-gl .dxss-v,
+.dxssControl_Material .dxss-gl .dxss-h
+{
+    border-color: rgba(0,0,0,0.247);
+}
+.dxssControl_Material .dxss-rowHeader
+{
+    border-right: 1px solid rgba(0,0,0,0.247);
+    border-top: 1px solid rgba(0,0,0,0.247);
+}
+.dxssControl_Material .dxss-colHeader
+{
+    border-bottom: 1px solid rgba(0,0,0,0.247);
+    border-left: 1px solid rgba(0,0,0,0.247);
+}
+.dxssControl_Material .dxss-crse
+{
+    background-color: #009688;
+    opacity: .20;
+}
+.dxssControl_Material .dxss-trbe
+{
+    border-top-color: #009688;
+}
+.dxssControl_Material .dxss-rrbe
+{
+    border-right-color: #009688;
+}
+.dxssControl_Material .dxss-brbe
+{
+    border-bottom-color: #009688;
+}
+.dxssControl_Material .dxss-lrbe
+{
+    border-left-color: #009688;
+}
+.dxssControl_Material .dxss-fh
+{
+    background-color: #009688;
+}
+.dxssControl_Material .dxss-sbe
+{
+    border-color: #009688;
+}
+.dxssControl_Material .dxss-sbe
+{
+    border-color: #009688;
+}
+.dxssControl_Material .dxtcLite_Material.dxtc-bottom > .dxtc-stripContainer .dxtc-rightIndent,
+.dxssControl_Material .dxtcLite_Material.dxtc-bottom > .dxtc-stripContainer .dxtc-leftIndent
+{
+    width: 0px;
+}
+.dxssControl_Material .dxrControl_Material .dxtcLite_Material.dxtc-top .dxtc-leftIndent
+{
+    width: 0px;
+}
+.dxssControl_Material .dxtcLite_Material.dxtc-bottom .dxtc-leftIndent
+{
+    width: 8px;
+}
+.dxssControl_Material .dxss-hrg,
+.dxssControl_Material .dxss-vrg
+{
+    background-color: #009688;
+}
+.dxssControl_Material .dxss-md
+{
+    border-left: 1px solid rgba(0,0,0,0.247) !important;
+    border-right: 1px solid rgba(0,0,0,0.247) !important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.dxssControl_Material .dxrControl_Material .dxmLite_Material .dxm-item
+{
+    padding: 7px 20px 6px 22px;
+}
+.dxssControl_Material .dxrControl_Material .dxmLite_Material .dxm-item
+{
+    padding: 0 4px;
+}
+.dxssControl_Material .dxss-tse
+{
+    border-color: #009688;
+}
+.dxssControl_Material .dxss-tre
+{
+    background: url('TouchResize.svg');
+}
+.dxssControl_Material .dxss-ddp,
+.dxssControl_Material .dxss-ddb
+{
+    border: 1px solid rgba(0,0,0,0.247);
+}
+.dxssControl_Material .dxss-ddp tr:hover
+{
+    background-color: #e0e0e0;
+}
+/* Loading panel */
+.dxssLoadingDiv_Material
+{
+    background: white;
+    opacity: 0.85 !important;
+    filter: alpha(opacity=85);
+}
+.dxssLoadingPanel_Material
+{
+    background-color: white;
+    font: 14px 'Roboto Regular', Helvetica, 'Droid Sans', Tahoma, Geneva, sans-serif;
+    color: #484848;
+    -moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+}
+.dxssLoadingPanel_Material td.dx
+{
+    font-size: 1.17em;
+    white-space: nowrap;
+    text-align: center;
+    padding: 10px 14px;
+}
+.dxssLoadingPanel_Material .dxlp-loadingImage
+{
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+    animation: dxLoadSpinSys 1s linear infinite;
+    border: 4px solid #009688;
+    border-top: 4px solid #EEE;
+    width: 24px;
+    height: 24px;
+}
+html.dxIE.dxBrowserVersion-9 .dxssLoadingPanel_Material .dxlp-loadingImage
+{
+    background-image: url('../Web/Loading.gif');
+    height: 32px;
+    width: 32px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: none;
+    border: none;
+    border-radius: 0;
+}
+/* DX Spreadsheet Cell Editor Element, Formula Bar, IntelliSense elements */
+.dxssControl_Material .dxss-ctve
+{
+    border: 2px solid #009688;
+    /*the same -dxss-cfe */
+}
+.dxssControl_Material .dxss-fb
+{
+    height: 32px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.247);
+    border-top-width: 0;
+}
+.dxssControl_Material .dxss-fbw
+{
+    padding: 7px 8px 7px 7px;
+    border: 1px solid #DCDCDC;
+    background-color: white;
+}
+.dxFirefox .dxssControl_Material .dxss-fbw
+{
+    padding: 7px 8px 6px 7px;
+}
+.dxssControl_Material .dxmLite_Material .dxss-fbMenu
+{
+    height: 32px;
+    border: 0;
+    background-color: transparent;
+    background-image: none;
+}
+.dxssControl_Material .dxss-fbMenu .dxm-content
+{
+    padding-top: 8px !important;
+    padding-left: 27px !important;
+    padding-right: 27px !important;
+    padding-bottom: 0px !important;
+}
+.dxssControl_Material .dxss-Hint
+{
+    border: 1px solid #dedede;
+    background-color: #FFFFFF;
+    padding: 3px 8px 4px 8px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+}
+.dxssControl_Material .dxss-Hint,
+.dxss-funcLB.dxeListBox_Material
+{
+    -moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.12);
+}
+.dxssControl_Material .dxss-Hint.dxss-funcInfo
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.dxpnlControl_Material .dxssDlgPageSetupForm
+{
+    width: 530px;
+}
+.dxssDlgPageSetupForm .dxssPSContainer .dxssPageControl.dxtcLite_Material .dxtc-content
+{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.dxssDlgPageSetupForm .dxssPSContainer .dxssPageControl.dxtcLite_Material
+{
+    margin-top: 16px;
+}
+.dxssDlgPageSetupForm .dxtcLite_Material > .dxtc-stripContainer .dxtc-link
+{
+    padding: 4px 25px;
+}
+.dxpnlControl_Material .dxssDlgPageSetupForm .dxeButtonEdit_Material
+{
+    min-width: 75px;
+}
+.dxpnlControl_Material .dxssDlgPageSetupForm .dxssPSPrintContainer
+{
+    padding: 10px 19px 10px 10px;
+    margin-bottom: 4px;
+}
+.dxpnlControl_Material .dxssDlgPageSetupForm .dxtcLite_Material > .dxtc-content
+{
+    padding: 0px;
+}
+.dxssControlSys .dxmLite_Material .dxm-popup .dxm-checked img[class*="ssRibbonGIcons_PageMarginsNormal"],
+.dxssControlSys .dxmLite_Material .dxm-popup .dxm-checked img[class*="ssRibbonGIcons_PageMarginsWide"],
+.dxssControlSys .dxmLite_Material .dxm-popup .dxm-checked img[class*="ssRibbonGIcons_PageMarginsNarrow"],
+.dxssControlSys .dxmLite_Material .dxm-popup .dxm-checked span[class*="ssRibbonGIcons_PageMarginsNormal"],
+.dxssControlSys .dxmLite_Material .dxm-popup .dxm-checked span[class*="ssRibbonGIcons_PageMarginsWide"],
+.dxssControlSys .dxmLite_Material .dxm-popup .dxm-checked span[class*="ssRibbonGIcons_PageMarginsNarrow"]
+{
+    margin-top: 3px !important;
+}
+.dxssControlSys .dxmLite_Material .dxm-popup img[class*="ssRibbonGIcons_PageMarginsNormal"],
+.dxssControlSys .dxmLite_Material .dxm-popup img[class*="ssRibbonGIcons_PageMarginsWide"],
+.dxssControlSys .dxmLite_Material .dxm-popup img[class*="ssRibbonGIcons_PageMarginsNarrow"],
+.dxssControlSys .dxmLite_Material .dxm-popup span[class*="ssRibbonGIcons_PageMarginsNormal"],
+.dxssControlSys .dxmLite_Material .dxm-popup span[class*="ssRibbonGIcons_PageMarginsWide"],
+.dxssControlSys .dxmLite_Material .dxm-popup span[class*="ssRibbonGIcons_PageMarginsNarrow"]
+{
+    margin-top: 3px !important;
+}
+.dxssFCFormLayout .dxflGroupCell_Material
+{
+    padding: 0 10px;
+}
+.dxpcLite_Material .dxssDlgFormatCellsForm
+{
+    width: 623px;
+}
+.dxeListBox_Material.dxssFCType
+{
+    width: 400px !important;
+    height: 159px !important;
+}
+.dxeListBox_Material.dxssFCType .dxlbd
+{
+    width: 398px !important;
+}
+.dxeListBox_Material.dxssFCCategory
+{
+    width: 150px !important;
+    height: 350px !important;
+    margin-top: 13px;
+}
+.dxflGroup_Material.dxssFCDescription
+{
+    height: 85px;
+    padding-top: 13px !important;
+}
+.dxssFCFormLayout .dxflGroupBox_Material
+{
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+.dxssFCSampleGroup .dxflItem_Material
+{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.dxeControlsCell_Material > .dxssFCDecimalPlaces
+{
+    width: 100px !important;
+}
+/* Cell Editing */
+.dxssControl_Material.icbem .dxss-inputTarget
+{
+    border: 2px solid #009688;
+}
+/*Cell position hint*/
+.dxssControl_Material .dxss-cell-pos-hint
+{
+    background-color: #009688;
+    color: white;
+}
+.dxrControl_Material .dxssRibbonCBSmall
+{
+    width: 100px;
+}
+.dxrControl_Material .dxssRibbonCBLarge
+{
+    width: 130px;
+}
+/* --------------Dialogs----------------- */
+.dxssControl_Material .dxss-dialogSimpleFooterGroup,
+.dxssControl_Material .dxss-dialogFooter
+{
+    border-top: 1px #dfdfdf solid;
+    padding: 10px 19px 11px 10px;
+}
+.dxssControl_Material .dxss-dialog .dxss-dialogFooterBtn
+{
+    width: 100px !important;
+}
+.dxssControl_Material .dxss-dialog .dxss-imagePreviewCell
+{
+    color: #878787;
+    border: dashed 1px #cac8c8;
+}
+.dxssControl_Material .dxss-customDataFilterForm .dxss-dialogRadionButtonList .dxe,
+.dxssControl_Material .dxss-dialogHeaderGroup .dxss-dialogRadionButtonList .dxe
+{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.dxssControl_Material .dxss-changeChartTypeForm .dxss-chartsbtn div.dxb
+{
+    padding: 6px 9px 7px;
+}
+.dxssControl_Material .dxss-changeChartTypeForm .dxss-chartsbtn
+{
+    width: auto;
+}
+.dxssControl_Material .dxss-changeChartTypeForm .dxtcLite_Material.dxtc-left > .dxtc-stripContainer .dxtc-link
+{
+    padding-right: 5px;
+}
+@media (max-width: 400px)
+{
+    .dxssControl_Material .dxss-dialog .dxss-dialogRadionButtonList .dxichTextCellSys
+    {
+        padding-right: 5px;
+    }
+    .dxssControl_Material .dxss-saveFileAsForm .dxss-dialogContentGroup,
+    .dxssControl_Material .dxss-insertLinkForm .dxss-dialogContentGroup
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .dxssControl_Material .dxss-changeChartTypeForm .dxtcLite_Material.dxtc-left > .dxtc-stripContainer .dxtc-link
+    {
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+    .dxssControl_Material .dxss-changeChartTypeForm .dxtcLite_Material > .dxtc-content
+    {
+        padding-left: 7px;
+        padding-right: 7px;
+        text-align: center;
+    }
+    .dxssControl_Material .dxss-changeChartTypeForm .dxss-dialogSimpleContentGroup
+    {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    .dxssControl_Material .dxss-modifyTableStyleForm .dxss-dialogSimpleContentGroup
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .dxssControl_Material .dxss-modifyTableStyleForm .dxtcLite_Material.dxtc-left > .dxtc-stripContainer .dxtc-link
+    {
+        padding-left: 6px;
+        padding-right: 5px;
+    }
+    .dxssControl_Material .dxss-modifyTableStyleForm .dxtcLite_Material > .dxtc-content
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+    }
+}
+/*---------Change-Chart-Style-Dialog-------*/
+.dxss-modifyChartStyleContent .dxbButtonHover_Material
+{
+    color: white;
+    background-color: #009688;
+    border: 1px solid #009688;
+}
+.dxss-modifyChartStyleContent .dxbButtonChecked_Material
+{
+    color: #484848;
+    background-color: #C0C0C0;
+}
+.dxss-modifyChartStyleContent .dxbButtonPressed_Material
+{
+    color: white;
+    background-color: #C0C0C0;
+}
+.dxss-modifyChartStyleContent .dxbButton_Material div.dxb
+{
+    padding-left: 9px;
+    padding-right: 9px;
+}
+.dxss-modifyChartStyleContent .dxbButton_Material
+{
+    border-width: 1px;
+    border-style: solid;
+    width: auto;
+}
+.dxeBase_Material.dxss-cbFindMatch td.dxichCellSys,
+.dxeBase_Material.dxss-cbFindMatch td.dxichTextCellSys
+{
+    padding-top: 6px;
+}
+/* Format as Table */
+.dxss-modifyChartStyleContent .dxbButton_Material div.dxb
+{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.dxss-modifyChartStyleContent .dxbButton_Material div.dxbf
+{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+/*-----Filter-Dialogs-----*/
+.dxss-validationConfirmForm .dxbButton_Material div.dxb,
+.dxss-dataFilterSimpleForm .dxbButton_Material div.dxb
+{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+@media (max-width: 475px)
+{
+    .dxss-dataValidationForm .dxbButton_Material div.dxb,
+    .dxss-dataFilterSimpleForm .dxbButton_Material div.dxb
+    {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .dxpnlControl_Material .dxss-dataFilterSimpleForm .dxss-dialogControlsWrapper > tbody > tr > td:first-child
+    {
+        display: none;
+    }
+    .dxssControl_Material .dxss-dataValidationForm .dxss-dialogSimpleFooterGroup,
+    .dxssControl_Material .dxss-dataFilterSimpleForm .dxss-dialogSimpleFooterGroup
+    {
+        padding-left: 0px;
+        padding-right: 2px;
+    }
+    .dxssControl_Material .dxss-dialog.dxss-dataValidationForm .dxss-dialogFooterBtn,
+    .dxssControl_Material .dxss-dialog.dxss-validationConfirmForm .dxss-dialogFooterBtn,
+    .dxssControl_Material .dxss-dialog.dxss-dataFilterSimpleForm .dxss-dialogFooterBtn
+    {
+        width: 85px !important;
+    }
+}
+/*---Page-Setup-Dialog---*/
+.dxssControl_Material .dxss-pageSetupForm .dxss-pageSetupContent > div:first-child
+{
+    padding-right: 0px;
+    padding-left: 7px;
+}
+.dxssControl_Material .dxss-pageSetupForm .dxss-pageSetupContent .dxss-customPaddingGroup
+{
+    padding-left: 0px;
+    padding-right: 10px;
+}
+.dxss-customPaddingGroup .dxflGroupCell_Material
+{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.dxssControl_Material .dxss-dialog .dxss-shortEditor
+{
+    min-width: 90px;
+    max-width: 90px;
+}
+.dxssControl_Material .dxss-pageSetupForm .dxss-orientationGroup
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.dxssControl_Material .dxss-pageSetupForm .dxss-scalingGroup,
+.dxssControl_Material .dxss-pageSetupForm .dxss-pagePrintGroup,
+.dxssControl_Material .dxss-pageSetupForm .dxss-firstPageGroup
+{
+    padding-left: 7px;
+}
+/*---Floating-content---*/
+.dxssControl_Material .dxss-pageSetupForm .dxss-scalingGroup > div:first-child,
+.dxssControl_Material .dxss-pageSetupForm .dxss-scalingGroup > div:nth-child(3)
+{
+    width: 25% !important;
+}
+.dxssControl_Material .dxss-pageSetupForm .dxss-scalingGroup > div:nth-child(2)
+{
+    width: 75% !important;
+}
+.dxssControl_Material .dxss-pageSetupForm .dxss-scalingGroup > div:nth-child(5)
+{
+    width: 35% !important;
+}
+/*---Spin-edits---*/
+.dxss-marginPreviewContainer .dxss-previewTable .dxeButtonEditSys .dxeSpinIncButton_Material,
+.dxss-marginPreviewContainer .dxss-previewTable .dxeButtonEditSys .dxeSpinDecButton_Material
+{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.dxssControl_Material .dxss-pageSetupContent .dxss-HFMainGroup
+{
+    padding-left: 0px;
+    padding-right: 10px;
+}
+.dxssControl_Material .dxss-previewTable .dxeCaptionCell_Material
+{
+    padding-bottom: 3px;
+}
+/*---Custom-Header-Footer-Dialog---*/
+.dxssControl_Material .dxss-headerFooterContent .dxss-HFHeaderGroup,
+.dxssControl_Material .dxss-headerFooterContent .dxss-HFFooterGroup
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.dxss-headerFooterContent .dxss-HFHeaderGroup .dxflGroupCell_Material,
+.dxss-headerFooterContent .dxss-HFFooterGroup .dxflGroupCell_Material
+{
+    padding-left: 0px;
+    padding-right: 10px;
+}
+/***Data*Validation***/
+.dxss-dataValidationForm .dxtcLite_Material .dxss-dvContent
+{
+    min-height: 314px;
+}
+.dxss-dataValidationForm .dxtcLite_Material .dxss-dvSettingsContent
+{
+    min-height: 270px;
+}
+.dxss-dataValidationForm .dxtcLite_Material .dxss-dvSettingsContent .dxss-dvDescriptionRow
+{
+    padding-top: 5px;
+}
+.dxssControl_Material .dxss-dataValidationForm .dxss-zeroPaddingGroup
+{
+    padding-right: 0px;
+    padding-left: 0px;
+}

@@ -1,0 +1,102 @@
+.dx-acc-r .dxRichEdit_CenterTabDragHandle_Material:before,
+.dx-acc-r .dxRichEdit_ColumnSeparatorDragHandle_Material:before,
+.dx-acc-r .dxRichEdit_DecimalTabDragHandle_Material:before,
+.dx-acc-r .dxRichEdit_FirstLineIdentDragHandle_Material:before,
+.dx-acc-r .dxRichEdit_LeftIdentDragHandle_Material:before,
+.dx-acc-r .dxRichEdit_LeftTabDragHandle_Material:before,
+.dx-acc-r .dxRichEdit_QuickSearchCloseButton_Material:before,
+.dx-acc-r .dxRichEdit_QuickSearchCollapseButton_Material:before,
+.dx-acc-r .dxRichEdit_QuickSearchNextButton_Material:before,
+.dx-acc-r .dxRichEdit_QuickSearchPrevButton_Material:before,
+.dx-acc-r .dxRichEdit_RightIdentDragHandle_Material:before,
+.dx-acc-r .dxRichEdit_RightTabDragHandle_Material:before
+
+{
+    content: url('sprite.svg');
+
+}
+.dx-acc-r .dxRichEdit_CenterTabDragHandle_Material:before
+
+{
+    left: -24px;
+    top: -14px;
+
+}
+.dx-acc-r .dxRichEdit_ColumnSeparatorDragHandle_Material:before
+
+{
+    left: -26px;
+    top: -21px;
+
+}
+.dx-acc-r .dxRichEdit_DecimalTabDragHandle_Material:before
+
+{
+    left: -33px;
+    top: -14px;
+
+}
+.dx-acc-r .dxRichEdit_FirstLineIdentDragHandle_Material:before
+
+{
+    left: -10px;
+    top: -34px;
+
+}
+.dx-acc-r .dxRichEdit_LeftIdentDragHandle_Material:before
+
+{
+    left: 0px;
+    top: -34px;
+
+}
+.dx-acc-r .dxRichEdit_LeftTabDragHandle_Material:before
+
+{
+    left: -34px;
+    top: -7px;
+
+}
+.dx-acc-r .dxRichEdit_QuickSearchCloseButton_Material:before
+
+{
+    left: 0px;
+    top: 0px;
+
+}
+.dx-acc-r .dxRichEdit_QuickSearchCollapseButton_Material:before
+
+{
+    left: 0px;
+    top: -21px;
+
+}
+.dx-acc-r .dxRichEdit_QuickSearchNextButton_Material:before
+
+{
+    left: -13px;
+    top: -21px;
+
+}
+.dx-acc-r .dxRichEdit_QuickSearchPrevButton_Material:before
+
+{
+    left: -21px;
+    top: 0px;
+
+}
+.dx-acc-r .dxRichEdit_RightIdentDragHandle_Material:before
+
+{
+    left: -20px;
+    top: -34px;
+
+}
+.dx-acc-r .dxRichEdit_RightTabDragHandle_Material:before
+
+{
+    left: -34px;
+    top: 0px;
+
+}
+

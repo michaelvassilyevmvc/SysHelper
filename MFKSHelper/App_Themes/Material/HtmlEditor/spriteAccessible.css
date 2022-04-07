@@ -1,0 +1,206 @@
+.dx-acc-r .dxeListBoxItemSelected_Material .dxHtmlEditor_heEnumIcon_Material:before,
+.dx-acc-r .dxeListBoxItemSelected_Material .dxHtmlEditor_heEventIcon_Material:before,
+.dx-acc-r .dxeListBoxItemSelected_Material .dxHtmlEditor_heFieldIcon_Material:before,
+.dx-acc-r .dxeListBoxItemSelected_Material .dxHtmlEditor_heXmlItemIcon_Material:before,
+.dx-acc-r .dxHtmlEditor_heConstrainProportionsBottom_Material:before,
+.dx-acc-r .dxHtmlEditor_heConstrainProportionsBottomRtl_Material:before,
+.dx-acc-r .dxHtmlEditor_heConstrainProportionsMiddleOff_Material:before,
+.dx-acc-r .dxHtmlEditor_heConstrainProportionsMiddleOffRtl_Material:before,
+.dx-acc-r .dxHtmlEditor_heConstrainProportionsMiddleOn_Material:before,
+.dx-acc-r .dxHtmlEditor_heConstrainProportionsMiddleOnRtl_Material:before,
+.dx-acc-r .dxHtmlEditor_heConstrainProportionsTop_Material:before,
+.dx-acc-r .dxHtmlEditor_heConstrainProportionsTopRtl_Material:before,
+.dx-acc-r .dxHtmlEditor_heEnumIcon_Material:before,
+.dx-acc-r .dxHtmlEditor_heErrorFrameCloseButton_Material:before,
+.dx-acc-r .dxHtmlEditor_heEventIcon_Material:before,
+.dx-acc-r .dxHtmlEditor_heFieldIcon_Material:before,
+.dx-acc-r .dxHtmlEditor_heReset_Material:before,
+.dx-acc-r .dxHtmlEditor_heSizeGrip_Material:before,
+.dx-acc-r .dxHtmlEditor_heSizeGripRtl_Material:before,
+.dx-acc-r .dxHtmlEditor_heTagInspectorChangeButton_Material:before,
+.dx-acc-r .dxHtmlEditor_heTagInspectorRemoveButton_Material:before,
+.dx-acc-r .dxHtmlEditor_heTagInspectorSeparator_Material:before,
+.dx-acc-r .dxHtmlEditor_heToolbarPopOut_Material:before,
+.dx-acc-r .dxHtmlEditor_heXmlItemIcon_Material:before,
+.dx-acc-r .dxm-hovered .dxHtmlEditor_heToolbarPopOut_Material:before
+
+{
+    content: url('sprite.svg');
+
+}
+.dx-acc-r .dxeListBoxItemSelected_Material .dxHtmlEditor_heEnumIcon_Material:before
+
+{
+    left: -85px;
+    top: 0px;
+
+}
+.dx-acc-r .dxeListBoxItemSelected_Material .dxHtmlEditor_heEventIcon_Material:before
+
+{
+    left: -17px;
+    top: 0px;
+
+}
+.dx-acc-r .dxeListBoxItemSelected_Material .dxHtmlEditor_heFieldIcon_Material:before
+
+{
+    left: 0px;
+    top: 0px;
+
+}
+.dx-acc-r .dxeListBoxItemSelected_Material .dxHtmlEditor_heXmlItemIcon_Material:before
+
+{
+    left: -68px;
+    top: 0px;
+
+}
+.dx-acc-r .dxHtmlEditor_heConstrainProportionsBottom_Material:before
+
+{
+    left: -290px;
+    top: -10px;
+
+}
+.dx-acc-r .dxHtmlEditor_heConstrainProportionsBottomRtl_Material:before
+
+{
+    left: -272px;
+    top: -10px;
+
+}
+.dx-acc-r .dxHtmlEditor_heConstrainProportionsMiddleOff_Material:before
+
+{
+    left: -217px;
+    top: 0px;
+
+}
+.dx-acc-r .dxHtmlEditor_heConstrainProportionsMiddleOffRtl_Material:before
+
+{
+    left: -241px;
+    top: 0px;
+
+}
+.dx-acc-r .dxHtmlEditor_heConstrainProportionsMiddleOn_Material:before
+
+{
+    left: -225px;
+    top: 0px;
+
+}
+.dx-acc-r .dxHtmlEditor_heConstrainProportionsMiddleOnRtl_Material:before
+
+{
+    left: -233px;
+    top: 0px;
+
+}
+.dx-acc-r .dxHtmlEditor_heConstrainProportionsTop_Material:before
+
+{
+    left: -286px;
+    top: 0px;
+
+}
+.dx-acc-r .dxHtmlEditor_heConstrainProportionsTopRtl_Material:before
+
+{
+    left: -281px;
+    top: -10px;
+
+}
+.dx-acc-r .dxHtmlEditor_heEnumIcon_Material:before
+
+{
+    left: -136px;
+    top: 0px;
+
+}
+.dx-acc-r .dxHtmlEditor_heErrorFrameCloseButton_Material:before
+
+{
+    left: -249px;
+    top: 0px;
+
+}
+.dx-acc-r .dxHtmlEditor_heEventIcon_Material:before
+
+{
+    left: -51px;
+    top: 0px;
+
+}
+.dx-acc-r .dxHtmlEditor_heFieldIcon_Material:before
+
+{
+    left: -102px;
+    top: 0px;
+
+}
+.dx-acc-r .dxHtmlEditor_heReset_Material:before
+
+{
+    left: -153px;
+    top: 0px;
+
+}
+.dx-acc-r .dxHtmlEditor_heSizeGrip_Material:before
+
+{
+    left: -187px;
+    top: 0px;
+
+}
+.dx-acc-r .dxHtmlEditor_heSizeGripRtl_Material:before
+
+{
+    left: -202px;
+    top: 0px;
+
+}
+.dx-acc-r .dxHtmlEditor_heTagInspectorChangeButton_Material:before
+
+{
+    left: -34px;
+    top: 0px;
+
+}
+.dx-acc-r .dxHtmlEditor_heTagInspectorRemoveButton_Material:before
+
+{
+    left: -170px;
+    top: 0px;
+
+}
+.dx-acc-r .dxHtmlEditor_heTagInspectorSeparator_Material:before
+
+{
+    left: -280px;
+    top: 0px;
+
+}
+.dx-acc-r .dxHtmlEditor_heToolbarPopOut_Material:before
+
+{
+    left: -260px;
+    top: 0px;
+
+}
+.dx-acc-r .dxHtmlEditor_heXmlItemIcon_Material:before
+
+{
+    left: -119px;
+    top: 0px;
+
+}
+.dx-acc-r .dxm-hovered .dxHtmlEditor_heToolbarPopOut_Material:before
+
+{
+    left: -270px;
+    top: 0px;
+
+}
+
