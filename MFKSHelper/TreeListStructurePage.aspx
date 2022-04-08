@@ -286,10 +286,10 @@
                                               <Toolbars>
                     <dx:TreeListToolbar>
                         <Items>
-                            <dx:TreeListToolbarItem Command="Refresh" Text="%%Обновить%%"></dx:TreeListToolbarItem>
-                            <dx:TreeListToolbarItem Command="FullExpand" Text="%%Раскрыть все%%">
+                            <dx:TreeListToolbarItem Command="Refresh" Text="Обновить"></dx:TreeListToolbarItem>
+                            <dx:TreeListToolbarItem Command="FullExpand" Text="Раскрыть все">
                             </dx:TreeListToolbarItem>
-                            <dx:TreeListToolbarItem Command="FullCollapse" Text="%%Свернуть все%%">
+                            <dx:TreeListToolbarItem Command="FullCollapse" Text="Свернуть все">
                             </dx:TreeListToolbarItem>
                             <dx:TreeListToolbarItem Command="Custom" Name="btSave" Text="Сохранить структуру"></dx:TreeListToolbarItem>
                             <dx:TreeListToolbarItem Command="Custom" Name="btCancel" Text="Восстановить структуру"></dx:TreeListToolbarItem>
@@ -297,12 +297,12 @@
                     </dx:TreeListToolbar>
                 </Toolbars>
                                             <SettingsText
-                                                LoadingPanelText="%%Загрузка%%&hellip;"
-                                                CommandDelete="%%Удалить%%"
-                                                CommandEdit="%%Редактировать%%"
-                                                CommandUpdate="%%Изменить%%"
-                                                CommandNew="%%Новый%%"
-                                                ConfirmDelete="%%Подтвердить удаление%%?" />
+                                                LoadingPanelText="Загрузка&hellip;"
+                                                CommandDelete="Удалить"
+                                                CommandEdit="Редактировать"
+                                                CommandUpdate="Изменить"
+                                                CommandNew="Новый"
+                                                ConfirmDelete="Подтвердить удаление?" />
                                             <SettingsBehavior AllowFocusedNode="true" AllowDragDrop="true" />
                                             <SettingsEditing AllowNodeDragDrop="true" ConfirmDelete="true" EditFormColumnCount="1" Mode="PopupEditForm"></SettingsEditing>
                                             <SettingsDataSecurity AllowInsert="true" AllowEdit="true" AllowDelete="true" />
@@ -384,26 +384,26 @@
                                                 </dx:TreeListTextColumn>
                                                 <dx:TreeListCommandColumn ButtonType="Image"
                                                     ShowNewButtonInHeader="False" VisibleIndex="0" ClearFilterButton-Visible="true" Width="25" Visible="false">
-                                                    <NewButton Text="%%Добавить%%" Visible="False">
-                                                        <Image AlternateText="%%Добавить%%" IconID="actions_add_32x32gray">
+                                                    <NewButton Text="Добавить" Visible="False">
+                                                        <Image AlternateText="Добавить" IconID="actions_add_32x32gray">
                                                         </Image>
                                                     </NewButton>
-                                                    <UpdateButton Text="%%Сохранить%%">
-                                                        <Image AlternateText="%%Сохранить%%" IconID="actions_apply_32x32gray">
+                                                    <UpdateButton Text="Сохранить">
+                                                        <Image AlternateText="Сохранить" IconID="actions_apply_32x32gray">
                                                         </Image>
                                                     </UpdateButton>
-                                                    <CancelButton Text="%%Отмена%%">
-                                                        <Image AlternateText="%%Отмена%%" IconID="actions_cancel_32x32gray">
+                                                    <CancelButton Text="Отмена">
+                                                        <Image AlternateText="Отмена" IconID="actions_cancel_32x32gray">
                                                         </Image>
                                                     </CancelButton>
-                                                    <DeleteButton Text="%%Удалить%%" Visible="False">
-                                                        <Image AlternateText="%%Удалить%%" IconID="edit_delete_32x32gray">
+                                                    <DeleteButton Text="Удалить" Visible="False">
+                                                        <Image AlternateText="Удалить" IconID="edit_delete_32x32gray">
                                                         </Image>
                                                     </DeleteButton>
                                                     <CellStyle Wrap="True">
                                                     </CellStyle>
-                                                    <ClearFilterButton Text="%%Очистить фильтр%%">
-                                                        <Image AlternateText="%%Очистить фильтр%%" IconID="filter_ignoremasterfilter_32x32office2013">
+                                                    <ClearFilterButton Text="Очистить фильтр">
+                                                        <Image AlternateText="Очистить фильтр" IconID="filter_ignoremasterfilter_32x32office2013">
                                                         </Image>
                                                     </ClearFilterButton>
                                                 </dx:TreeListCommandColumn>
@@ -411,20 +411,20 @@
                                               <Toolbars>
                                                 <dx:TreeListToolbar>
                                                     <Items>
-                                                        <dx:TreeListToolbarItem Command="Refresh" Text="%%Обновить%%"></dx:TreeListToolbarItem>
-                                                        <dx:TreeListToolbarItem Command="FullExpand" Text="%%Раскрыть все%%"></dx:TreeListToolbarItem>
-                                                        <dx:TreeListToolbarItem Command="FullCollapse" Text="%%Свернуть все%%"></dx:TreeListToolbarItem>
+                                                        <dx:TreeListToolbarItem Command="Refresh" Text="Обновить"></dx:TreeListToolbarItem>
+                                                        <dx:TreeListToolbarItem Command="FullExpand" Text="Раскрыть все"></dx:TreeListToolbarItem>
+                                                        <dx:TreeListToolbarItem Command="FullCollapse" Text="Свернуть все"></dx:TreeListToolbarItem>
                                                         <dx:TreeListToolbarItem Command="Custom" Name="btImport" Text="Импорт данных"></dx:TreeListToolbarItem>
                                                     </Items>
                                                 </dx:TreeListToolbar>
                                             </Toolbars>
                                             <SettingsText
-                                                LoadingPanelText="%%Загрузка%%&hellip;"
-                                                CommandDelete="%%Удалить%%"
-                                                CommandEdit="%%Редактировать%%"
-                                                CommandUpdate="%%Изменить%%"
-                                                CommandNew="%%Новый%%"
-                                                ConfirmDelete="%%Подтвердить удаление%%?" />
+                                                LoadingPanelText="Загрузка&hellip;"
+                                                CommandDelete="Удалить"
+                                                CommandEdit="Редактировать"
+                                                CommandUpdate="Изменить"
+                                                CommandNew="Новый"
+                                                ConfirmDelete="Подтвердить удаление?" />
                                             <SettingsBehavior AllowFocusedNode="true" AllowDragDrop="true" />
                                             <SettingsEditing AllowNodeDragDrop="true" ConfirmDelete="true" EditFormColumnCount="1" Mode="PopupEditForm"></SettingsEditing>
                                             <SettingsPopupEditForm VerticalAlign="WindowCenter" HorizontalAlign="WindowCenter" AllowResize="true" MinWidth="600px" Modal="true"></SettingsPopupEditForm>
@@ -499,20 +499,20 @@
                             </Styles>
                             <SettingsDataSecurity AllowDelete="true" AllowEdit="true" AllowInsert="true" />
                             <SettingsCommandButton RenderMode="Image">
-                                <NewButton Text="%%Добавить%%">
-                                    <Image AlternateText="%%Добавить%%" IconID="actions_add_32x32gray">
+                                <NewButton Text="Добавить">
+                                    <Image AlternateText="Добавить" IconID="actions_add_32x32gray">
                                     </Image>
                                 </NewButton>
-                                <UpdateButton Text="%%Сохранить%%">
-                                    <Image AlternateText="%%Сохранить%%" IconID="actions_apply_32x32gray">
+                                <UpdateButton Text="Сохранить">
+                                    <Image AlternateText="Сохранить" IconID="actions_apply_32x32gray">
                                     </Image>
                                 </UpdateButton>
-                                <CancelButton Text="%%Отмена%%">
-                                    <Image AlternateText="%%Отмена%%" IconID="actions_cancel_32x32gray">
+                                <CancelButton Text="Отмена">
+                                    <Image AlternateText="Отмена" IconID="actions_cancel_32x32gray">
                                     </Image>
                                 </CancelButton>
-                                <EditButton Text="%%Редактировать%%">
-                                    <Image AlternateText="%%Редактировать%%" Height="32px" Width="32px">
+                                <EditButton Text="Редактировать">
+                                    <Image AlternateText="Редактировать" Height="32px" Width="32px">
                                     </Image>
                                     <Styles>
                                         <Style>
@@ -523,12 +523,12 @@
                                         </Style>
                                     </Styles>
                                 </EditButton>
-                                <DeleteButton Text="%%Удалить%%">
-                                    <Image AlternateText="%%Удалить%%" IconID="edit_delete_32x32gray">
+                                <DeleteButton Text="Удалить">
+                                    <Image AlternateText="Удалить" IconID="edit_delete_32x32gray">
                                     </Image>
                                 </DeleteButton>
-                                <ClearFilterButton Text="%%Очистить фильтр%%">
-                                    <Image AlternateText="%%Очистить фильтр%%" IconID="filter_ignoremasterfilter_32x32office2013">
+                                <ClearFilterButton Text="Очистить фильтр">
+                                    <Image AlternateText="Очистить фильтр" IconID="filter_ignoremasterfilter_32x32office2013">
                                     </Image>
                                 </ClearFilterButton>
                             </SettingsCommandButton>

@@ -5,23 +5,23 @@
 	<SettingsPager CurrentPageNumberFormat="{0}">
 		<PageSizeItemSettings ShowPopupShadow="true" />
 	</SettingsPager>
-	<SettingsText EmptyCard="%%Нет данных для отображения%%" 
-		ConfirmDelete="%%Вы действительно хотите удалить эту запись?%%" />
+	<SettingsText EmptyCard="Нет данных для отображения" 
+		ConfirmDelete="Вы действительно хотите удалить эту запись?" />
 	<SettingsCommandButton RenderMode="Image">
-		<NewButton Text="%%Добавить%%">
-			<Image AlternateText="%%Добавить%%" IconID="actions_add_32x32gray">
+		<NewButton Text="Добавить">
+			<Image AlternateText="Добавить" IconID="actions_add_32x32gray">
 			</Image>
 		</NewButton>
-		<UpdateButton Text="%%Сохранить%%">
-			<Image AlternateText="%%Сохранить%%" IconID="actions_apply_32x32gray">
+		<UpdateButton Text="Сохранить">
+			<Image AlternateText="Сохранить" IconID="actions_apply_32x32gray">
 			</Image>
 		</UpdateButton>
-		<CancelButton Text="%%Отмена%%">
-			<Image AlternateText="%%Отмена%%" IconID="actions_cancel_32x32gray">
+		<CancelButton Text="Отмена">
+			<Image AlternateText="Отмена" IconID="actions_cancel_32x32gray">
 			</Image>
 		</CancelButton>
-		<EditButton Text="%%Редактировать%%">
-			<Image AlternateText="%%Редактировать%%" Url="Web/1x1.gif" Height="32px" Width="32px">
+		<EditButton Text="Редактировать">
+			<Image AlternateText="Редактировать" Url="Web/1x1.gif" Height="32px" Width="32px">
 			</Image>
 			<Styles>
 				<Style>
@@ -32,8 +32,8 @@
 				</Style>
 			</Styles>
 		</EditButton>
-		<DeleteButton Text="%%Удалить%%">
-			<Image AlternateText="%%Удалить%%" IconID="edit_delete_32x32gray">
+		<DeleteButton Text="Удалить">
+			<Image AlternateText="Удалить" IconID="edit_delete_32x32gray">
 			</Image>
 		</DeleteButton>
 	</SettingsCommandButton>

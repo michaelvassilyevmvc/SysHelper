@@ -62,14 +62,14 @@
                                     ValueField="ID" 
                                     TextField="Name" 
                                     OnDataBinding="cbKindOfSportList_DataBinding"
-                                    NullText="%%Выбрать%%...">
-                                    <ValidationSettings Display="Dynamic" ErrorText="%%Неверное значение%%"
+                                    NullText="Выбрать...">
+                                    <ValidationSettings Display="Dynamic" ErrorText="Неверное значение"
                                         ErrorTextPosition="Right" ValidationGroup="vgInfo">
-                                        <RequiredField IsRequired="True" ErrorText="%%Заполните обязательное поле%%" />
+                                        <RequiredField IsRequired="True" ErrorText="Заполните обязательное поле" />
                                     </ValidationSettings>
                                 </dx:ASPxComboBox>
                             </EditItemTemplate>
-                            <EditFormSettings Visible="True" CaptionLocation="Near" Caption="%%Вид спорта%%"></EditFormSettings>
+                            <EditFormSettings Visible="True" CaptionLocation="Near" Caption="Вид спорта"></EditFormSettings>
                         </dx:GridViewDataComboBoxColumn>
 
                         <dx:GridViewDataTextColumn
@@ -91,7 +91,7 @@
                     <Toolbars>
                         <dx:GridViewToolbar Name="btAdd">
                             <Items>
-                                <dx:GridViewToolbarItem Command="New" Name="tbbtNew" Text="%%Добавить%%">
+                                <dx:GridViewToolbarItem Command="New" Name="tbbtNew" Text="Добавить">
                                 </dx:GridViewToolbarItem>
                             </Items>
                         </dx:GridViewToolbar>

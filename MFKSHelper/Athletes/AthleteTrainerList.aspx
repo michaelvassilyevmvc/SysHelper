@@ -21,7 +21,7 @@
 						DataSourceID="dsAthleteTrainerList" 
 						AutoGenerateColumns="False" 
 						KeyFieldName="ID" 
-						Caption="%%Тренеры%%" 
+						Caption="Тренеры" 
 						Width="100%"
 						OnAfterPerformCallback="gvAthletes_rank_and_trainers_AfterPerformCallback" 
 						OnDetailRowGetButtonVisibility="gvAthletes_trainers_list_DetailRowGetButtonVisibility" 
@@ -80,7 +80,7 @@
 							</dx:GridViewDataComboBoxColumn>--%>
 
 							<dx:GridViewDataTextColumn 
-								Caption="%%Тренер%%" 
+								Caption="Тренер" 
 								FieldName="FIO" 
 								ReadOnly="True" 
 								ShowInCustomizationForm="True" 
@@ -104,7 +104,7 @@
 													ErrorDisplayMode="ImageWithText"
 													ErrorTextPosition="Bottom" 
 													ValidateOnLeave="False">
-													<RequiredField ErrorText="%%Заполните обязательное поле%%" IsRequired="true" />
+													<RequiredField ErrorText="Заполните обязательное поле" IsRequired="true" />
 												</ValidationSettings>
 
 												<DropDownWindowTemplate>
@@ -121,32 +121,32 @@
 															Init="SportInfo.gvTrainerFIO_Init('ddeTrainerFIO')"
 															FocusedRowChanged="SportInfo.gvTrainerFIO_FocusedRowChanged" />
 														<Columns>
-															<dx:GridViewDataTextColumn FieldName="FirmID" Caption="%%Организация%%" VisibleIndex="2" GroupIndex="0">
+															<dx:GridViewDataTextColumn FieldName="FirmID" Caption="Организация" VisibleIndex="2" GroupIndex="0">
 															</dx:GridViewDataTextColumn>
-															<dx:GridViewDataTextColumn FieldName="FIO" Caption="%%Ф.И.О.%%" VisibleIndex="1" SortIndex="2" SortOrder="Ascending"></dx:GridViewDataTextColumn>
+															<dx:GridViewDataTextColumn FieldName="FIO" Caption="Ф.И.О." VisibleIndex="1" SortIndex="2" SortOrder="Ascending"></dx:GridViewDataTextColumn>
 														</Columns>
 														<Toolbars>
 															<dx:GridViewToolbar>
 																<Items>
-																	<dx:GridViewToolbarItem Command="Refresh" Text="%%Обновить%%"></dx:GridViewToolbarItem>
-																	<dx:GridViewToolbarItem Command="FullExpand" Text="%%Раскрыть все%%"></dx:GridViewToolbarItem>
-																	<dx:GridViewToolbarItem Command="FullCollapse" Text="%%Свернуть все%%"></dx:GridViewToolbarItem>
+																	<dx:GridViewToolbarItem Command="Refresh" Text="Обновить"></dx:GridViewToolbarItem>
+																	<dx:GridViewToolbarItem Command="FullExpand" Text="Раскрыть все"></dx:GridViewToolbarItem>
+																	<dx:GridViewToolbarItem Command="FullCollapse" Text="Свернуть все"></dx:GridViewToolbarItem>
 																</Items>
 															</dx:GridViewToolbar>
 														</Toolbars>
 														<Settings AutoFilterCondition="Contains" ShowFilterRow="true" VerticalScrollableHeight="300" VerticalScrollBarMode="Auto" />
 														<SettingsPager Position="Bottom" PageSize="20" Mode="ShowPager" >
 															<FirstPageButton Visible="true">
-																<Image ToolTip="%%Первая%%" AlternateText="«"></Image>
+																<Image ToolTip="Первая" AlternateText="«"></Image>
 															</FirstPageButton>
 															<LastPageButton Visible="true">
-																<Image ToolTip="%%Последняя%%" AlternateText="»"></Image>
+																<Image ToolTip="Последняя" AlternateText="»"></Image>
 															</LastPageButton>
 															<PrevPageButton>
-																<Image ToolTip="%%Предыдущая%%" AlternateText="&lt;"></Image>
+																<Image ToolTip="Предыдущая" AlternateText="&lt;"></Image>
 															</PrevPageButton>
 															<NextPageButton>
-																<Image ToolTip="%%Следующая%%" AlternateText="&gt;"></Image>
+																<Image ToolTip="Следующая" AlternateText="&gt;"></Image>
 															</NextPageButton>
 															<PageSizeItemSettings Visible="true" />
 														</SettingsPager>
@@ -165,7 +165,7 @@
 								ShowInCustomizationForm="True"
 								Visible="False"
 								VisibleIndex="8"
-								Caption="%%Начало%%">
+								Caption="Начало">
 								<PropertiesDateEdit 
 									AllowMouseWheel="false" 
 									Width="170" 
@@ -176,16 +176,16 @@
 									<CalendarProperties 
 										ShowWeekNumbers="false" 
 										ShowClearButton="True" 
-										TodayButtonText="%%Сегодня%%" 
-										ClearButtonText="%%Очистить%%">
+										TodayButtonText="Сегодня" 
+										ClearButtonText="Очистить">
 										
-										<FastNavProperties OkButtonText="OK" CancelButtonText="%%Отмена%%" />
+										<FastNavProperties OkButtonText="OK" CancelButtonText="Отмена" />
 									</CalendarProperties>
 									<ValidationSettings 
 										Display="Dynamic" 
 										ErrorDisplayMode="ImageWithText" 
 										ErrorTextPosition="Bottom">
-										<RequiredField ErrorText="%%Заполните обязательное поле%%" IsRequired="True" />
+										<RequiredField ErrorText="Заполните обязательное поле" IsRequired="True" />
 									</ValidationSettings>
 								</PropertiesDateEdit>
 								<EditFormSettings CaptionLocation="Top" Visible="True" />
@@ -196,12 +196,12 @@
 								ShowInCustomizationForm="True" 
 								Visible="False"
 								VisibleIndex="9" 
-								Caption="%%Завершение%%">
+								Caption="Завершение">
 								<PropertiesDateEdit 
 									AllowMouseWheel="false"
 									Width="170"
-									NullDisplayText="%%настоящее время%%"
-									NullText="%%настоящее время%%" 
+									NullDisplayText="настоящее время"
+									NullText="настоящее время" 
 									NullTextDisplayMode="UnfocusedAndFocused" 
 									ClientInstanceName="gvAthletes_trainers_list_End_date" 
 									ShowOutOfRangeWarning="False" 									
@@ -210,10 +210,10 @@
 									<CalendarProperties 
 										ShowWeekNumbers="false" 
 										ShowClearButton="True"
-										TodayButtonText="%%Сегодня%%"
-										ClearButtonText="%%Очистить%%"
+										TodayButtonText="Сегодня"
+										ClearButtonText="Очистить"
 										>
-										<FastNavProperties OkButtonText="OK" CancelButtonText="%%Отмена%%" />
+										<FastNavProperties OkButtonText="OK" CancelButtonText="Отмена" />
 									</CalendarProperties>
 									<ValidationSettings Display="Dynamic" ErrorDisplayMode="ImageWithText" ErrorTextPosition="Bottom">
 									</ValidationSettings>
@@ -222,7 +222,7 @@
 							</dx:GridViewDataDateColumn>
 
 							<%--<dx:GridViewDataTextColumn 
-								Caption="%%Период%%" 
+								Caption="Период" 
 								FieldName="Period" 
 								ShowInCustomizationForm="True"
 								VisibleIndex="5" 
@@ -251,13 +251,13 @@
 										Display="Dynamic" 
 										ErrorDisplayMode="ImageWithText" 
 										ErrorTextPosition="Bottom">
-										<RequiredField ErrorText="%%Выберите тренера%%" IsRequired="True" />
+										<RequiredField ErrorText="Выберите тренера" IsRequired="True" />
 									</ValidationSettings>
 								</PropertiesComboBox>
 								<EditFormSettings 
 									CaptionLocation="Top" 
 									Visible="True"
-									Caption="%%Тренер%%" />
+									Caption="Тренер" />
 							</dx:GridViewDataComboBoxColumn>--%>
 
 							
@@ -265,7 +265,7 @@
 							<dx:GridViewDataComboBoxColumn 
 								FieldName="KindOfSportID" 
 								Name="KindOfSportID" 
-								Caption="%%Вид спорта%%" 
+								Caption="Вид спорта" 
 								VisibleIndex="10" 
 								GroupIndex="0">
 								<PropertiesComboBox 
@@ -276,7 +276,7 @@
 										Display="Dynamic" 
 										ErrorDisplayMode="ImageWithText" 
 										ErrorTextPosition="Bottom">
-										<RequiredField ErrorText="%%Выберите вид спорта%%" IsRequired="True" />
+										<RequiredField ErrorText="Выберите вид спорта" IsRequired="True" />
 									</ValidationSettings>
 								</PropertiesComboBox>
 								<EditFormSettings CaptionLocation="Top"   />
@@ -286,15 +286,15 @@
 						<Toolbars>
 							<dx:GridViewToolbar>
 								<Items>
-									<dx:GridViewToolbarItem Command="New" Name="btAdd" Text="%%Добавить%%"></dx:GridViewToolbarItem>
-									<dx:GridViewToolbarItem Command="FullExpand" Text="%%Раскрыть все%%"></dx:GridViewToolbarItem>
-									<dx:GridViewToolbarItem Command="FullCollapse" Text="%%Свернуть все%%"></dx:GridViewToolbarItem>
+									<dx:GridViewToolbarItem Command="New" Name="btAdd" Text="Добавить"></dx:GridViewToolbarItem>
+									<dx:GridViewToolbarItem Command="FullExpand" Text="Раскрыть все"></dx:GridViewToolbarItem>
+									<dx:GridViewToolbarItem Command="FullCollapse" Text="Свернуть все"></dx:GridViewToolbarItem>
 								</Items>
 							</dx:GridViewToolbar>
 						</Toolbars>
 						<Templates>
 							<DetailRow>
-								<dx:ASPxLabel runat="server" Text="%%Организация%%: " Font-Bold="true" />
+								<dx:ASPxLabel runat="server" Text="Организация: " Font-Bold="true" />
 								<dx:ASPxLabel runat="server" ID="lbTrainersFirmName" Text='<%# Eval("Firm_Name") %>' />
 							</DetailRow>
 						</Templates>

@@ -162,7 +162,7 @@
 	</div>
 
 	<div id="customModalGroupSelect" class="modal trainer-modal">
-				<label class="custom-label">%%%%Перевести в группу%%%%</label>
+				<label class="custom-label">Перевести в группу</label>
 				<section class="grid-center mb-10">
                     <dx:ASPxGridView
                         ID="gvGroupSelect"
@@ -205,41 +205,41 @@
                                 Visible="False">
                                 <EditFormSettings Visible="False" />
                             </dx:GridViewDataTextColumn>
-                            <dx:GridViewDataTextColumn FieldName="Name" ShowInCustomizationForm="True" VisibleIndex="2" Caption="%%Название%%">
+                            <dx:GridViewDataTextColumn FieldName="Name" ShowInCustomizationForm="True" VisibleIndex="2" Caption="Название">
                             </dx:GridViewDataTextColumn>
-                            <dx:GridViewDataComboBoxColumn FieldName="Type" ShowInCustomizationForm="True" VisibleIndex="4" Caption="%%Тип группы%%">
+                            <dx:GridViewDataComboBoxColumn FieldName="Type" ShowInCustomizationForm="True" VisibleIndex="4" Caption="Тип группы">
                                 <PropertiesComboBox ValueType="System.Byte" Width="100%">
                                     <Items>
-                                        <dx:ListEditItem Selected="True" Text="%%Начальная подготовка%%" Value="0" />
-                                        <dx:ListEditItem Text="%%Спортивно-оздоровительная%%" Value="1" />
-                                        <dx:ListEditItem Text="%%Учебно-тренировочная%%" Value="2" />
-                                        <dx:ListEditItem Text="%%Спортивного совершенствования%%" Value="3" />
-                                        <dx:ListEditItem Text="%%Высшего спортивного мастерства%%" Value="4" />
+                                        <dx:ListEditItem Selected="True" Text="Начальная подготовка" Value="0" />
+                                        <dx:ListEditItem Text="Спортивно-оздоровительная" Value="1" />
+                                        <dx:ListEditItem Text="Учебно-тренировочная" Value="2" />
+                                        <dx:ListEditItem Text="Спортивного совершенствования" Value="3" />
+                                        <dx:ListEditItem Text="Высшего спортивного мастерства" Value="4" />
                                     </Items>
                                 </PropertiesComboBox>
                                 <Settings AllowAutoFilter="True" />
                             </dx:GridViewDataComboBoxColumn>
-                            <dx:GridViewDataComboBoxColumn FieldName="Period" ShowInCustomizationForm="True" VisibleIndex="3" ReadOnly="True" Caption="%%Период обучения%%">
+                            <dx:GridViewDataComboBoxColumn FieldName="Period" ShowInCustomizationForm="True" VisibleIndex="3" ReadOnly="True" Caption="Период обучения">
                                 <PropertiesComboBox Width="100%">
                                     <Items>
-                                        <dx:ListEditItem Selected="True" Text="%%Весь период%%" Value="0" />
-                                        <dx:ListEditItem Text="%%Первый год обучения%%" Value="1" />
-                                        <dx:ListEditItem Text="%%Второй год обучения%%" Value="2" />
-                                        <dx:ListEditItem Text="%%Третий год обучения%%" Value="3" />
-                                        <dx:ListEditItem Text="%%Свыше одного года обучения%%" Value="-1" />
-                                        <dx:ListEditItem Text="%%Свыше двух лет обучения%%" Value="-2" />
-                                        <dx:ListEditItem Text="%%Свыше трёх лет обучения%%" Value="-3" />
+                                        <dx:ListEditItem Selected="True" Text="Весь период" Value="0" />
+                                        <dx:ListEditItem Text="Первый год обучения" Value="1" />
+                                        <dx:ListEditItem Text="Второй год обучения" Value="2" />
+                                        <dx:ListEditItem Text="Третий год обучения" Value="3" />
+                                        <dx:ListEditItem Text="Свыше одного года обучения" Value="-1" />
+                                        <dx:ListEditItem Text="Свыше двух лет обучения" Value="-2" />
+                                        <dx:ListEditItem Text="Свыше трёх лет обучения" Value="-3" />
                                     </Items>
                                 </PropertiesComboBox>
                                 <Settings AllowAutoFilter="True" />
                             </dx:GridViewDataComboBoxColumn>
-                            <dx:GridViewDataTextColumn Caption="%%ФИО тренера%%" FieldName="TrainerFIO" ShowInCustomizationForm="True" VisibleIndex="4">
+                            <dx:GridViewDataTextColumn Caption="ФИО тренера" FieldName="TrainerFIO" ShowInCustomizationForm="True" VisibleIndex="4">
                             </dx:GridViewDataTextColumn>
                         </Columns>
                         <Toolbars>
                             <dx:GridViewToolbar>
                                 <Items>
-                                    <dx:GridViewToolbarItem Command="Refresh" Text="%%Обновить%%"></dx:GridViewToolbarItem>
+                                    <dx:GridViewToolbarItem Command="Refresh" Text="Обновить"></dx:GridViewToolbarItem>
                                 </Items>
                             </dx:GridViewToolbar>
                         </Toolbars>
@@ -256,12 +256,12 @@
 						ClientInstanceName="btGroupSelect" 
 						runat="server" 
 						ClientEnabled="False" 
-						Text="%%Выбрать%%" 
+						Text="Выбрать" 
 						AutoPostBack="False">
 						<DisabledStyle CssClass="btn-default"></DisabledStyle>
 					<ClientSideEvents Click="LearningGroupsComposition.btGroupSelect_Click" />
 				</dx:ASPxButton>
-					<a href="#close" rel="modal:close" class="btn btn-default">%%Отмена%%</a>
+					<a href="#close" rel="modal:close" class="btn btn-default">Отмена</a>
 				</section>
 			</div>
 

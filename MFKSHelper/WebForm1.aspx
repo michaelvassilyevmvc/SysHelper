@@ -58,20 +58,20 @@
                                 FieldName="FIO"
                                 ShowInCustomizationForm="True"
                                 VisibleIndex="5"
-                                Caption="%%ФИО%%">
+                                Caption="ФИО">
                             </dx:GridViewDataTextColumn>
                             <dx:GridViewDataDateColumn
                                 FieldName="Date_of_firm_entered"
                                 ShowInCustomizationForm="True"
                                 VisibleIndex="6"
-                                Caption="%%Дата начала преподавания в организации%%">
+                                Caption="Дата начала преподавания в организации">
                                 <PropertiesDateEdit AllowMouseWheel="false" Width="170" UseMaskBehavior="True">
                                     <CalendarProperties
                                         ShowWeekNumbers="false"
                                         ShowClearButton="True"
-                                        TodayButtonText="%%Сегодня%%"
-                                        ClearButtonText="%%Очистить%%">
-                                        <FastNavProperties OkButtonText="OK" CancelButtonText="%%Отмена%%" />
+                                        TodayButtonText="Сегодня"
+                                        ClearButtonText="Очистить">
+                                        <FastNavProperties OkButtonText="OK" CancelButtonText="Отмена" />
                                     </CalendarProperties>
                                 </PropertiesDateEdit>
                                 <CellStyle HorizontalAlign="Center"></CellStyle>
@@ -80,20 +80,20 @@
                                 FieldName="Date_of_firm_escaping"
                                 ShowInCustomizationForm="True"
                                 VisibleIndex="7"
-                                Caption="%%Дата завершения преподавания в организации%%">
+                                Caption="Дата завершения преподавания в организации">
                                 <PropertiesDateEdit
                                     AllowMouseWheel="false"
                                     Width="170"
-                                    NullText="%%настоящее время%%"
+                                    NullText="настоящее время"
                                     UseMaskBehavior="True"
-                                    NullDisplayText="%%настоящее время%%"
+                                    NullDisplayText="настоящее время"
                                     ShowOutOfRangeWarning="False">
                                     <CalendarProperties
                                         ShowWeekNumbers="false"
                                         ShowClearButton="True"
-                                        TodayButtonText="%%Сегодня%%"
-                                        ClearButtonText="%%Очистить%%">
-                                        <FastNavProperties OkButtonText="OK" CancelButtonText="%%Отмена%%" />
+                                        TodayButtonText="Сегодня"
+                                        ClearButtonText="Очистить">
+                                        <FastNavProperties OkButtonText="OK" CancelButtonText="Отмена" />
                                     </CalendarProperties>
                                 </PropertiesDateEdit>
                                 <CellStyle HorizontalAlign="Center"></CellStyle>
@@ -111,7 +111,7 @@
                                 ShowInCustomizationForm="True"
                                 Visible="True"
                                 VisibleIndex="10"
-                                Caption="%%Организация%%" GroupIndex="1">
+                                Caption="Организация" GroupIndex="1">
                             </dx:GridViewDataTextColumn>
                             <dx:GridViewDataTextColumn
                                 FieldName="KindsOfSports_Name"
@@ -123,7 +123,7 @@
                                 FieldName="IIN"
                                 ShowInCustomizationForm="True"
                                 VisibleIndex="4"
-                                Caption="%%ИИН%%">
+                                Caption="ИИН">
                             </dx:GridViewDataTextColumn>
                             <dx:GridViewDataTextColumn
                                 FieldName="FirmID"
@@ -134,7 +134,7 @@
                             <dx:GridViewDataComboBoxColumn
                                 FieldName="KindsOfSportsID"
                                 VisibleIndex="11"
-                                Caption="%%Вид спорта%%">
+                                Caption="Вид спорта">
                                 <PropertiesComboBox
                                     DataSourceID="dsKindsOfSportAll"
                                     TextField="Name"
@@ -157,8 +157,8 @@
                         <Toolbars>
                             <dx:GridViewToolbar>
                                 <Items>
-                                    <dx:GridViewToolbarItem Command="FullExpand" Text="%%Раскрыть все%%" />
-                                    <dx:GridViewToolbarItem Command="FullCollapse" Text="%%Свернуть все%%" />
+                                    <dx:GridViewToolbarItem Command="FullExpand" Text="Раскрыть все" />
+                                    <dx:GridViewToolbarItem Command="FullCollapse" Text="Свернуть все" />
                                 </Items>
                             </dx:GridViewToolbar>
                         </Toolbars>
@@ -171,12 +171,12 @@
                         ID="btTrainersSelect"
                         ClientInstanceName="btTrainersSelect"
                         runat="server"
-                        Text="%%Выбрать%%"
+                        Text="Выбрать"
                         CssClass="btn-primary"
                         AutoPostBack="false">
                         <ClientSideEvents Click="function(s,e){}" />
                     </dx:ASPxButton>
-                    <a href="#close" rel="modal:close" class="btn btn-default">%%Отмена%%</a>
+                    <a href="#close" rel="modal:close" class="btn btn-default">Отмена</a>
                 </section>
 
                  <asp:SqlDataSource 
@@ -192,7 +192,7 @@
 		, A.Date_of_firm_escaping
 		, F.ID as FirmID
 		, F.NameRus AS Firm_Name
-		, N'%%Тренера текущей организации%%' AS IsCurrentFirm
+		, N'Тренера текущей организации' AS IsCurrentFirm
 		, ISNULL(kos.CommonID, A.KindsOfSportsID) AS KindsOfSportsID
 		, ISNULL(COMN.NameRus, A.KindsOfSports_NameRus)  AS KindsOfSports_Name
 		from dbo.GetTrainersListAll(0) AS A

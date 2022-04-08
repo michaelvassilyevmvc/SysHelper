@@ -378,6 +378,8 @@
     <Content Include="Scripts\handlebars.runtime.min.js" />
     <Content Include="Scripts\LearningGroupsComposition.js" />
     <Content Include="Scripts\md5.js" />
+    <Content Include="Scripts\sport-info.js" />
+    <Content Include="SpeedRun\Element\AthleteTrainerList.ascx" />
     <Content Include="SpeedRun\SpeedGrid.aspx" />
     <Content Include="TreeListSample.aspx" />
     <Content Include="WebForm1.aspx" />
@@ -756,6 +758,14 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="SpeedRun\Element\AthleteTrainerList.ascx.cs">
+      <DependentUpon>AthleteTrainerList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SpeedRun\Element\AthleteTrainerList.ascx.designer.cs">
+      <DependentUpon>AthleteTrainerList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SpeedRun\GridViewExtended.cs" />
     <Compile Include="SpeedRun\Models\KindOfSport.cs" />
     <Compile Include="SpeedRun\Repository\Repository.cs" />
     <Compile Include="SpeedRun\SpeedGrid.aspx.cs">
@@ -797,6 +807,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Extensions\" />
     <Folder Include="Log\" />
   </ItemGroup>
   <ItemGroup>

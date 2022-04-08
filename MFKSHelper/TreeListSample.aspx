@@ -26,7 +26,7 @@
                         FieldName="Name"
                         AutoFilterCondition="Default"
                         ShowInFilterControl="Default"
-                        Caption="%%Наименование спортивно-массовых мероприятий%%"
+                        Caption="Наименование спортивно-массовых мероприятий"
                         VisibleIndex="1">
                         <DataCellTemplate>
                             <div class="dctOuter">

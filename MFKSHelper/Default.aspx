@@ -10,7 +10,7 @@
             ClientInstanceName="cbMainPanel"
             runat="server"
             OnCallback="cbMainPanel_Callback">
-            <SettingsLoadingPanel Text="%%Загрузка%%&amp;hellip;" />
+            <SettingsLoadingPanel Text="Загрузка&amp;hellip;" />
             <PanelCollection>
                 <dx:PanelContent runat="server">
 
