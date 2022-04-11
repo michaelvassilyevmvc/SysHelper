@@ -351,6 +351,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\toastr.min.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -377,8 +378,10 @@
     <Content Include="Scripts\handlebars.runtime.js" />
     <Content Include="Scripts\handlebars.runtime.min.js" />
     <Content Include="Scripts\LearningGroupsComposition.js" />
+    <Content Include="Scripts\main.js" />
     <Content Include="Scripts\md5.js" />
     <Content Include="Scripts\sport-info.js" />
+    <Content Include="Scripts\toastr.min.js" />
     <Content Include="SpeedRun\Element\AthleteTrainerList.ascx" />
     <Content Include="SpeedRun\SpeedGrid.aspx" />
     <Content Include="TreeListSample.aspx" />
@@ -681,6 +684,9 @@
     <Compile Include="CachTest\UserControl\UCProductsControl.ascx.designer.cs">
       <DependentUpon>UCProductsControl.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Main\ToasterMessage.cs" />
+    <Compile Include="Classes\Main\ToasterMessagePositionType.cs" />
+    <Compile Include="Classes\Main\ToasterMessageType.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -695,6 +701,7 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Extensions\ToastExtensiion.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -766,6 +773,7 @@
       <DependentUpon>AthleteTrainerList.ascx</DependentUpon>
     </Compile>
     <Compile Include="SpeedRun\GridViewExtended.cs" />
+    <Compile Include="SpeedRun\Models\AthleteCardDto.cs" />
     <Compile Include="SpeedRun\Models\KindOfSport.cs" />
     <Compile Include="SpeedRun\Repository\Repository.cs" />
     <Compile Include="SpeedRun\SpeedGrid.aspx.cs">
@@ -807,8 +815,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Extensions\" />
     <Folder Include="Log\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

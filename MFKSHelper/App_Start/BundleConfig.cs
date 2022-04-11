@@ -9,7 +9,7 @@ namespace MFKSHelper
 {
     public class BundleConfig
     {
-        // Дополнительные сведения об объединении см. на странице https://go.microsoft.com/fwlink/?LinkID=303951.
+        
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/WebFormsJs").Include(
@@ -21,16 +21,18 @@ namespace MFKSHelper
                             "~/Scripts/WebForms/DetailsView.js",
                             "~/Scripts/WebForms/TreeView.js",
                             "~/Scripts/WebForms/WebParts.js"));
-
-            // Для работы этих файлов очень важен порядок, так как у них есть явные зависимости
+        
             bundles.Add(new ScriptBundle("~/bundles/MsAjaxJs").Include(
                     "~/Scripts/WebForms/MsAjax/MicrosoftAjax.js",
                     "~/Scripts/WebForms/MsAjax/MicrosoftAjaxApplicationServices.js",
                     "~/Scripts/WebForms/MsAjax/MicrosoftAjaxTimer.js",
                     "~/Scripts/WebForms/MsAjax/MicrosoftAjaxWebForms.js"));
-
-            // Используйте версию Modernizr для разработчиков, чтобы учиться работать. Когда вы будете готовы перейти к работе,
-            // готово к выпуску, используйте средство сборки по адресу https://modernizr.com, чтобы выбрать только необходимые тесты.
+            bundles.Add(new ScriptBundle("~/bundles/toast").Include(
+                "~/Scripts/jquery-3.4.1.min.js",
+                "~/Scripts/toastr.min.js",
+                "~/Scripts/main.js"
+                ));
+        
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                             "~/Scripts/modernizr-*"));
         }

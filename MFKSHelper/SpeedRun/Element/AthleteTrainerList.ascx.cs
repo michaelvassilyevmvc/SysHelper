@@ -1,4 +1,7 @@
 ﻿using DevExpress.Web;
+using MFKSHelper.Classes.Main;
+using MFKSHelper.Extensions;
+using MFKSHelper.SpeedRun.Models;
 using System;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -8,13 +11,45 @@ namespace MFKSHelper.SpeedRun.Element
     public partial class AthleteTrainerList : System.Web.UI.UserControl
     {
         #region Свойства
-        public int AthleteID { get; set; } = 100013808;
-        public int FirmID { get; set; } = 22;
+        public AthleteCardDto AthleteCardDto
+        {
+            get
+            {
+                if (ViewState["AthleteCardDto"] != null)
+                {
+                    return ViewState["AthleteCardDto"] as AthleteCardDto;
+                }
+                return null;
+            }
+            set
+            {
+                ViewState["AthleteCardDto"] = value;
+            }
+        }
+
+        //public int AthleteID
+        //{
+        //    get
+        //    {
+        //        if (ViewState["AthleteID"] != null)
+        //        {
+        //            return Convert.ToInt32(ViewState["AthleteID"]);
+        //        }
+        //        return 0;
+        //    }
+        //    set
+        //    {
+        //        ViewState["AthleteID"] = value;
+        //    }
+        //}
+        //public int FirmID { get; set; } = 22;
+        //public int KindOfSportID { get; set; } = 0;
         #endregion
 
         #region События
         protected void Page_Load(object sender, EventArgs e)
         {
+            gvTrainerListByAthlete.ExpandAll();
         }
         protected void BeginLoggableTransact(object sender, SqlDataSourceCommandEventArgs e)
         {
@@ -27,12 +62,12 @@ namespace MFKSHelper.SpeedRun.Element
 
         protected void dsAthleteKindOfSportList_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
         {
-            e.Command.Parameters["@AthleteID"].Value = AthleteID;
+            e.Command.Parameters["@AthleteID"].Value = AthleteCardDto?.AthleteID ?? 0;
         }
         protected void dsAthleteTrainerList_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
         {
-            e.Command.Parameters["@AthleteID"].Value = AthleteID;
-            e.Command.Parameters["@KindOfSportID"].Value = 0;
+            e.Command.Parameters["@AthleteID"].Value = AthleteCardDto?.AthleteID ?? 0;
+            e.Command.Parameters["@KindOfSportID"].Value = AthleteCardDto?.KindOfSportIDFilter ?? 0;
             e.Command.Parameters["@Lang"].Value = "Rus";
         }
         protected void cbEditTemplate_Validation(object sender, ValidationEventArgs e)
@@ -44,9 +79,9 @@ namespace MFKSHelper.SpeedRun.Element
         }
         protected void dsAccessTrainersToAthlete_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
         {
-            e.Command.Parameters["@AthleteID"].Value = AthleteID;
-            e.Command.Parameters["@FirmID"].Value = 22;
-            e.Command.Parameters["@RegionID"].Value = 1;
+            e.Command.Parameters["@AthleteID"].Value = AthleteCardDto?.AthleteID ?? 0;
+            e.Command.Parameters["@FirmID"].Value = AthleteCardDto?.FirmID ??  0;
+            e.Command.Parameters["@RegionID"].Value = AthleteCardDto?.RegionID ?? 0;
         }
         protected void cbTrainerList_Init(object sender, EventArgs e)
         {
@@ -68,6 +103,7 @@ namespace MFKSHelper.SpeedRun.Element
             {
                 case "bindgrid":
                     ASPxGridView grid = popup.FindControl("gvTrainersSelect") as ASPxGridView;
+                    
                     grid.Selection.UnselectAll();
                     grid.PageIndex = 0;
                     grid.FilterExpression = "";
@@ -77,6 +113,7 @@ namespace MFKSHelper.SpeedRun.Element
                     filterCombo.SelectedIndex = 0;
 
                     grid.DataBind();
+                    grid.ExpandAll();
                     break;
             }
         }
@@ -89,11 +126,26 @@ namespace MFKSHelper.SpeedRun.Element
         protected void dsAthleteTrainerList_Inserting(object sender, SqlDataSourceCommandEventArgs e)
         {
             BeginLoggableTransact(sender, e);
-            e.Command.Parameters["@AthleteID"].Value = AthleteID;
+            e.Command.Parameters["@AthleteID"].Value = AthleteCardDto?.AthleteID ?? 0;
             e.Command.Parameters["@TrainerID"].Value = gvTrainerListByAthlete.GetEditFormTemplateValueID("TrainerID", "cbTrainerList");
-            e.Command.Parameters["@Edit_FirmID"].Value = FirmID;
+            e.Command.Parameters["@Edit_FirmID"].Value = AthleteCardDto?.FirmID ?? 0;
         }
 
         #endregion
+
+        #region Methods
+
+        public void Refresh()
+        {
+            gvTrainerListByAthlete.DataBind();
+        }
+
+        #endregion
+
+        protected void gvTrainerListByAthlete_RowUpdated(object sender, DevExpress.Web.Data.ASPxDataUpdatedEventArgs e)
+        {
+            ASPxGridView grid = sender as ASPxGridView;
+            grid.ShowToastr("Запись изменена", "Спортивные звания / разряды", ToasterMessageType.Success);
+        }
     }
 }

@@ -24,12 +24,48 @@ namespace MFKSHelper.SpeedRun
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// AthleteTrainerList элемент управления.
+        /// cbPanel элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::MFKSHelper.SpeedRun.Element.AthleteTrainerList AthleteTrainerList;
+        protected global::DevExpress.Web.ASPxCallbackPanel cbPanel;
+
+        /// <summary>
+        /// cbAthleteList элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox cbAthleteList;
+
+        /// <summary>
+        /// lblAthleteID элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxLabel lblAthleteID;
+
+        /// <summary>
+        /// dsAthleteList элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource dsAthleteList;
+
+        /// <summary>
+        /// ucAthleteTrainerList элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::MFKSHelper.SpeedRun.Element.AthleteTrainerList ucAthleteTrainerList;
     }
 }

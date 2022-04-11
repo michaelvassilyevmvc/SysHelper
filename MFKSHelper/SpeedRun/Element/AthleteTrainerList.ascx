@@ -3,7 +3,7 @@
 
 <script src="/Scripts/sport-info.js"></script>
 
-<dx:ASPxLoadingPanel
+			<dx:ASPxLoadingPanel
                                 ID="lp"
                                 ClientInstanceName="lp"
                                 runat="server"								
@@ -20,7 +20,9 @@
 						KeyFieldName="ID" 
 						Caption="Тренеры" 
 						Width="100%"
+						OnRowUpdated="gvTrainerListByAthlete_RowUpdated"
 						>
+						<ClientSideEvents EndCallback="Master.cp_EndCallback" />
 						<SettingsAdaptivity AdaptivityMode="HideDataCells">
 						</SettingsAdaptivity>
 						<SettingsPager Mode="ShowAllRecords">
@@ -267,7 +269,6 @@
 										<Settings ShowFilterRow="True" GroupFormat="{1}" />
 										<SettingsBehavior
 											AllowGroup="true"
-											AutoExpandAllGroups="true"
 											AllowSelectByRowClick="True"
 											AllowSelectSingleRowOnly="True" />
 										<Columns>
@@ -481,7 +482,7 @@
 </asp:SqlDataSource>
 
             <asp:SqlDataSource ID="dsAllKindOfSportData" runat="server" ConnectionString='<%$ ConnectionStrings:MFKSConnectionString %>' 
-                SelectCommand="dbo.GetAllKindOfSport" SelectCommandType="StoredProcedure" CacheDuration="30">
+                SelectCommand="dbo.GetAllKindOfSport" SelectCommandType="StoredProcedure">
                 <SelectParameters>
                     <asp:Parameter DefaultValue="Rus" Name="Lang" Type="String"></asp:Parameter>
                 </SelectParameters>
