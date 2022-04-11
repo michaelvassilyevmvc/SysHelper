@@ -42,13 +42,22 @@ namespace MFKSHelper.SpeedRun
         protected global::DevExpress.Web.ASPxComboBox cbAthleteList;
 
         /// <summary>
-        /// lblAthleteID элемент управления.
+        /// cbAthleteKindOfSportList элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxLabel lblAthleteID;
+        protected global::DevExpress.Web.ASPxComboBox cbAthleteKindOfSportList;
+
+        /// <summary>
+        /// dsAthleteKindOfSportList элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource dsAthleteKindOfSportList;
 
         /// <summary>
         /// dsAthleteList элемент управления.

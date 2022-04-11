@@ -15,13 +15,13 @@ namespace MFKSHelper.SpeedRun.Element
     {
 
         /// <summary>
-        /// lp элемент управления.
+        /// lpSportInfo элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxLoadingPanel lp;
+        protected global::DevExpress.Web.ASPxLoadingPanel lpSportInfo;
 
         /// <summary>
         /// gvTrainerListByAthlete элемент управления.

@@ -774,7 +774,6 @@
     </Compile>
     <Compile Include="SpeedRun\GridViewExtended.cs" />
     <Compile Include="SpeedRun\Models\AthleteCardDto.cs" />
-    <Compile Include="SpeedRun\Models\KindOfSport.cs" />
     <Compile Include="SpeedRun\Repository\Repository.cs" />
     <Compile Include="SpeedRun\SpeedGrid.aspx.cs">
       <DependentUpon>SpeedGrid.aspx</DependentUpon>

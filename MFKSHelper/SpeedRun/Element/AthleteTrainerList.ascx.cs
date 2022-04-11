@@ -11,46 +11,34 @@ namespace MFKSHelper.SpeedRun.Element
     public partial class AthleteTrainerList : System.Web.UI.UserControl
     {
         #region Свойства
-        public AthleteCardDto AthleteCardDto
-        {
-            get
-            {
-                if (ViewState["AthleteCardDto"] != null)
-                {
-                    return ViewState["AthleteCardDto"] as AthleteCardDto;
-                }
-                return null;
-            }
-            set
-            {
-                ViewState["AthleteCardDto"] = value;
-            }
-        }
-
-        //public int AthleteID
+        public AthleteCardDto AthleteCardDto { get; set; }
         //{
         //    get
         //    {
-        //        if (ViewState["AthleteID"] != null)
+        //        if (ViewState["AthleteCardDto"] != null)
         //        {
-        //            return Convert.ToInt32(ViewState["AthleteID"]);
+        //            return ViewState["AthleteCardDto"] as AthleteCardDto;
         //        }
-        //        return 0;
+        //        return null;
         //    }
         //    set
         //    {
-        //        ViewState["AthleteID"] = value;
+        //        ViewState["AthleteCardDto"] = value;
         //    }
         //}
-        //public int FirmID { get; set; } = 22;
-        //public int KindOfSportID { get; set; } = 0;
+        public int AthleteID { get; set; }
+
+
         #endregion
 
         #region События
         protected void Page_Load(object sender, EventArgs e)
         {
+            gvTrainerListByAthlete.Toolbars[0].GetItem("btAdd").Visible = AthleteCardDto?.IsEditable ?? false;
+            gvTrainerListByAthlete.Columns["CommandColum"].Visible = AthleteCardDto?.IsEditable ?? false; 
             gvTrainerListByAthlete.ExpandAll();
         }
+        
         protected void BeginLoggableTransact(object sender, SqlDataSourceCommandEventArgs e)
         {
             e.Command.Parameters["@Log_IP"].Value = "";
@@ -145,7 +133,19 @@ namespace MFKSHelper.SpeedRun.Element
         protected void gvTrainerListByAthlete_RowUpdated(object sender, DevExpress.Web.Data.ASPxDataUpdatedEventArgs e)
         {
             ASPxGridView grid = sender as ASPxGridView;
-            grid.ShowToastr("Запись изменена", "Спортивные звания / разряды", ToasterMessageType.Success);
+            grid.ShowToastr("Запись успешно изменена", "Тренеры", ToasterMessageType.Success);
+        }
+
+        protected void gvTrainerListByAthlete_RowInserted(object sender, DevExpress.Web.Data.ASPxDataInsertedEventArgs e)
+        {
+            ASPxGridView grid = sender as ASPxGridView;
+            grid.ShowToastr("Запись успешно добавлена", "Тренеры", ToasterMessageType.Success);
+        }
+
+        protected void gvTrainerListByAthlete_RowDeleted(object sender, DevExpress.Web.Data.ASPxDataDeletedEventArgs e)
+        {
+            ASPxGridView grid = sender as ASPxGridView;
+            grid.ShowToastr("Запись успешно удалена", "Тренеры", ToasterMessageType.Success);
         }
     }
 }

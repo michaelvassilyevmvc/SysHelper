@@ -4,8 +4,8 @@
 <script src="/Scripts/sport-info.js"></script>
 
 			<dx:ASPxLoadingPanel
-                                ID="lp"
-                                ClientInstanceName="lp"
+                                ID="lpSportInfo"
+                                ClientInstanceName="lpSportInfo"
                                 runat="server"								
                                 Text="%%Загрузка%%&amp;hellip;">
                             </dx:ASPxLoadingPanel>
@@ -21,6 +21,8 @@
 						Caption="Тренеры" 
 						Width="100%"
 						OnRowUpdated="gvTrainerListByAthlete_RowUpdated"
+						OnRowInserted="gvTrainerListByAthlete_RowInserted"
+						OnRowDeleted="gvTrainerListByAthlete_RowDeleted"
 						>
 						<ClientSideEvents EndCallback="Master.cp_EndCallback" />
 						<SettingsAdaptivity AdaptivityMode="HideDataCells">
@@ -243,7 +245,8 @@
 				Width="100%" 
 				HeaderText="Выберите тренера"
 				PopupHorizontalAlign="WindowCenter"
-				PopupVerticalAlign="WindowCenter"
+				PopupVerticalAlign="TopSides"
+				PopupVerticalOffset="50"
 				OnWindowCallback="ppcCustomModalSportInfoTrainerSelect_WindowCallback"
 				>
 				<ClientSideEvents Closing="SportInfo.ClosingTrainerListPopup" />

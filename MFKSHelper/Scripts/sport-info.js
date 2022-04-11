@@ -19,7 +19,7 @@
 
 	trainerSelectionCallback: function (values) {
 		if (values[0] === null) {
-			lp.Hide(); return;
+			lpSportInfo.Hide(); return;
 		}
 
 		SportInfo.SetTrainerResult(values);
@@ -28,7 +28,7 @@
 		var trainerEscape = (values[0][3] !== null) ? new Date(values[0][3]) : null;
 		SportInfo.SetPeriodRang(trainerEntered, trainerEscape);
 		cbTrainerList.Validate(true);
-		lp.Hide();
+		lpSportInfo.Hide();
 	},
 
 	SetPeriodRang(min, max) {
@@ -49,7 +49,7 @@
 	},
 
 	btTrainersSelect_Click: function (s, e) {
-		lp.Show();
+		lpSportInfo.Show();
 		gvTrainersSelect.GetSelectedFieldValues('ID;FIO;Date_of_firm_entered;Date_of_firm_escaping', SportInfo.trainerSelectionCallback);		
 		ppcCustomModalSportInfoTrainerSelect.Hide();
 	},
