@@ -199,8 +199,12 @@
 										ID="cbKindOfSportList" 
 										ClientInstanceName="cbKindOfSportList" 
 										runat="server" DataSourceID="dsAthleteKindOfSportList"
+										OnDataBound="cbKindOfSportList_DataBound"
                                         Value='<%# Bind("KindOfSportID") %>' TextField="Name" ValueField="KindOfSportID"
-                                        ValueType="System.Int32" Width="100%" OnValidation="cbEditTemplate_Validation" ValidationSettings-ValidationGroup="<%# Container.ValidationGroup %>">
+                                        ValueType="System.Int32" 
+										Width="100%" 
+										OnValidation="cbEditTemplate_Validation" 
+										ValidationSettings-ValidationGroup="<%# Container.ValidationGroup %>">
 										<ValidationSettings
                                             Display="Dynamic"
                                             ErrorDisplayMode="ImageWithText"
@@ -511,3 +515,5 @@
                     <asp:Parameter DefaultValue="0" Name="IsFilter" />
                 </SelectParameters>
             </asp:SqlDataSource>
+			
+			

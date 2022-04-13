@@ -26,7 +26,6 @@ namespace MFKSHelper.SpeedRun.Element
         //        ViewState["AthleteCardDto"] = value;
         //    }
         //}
-        public int AthleteID { get; set; }
 
 
         #endregion
@@ -146,6 +145,28 @@ namespace MFKSHelper.SpeedRun.Element
         {
             ASPxGridView grid = sender as ASPxGridView;
             grid.ShowToastr("Запись успешно удалена", "Тренеры", ToasterMessageType.Success);
+        }
+
+        protected void cbKindOfSportList_Init(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void cbKindOfSportList_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void cbKindOfSportList_DataBound(object sender, EventArgs e)
+        {
+            var cmb = sender as ASPxComboBox;
+            GridViewEditItemTemplateContainer container = cmb.NamingContainer as GridViewEditItemTemplateContainer;
+
+            if (!container.Grid.IsNewRowEditing)
+            {
+                if (cmb.Value.ToString() == cmb.Text) cmb.Text = "Текущий вид спорта отсутствует в списке доступных у спортсмена. Выберите из доступных...";
+
+            }
         }
     }
 }
