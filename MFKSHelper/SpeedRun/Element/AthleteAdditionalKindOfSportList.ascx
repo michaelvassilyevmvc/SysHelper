@@ -12,7 +12,7 @@
                     OnRowInserted="gvAthleteAdditionKindOfSport_RowInserted"
                     OnRowDeleted="gvAthleteAdditionKindOfSport_RowDeleted"
                     >
-                    <ClientSideEvents EndCallback="Master.cp_EndCallback" />
+                    <ClientSideEvents  EndCallback='function(s,e){ if (e.command === "UPDATEEDIT" || e.command === "DELETEROW") { Master.cp_EndCallback(s,e); cbPanel.PerformCallback("refresh"); } }' />
                     <%--<ClientSideEvents EndCallback="AthletesCard.AdditionKindOfSportListUpdate" />--%>
                     <Settings
                         ShowFilterRow="True"

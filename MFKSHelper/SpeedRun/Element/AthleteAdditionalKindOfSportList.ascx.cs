@@ -82,6 +82,8 @@ namespace MFKSHelper.SpeedRun.Element
             grid.ExpandAll();
         }
 
+        //todo: Необходимо настроить обновление других компонентов при обновлении списка видов спорта
+
         #endregion
     }
 }

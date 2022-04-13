@@ -28,6 +28,7 @@ namespace MFKSHelper.SpeedRun
 
         protected void Page_PreLoad(object sender, EventArgs e)
         {
+
             ucAthleteMainInfo.KindOfSportChanged();
             var athlID = ucAthleteMainInfo.AthleteID;
             var kndID = ucAthleteMainInfo.KindOfSportIDFilter;
@@ -54,6 +55,22 @@ namespace MFKSHelper.SpeedRun
         {
             switch (e.Parameter)
             {
+                case "refresh":
+                    ucAthleteMainInfo.AtheleteChanged();
+                    var athlID = ucAthleteMainInfo.AthleteID;
+
+
+                    AthleteCardDto = new AthleteCardDto()
+                    {
+                        AthleteID = athlID,
+                        FirmID = 22,
+                        KindOfSportIDFilter = 0,
+                        RegionID = 1,
+                        IsEditable = true
+                    };
+                    ucAthleteTrainerList.AthleteCardDto = AthleteCardDto;
+                    ucAthleteTrainerList.Refresh();
+                    break;
                 case "refreshAthlete":
                     //ucAthleteMainInfo.AtheleteChanged();
 

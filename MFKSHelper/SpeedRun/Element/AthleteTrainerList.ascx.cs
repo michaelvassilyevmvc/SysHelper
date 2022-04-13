@@ -125,6 +125,7 @@ namespace MFKSHelper.SpeedRun.Element
         public void Refresh()
         {
             gvTrainerListByAthlete.DataBind();
+            gvTrainerListByAthlete.ExpandAll();
         }
 
         #endregion
