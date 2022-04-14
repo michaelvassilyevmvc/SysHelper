@@ -4,6 +4,8 @@
 <%@ Register Src="~/SpeedRun/Element/AthleteMainInfo.ascx" TagPrefix="uc1" TagName="AthleteMainInfo" %>
 <%@ Register Src="~/SpeedRun/Element/AthleteTrainerList.ascx" TagPrefix="uc1" TagName="AthleteTrainerList" %>
 <%@ Register Src="~/SpeedRun/Element/AthleteAdditionalKindOfSportList.ascx" TagPrefix="uc1" TagName="AthleteAdditionalKindOfSportList" %>
+<%@ Register Src="~/SpeedRun/Element/AthleteFirmList.ascx" TagPrefix="uc1" TagName="AthleteFirmList" %>
+
 
 
 
@@ -18,6 +20,11 @@
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/toast") %>
     </asp:PlaceHolder>
+    <style>
+        .p-10{
+            padding:10px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -25,13 +32,62 @@
             <dx:ASPxCallbackPanel ID="cbPanel" ClientInstanceName="cbPanel" runat="server" OnCallback="cbPanel_Callback" >
                 <PanelCollection>
                     <dx:PanelContent>
-                        <div style="margin:20px;">
-                        <uc1:AthleteMainInfo runat="server" id="ucAthleteMainInfo" />
-                            </div>
-                        <uc1:AthleteTrainerList runat="server" ID="ucAthleteTrainerList" />
-                        <br />
-                        <label>Дополнительные виды спорта</label>
-                        <uc1:AthleteAdditionalKindOfSportList runat="server" id="ucAthleteAdditionalKindOfSportList" />
+                        <div class="p-10">
+                            <dx:ASPxProgressBar
+                                ID="pbAthleteCardPercent"
+                                ClientInstanceName="pbAthleteCardPercent"
+                                runat="server"
+                                Width="100%"
+                                DisplayFormatString="Процент заполнения карточки: {0}"
+                                CssClass="text-align-center">
+                            </dx:ASPxProgressBar>
+                            <br />
+                            <dx:ASPxRoundPanel ID="rpMainInfo" runat="server" ShowCollapseButton="true"  HeaderText="Основная информация: {0}" Width="100%">
+                                <PanelCollection>
+                                    <dx:PanelContent>
+
+                                        <uc1:AthleteMainInfo runat="server" id="ucAthleteMainInfo" />
+
+                                    </dx:PanelContent>
+                                </PanelCollection>
+                            </dx:ASPxRoundPanel>
+                            <br />
+                             <dx:ASPxRoundPanel ID="rpTrainerList" runat="server" ShowCollapseButton="true" HeaderText="Список тренеров: {0}" Width="100%" >
+                                <PanelCollection>
+                                    <dx:PanelContent>
+
+                                       <uc1:AthleteTrainerList runat="server" ID="ucAthleteTrainerList" />
+
+                                    </dx:PanelContent>
+                                </PanelCollection>
+                            </dx:ASPxRoundPanel>
+                            <br />
+                            <dx:ASPxRoundPanel ID="rpAdditionalKindOfSportList" runat="server" ShowCollapseButton="true" HeaderText="Дополнительные виды спорта" Width="100%" >
+                                <PanelCollection>
+                                    <dx:PanelContent>
+
+                                        <uc1:AthleteAdditionalKindOfSportList runat="server" id="ucAthleteAdditionalKindOfSportList" />
+
+                                    </dx:PanelContent>
+                                </PanelCollection>
+                            </dx:ASPxRoundPanel>
+                             <br />
+                            <dx:ASPxRoundPanel ID="rpFirmList" runat="server" ShowCollapseButton="true" HeaderText="Список организаций: {0}" Width="100%" >
+                            <PanelCollection>
+                                <dx:PanelContent>
+
+                                    <uc1:AthleteFirmList runat="server" id="ucAthleteFirmList" />
+
+                                </dx:PanelContent>
+                            </PanelCollection>
+                        </dx:ASPxRoundPanel>
+                            <br />
+
+
+
+
+                        </div>
+                        
 
                          </dx:PanelContent>
                 </PanelCollection>

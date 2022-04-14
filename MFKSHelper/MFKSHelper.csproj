@@ -383,7 +383,10 @@
     <Content Include="Scripts\sport-info.js" />
     <Content Include="Scripts\toastr.min.js" />
     <Content Include="SpeedRun\AdditionalKindOfSport.aspx" />
+    <Content Include="SpeedRun\BeforeElementPage\AthleteAdditionalInfo.aspx" />
+    <Content Include="SpeedRun\BeforeElementPage\AthleteFirmList.aspx" />
     <Content Include="SpeedRun\Element\AthleteAdditionalKindOfSportList.ascx" />
+    <Content Include="SpeedRun\Element\AthleteFirmList.ascx" />
     <Content Include="SpeedRun\Element\AthleteMainInfo.ascx" />
     <Content Include="SpeedRun\Element\AthleteTrainerList.ascx" />
     <Content Include="SpeedRun\MainInfoTest.aspx" />
@@ -776,12 +779,33 @@
     <Compile Include="SpeedRun\AdditionalKindOfSport.aspx.designer.cs">
       <DependentUpon>AdditionalKindOfSport.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SpeedRun\BeforeElementPage\AthleteAdditionalInfo.aspx.cs">
+      <DependentUpon>AthleteAdditionalInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SpeedRun\BeforeElementPage\AthleteAdditionalInfo.aspx.designer.cs">
+      <DependentUpon>AthleteAdditionalInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SpeedRun\BeforeElementPage\AthleteFirmList.aspx.cs">
+      <DependentUpon>AthleteFirmList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SpeedRun\BeforeElementPage\AthleteFirmList.aspx.designer.cs">
+      <DependentUpon>AthleteFirmList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SpeedRun\Element\AthleteAdditionalKindOfSportList.ascx.cs">
       <DependentUpon>AthleteAdditionalKindOfSportList.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="SpeedRun\Element\AthleteAdditionalKindOfSportList.ascx.designer.cs">
       <DependentUpon>AthleteAdditionalKindOfSportList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SpeedRun\Element\AthleteFirmList.ascx.cs">
+      <DependentUpon>AthleteFirmList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SpeedRun\Element\AthleteFirmList.ascx.designer.cs">
+      <DependentUpon>AthleteFirmList.ascx</DependentUpon>
     </Compile>
     <Compile Include="SpeedRun\Element\AthleteMainInfo.ascx.cs">
       <DependentUpon>AthleteMainInfo.ascx</DependentUpon>
@@ -806,6 +830,11 @@
       <DependentUpon>MainInfoTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="SpeedRun\Models\AthleteCardDto.cs" />
+    <Compile Include="SpeedRun\Models\AthleteInfo.cs" />
+    <Compile Include="SpeedRun\Models\AthleteInfoRepository.cs" />
+    <Compile Include="SpeedRun\Models\AthleteStatisticsInfo.cs" />
+    <Compile Include="SpeedRun\Models\AthleteStatisticsInfoRepository.cs" />
+    <Compile Include="SpeedRun\Models\IAthleteCardControl.cs" />
     <Compile Include="SpeedRun\Repository\Repository.cs" />
     <Compile Include="SpeedRun\SpeedGrid.aspx.cs">
       <DependentUpon>SpeedGrid.aspx</DependentUpon>

@@ -79,7 +79,7 @@
 
                     </Columns>
                     <Toolbars>
-                        <dx:GridViewToolbar Name="btAdd">
+                        <dx:GridViewToolbar>
                             <Items>
                                 <dx:GridViewToolbarItem Command="New" Name="btAdd" Text="%%Добавить%%"></dx:GridViewToolbarItem>
                             </Items>

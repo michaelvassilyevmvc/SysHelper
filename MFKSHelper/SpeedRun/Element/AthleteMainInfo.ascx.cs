@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace MFKSHelper.SpeedRun.Element
@@ -15,7 +11,7 @@ namespace MFKSHelper.SpeedRun.Element
         protected void Page_PreLoad(object sender, EventArgs e)
         {
 
-            
+
         }
 
         protected void Page_Load(object sender, EventArgs e)
@@ -25,7 +21,7 @@ namespace MFKSHelper.SpeedRun.Element
 
         protected void dsAthleteList_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
         {
-            e.Command.Parameters["@FirmID"].Value = 22;
+            e.Command.Parameters["@FirmID"].Value = Global.CurrentUserFirmID;
         }
 
         protected void dsAthleteKindOfSportList_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
@@ -33,20 +29,18 @@ namespace MFKSHelper.SpeedRun.Element
             e.Command.Parameters["@AthleteID"].Value = (cbAthleteList.SelectedItem != null) ? Convert.ToInt32(cbAthleteList.SelectedItem.Value) : 0;
         }
 
-        public void AtheleteChanged()
+
+
+        public void Refresh(bool isResetFilter)
         {
             cbAthleteList.DataBind();
             cbAthleteKindOfSportList.DataBind();
 
-            cbAthleteKindOfSportList.SelectedIndex = 0;
-            AthleteID = (cbAthleteList.SelectedItem != null) ? Convert.ToInt32(cbAthleteList.SelectedItem.Value) : 0;
-            KindOfSportIDFilter = (cbAthleteKindOfSportList.SelectedItem != null) ? Convert.ToInt32(cbAthleteKindOfSportList.SelectedItem.Value) : 0;
-        }
+            if (isResetFilter)
+            {
+                cbAthleteKindOfSportList.SelectedIndex = 0;
+            }
 
-        public void KindOfSportChanged()
-        {
-            cbAthleteList.DataBind();
-            cbAthleteKindOfSportList.DataBind();
             AthleteID = (cbAthleteList.SelectedItem != null) ? Convert.ToInt32(cbAthleteList.SelectedItem.Value) : 0;
             KindOfSportIDFilter = (cbAthleteKindOfSportList.SelectedItem != null) ? Convert.ToInt32(cbAthleteKindOfSportList.SelectedItem.Value) : 0;
         }

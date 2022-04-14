@@ -12,6 +12,10 @@ namespace MFKSHelper
 {
     public class Global : HttpApplication
     {
+        public static int CurrentUserFirmID = 22;
+        public static int CurrentUserRegionID = 1;
+        public static bool CurrentUserEditable = true;
+
         void Application_Start(object sender, EventArgs e)
         {
             // Код, выполняемый при запуске приложения

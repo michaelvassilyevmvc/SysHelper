@@ -19,7 +19,7 @@
                             <ClientSideEvents SelectedIndexChanged="function(s,e){ cbPanel.PerformCallback('refreshAthlete'); }" />
                         </dx:ASPxComboBox>
                         <br />
-                        <dx:ASPxComboBox ID="cbAthleteKindOfSportList" 
+<dx:ASPxComboBox ID="cbAthleteKindOfSportList" 
                             ClientInstanceName="cbAthleteKindOfSportList" 
                             runat="server" 
                             ValueField="KindOfSportID" 

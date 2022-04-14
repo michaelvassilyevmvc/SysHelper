@@ -24,7 +24,7 @@
 						OnRowInserted="gvTrainerListByAthlete_RowInserted"
 						OnRowDeleted="gvTrainerListByAthlete_RowDeleted"
 						>
-						<ClientSideEvents EndCallback="Master.cp_EndCallback" />
+						<ClientSideEvents  EndCallback='function(s,e){ if (e.command === "UPDATEEDIT" || e.command === "DELETEROW") { Master.cp_EndCallback(s,e); cbPanel.PerformCallback("refresh"); } }' />						
 						<SettingsAdaptivity AdaptivityMode="HideDataCells">
 						</SettingsAdaptivity>
 						<SettingsPager Mode="ShowAllRecords">

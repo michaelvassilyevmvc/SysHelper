@@ -11,11 +11,6 @@
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/toast") %>
     </asp:PlaceHolder>
-    <style>
-        .grid-row{
-            padding:10px !important;
-        }
-    </style>
 </head>
 <body>
     <form id="form1" runat="server">

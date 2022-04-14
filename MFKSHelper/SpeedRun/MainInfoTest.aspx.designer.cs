@@ -33,6 +33,24 @@ namespace MFKSHelper.SpeedRun
         protected global::DevExpress.Web.ASPxCallbackPanel cbPanel;
 
         /// <summary>
+        /// pbAthleteCardPercent элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxProgressBar pbAthleteCardPercent;
+
+        /// <summary>
+        /// rpMainInfo элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxRoundPanel rpMainInfo;
+
+        /// <summary>
         /// ucAthleteMainInfo элемент управления.
         /// </summary>
         /// <remarks>
@@ -40,6 +58,15 @@ namespace MFKSHelper.SpeedRun
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::MFKSHelper.SpeedRun.Element.AthleteMainInfo ucAthleteMainInfo;
+
+        /// <summary>
+        /// rpTrainerList элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxRoundPanel rpTrainerList;
 
         /// <summary>
         /// ucAthleteTrainerList элемент управления.
@@ -51,6 +78,15 @@ namespace MFKSHelper.SpeedRun
         protected global::MFKSHelper.SpeedRun.Element.AthleteTrainerList ucAthleteTrainerList;
 
         /// <summary>
+        /// rpAdditionalKindOfSportList элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxRoundPanel rpAdditionalKindOfSportList;
+
+        /// <summary>
         /// ucAthleteAdditionalKindOfSportList элемент управления.
         /// </summary>
         /// <remarks>
@@ -58,5 +94,23 @@ namespace MFKSHelper.SpeedRun
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::MFKSHelper.SpeedRun.Element.AthleteAdditionalKindOfSportList ucAthleteAdditionalKindOfSportList;
+
+        /// <summary>
+        /// rpFirmList элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxRoundPanel rpFirmList;
+
+        /// <summary>
+        /// ucAthleteFirmList элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::MFKSHelper.SpeedRun.Element.AthleteFirmList ucAthleteFirmList;
     }
 }

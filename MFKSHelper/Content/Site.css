@@ -10,9 +10,28 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-
-
-
+.grid-row {
+    padding: 10px !important;
+}
+.dxeCaption_Material{
+    min-width:100px;
+}
+.text-align-center .td.dxe{
+    text-align: center !important;
+}
+.dxeProgressBar_Material .dxePBMainCell, .dxeProgressBar_Material td.dxe{
+    text-align:center!important;
+}
+.dxeProgressBarIndicator_Material{
+    border-radius:0 !important;
+}
+.group-edit-buttons {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 16px;
+    text-align: right;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .jumbotron {

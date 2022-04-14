@@ -59,9 +59,6 @@ namespace StructureParserConsoleApp
                                 continue;
                             }
 
-                            //todo: get 
-
-
 
                             if (isChapter(row.InnerText))
                             {

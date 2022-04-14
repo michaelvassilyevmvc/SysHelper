@@ -8,25 +8,10 @@ using System.Web.UI.WebControls;
 
 namespace MFKSHelper.SpeedRun.Element
 {
-    public partial class AthleteTrainerList : System.Web.UI.UserControl
+    public partial class AthleteTrainerList : System.Web.UI.UserControl, IAthleteCardControl
     {
         #region Свойства
         public AthleteCardDto AthleteCardDto { get; set; }
-        //{
-        //    get
-        //    {
-        //        if (ViewState["AthleteCardDto"] != null)
-        //        {
-        //            return ViewState["AthleteCardDto"] as AthleteCardDto;
-        //        }
-        //        return null;
-        //    }
-        //    set
-        //    {
-        //        ViewState["AthleteCardDto"] = value;
-        //    }
-        //}
-
 
         #endregion
 
@@ -147,16 +132,7 @@ namespace MFKSHelper.SpeedRun.Element
             ASPxGridView grid = sender as ASPxGridView;
             grid.ShowToastr("Запись успешно удалена", "Тренеры", ToasterMessageType.Success);
         }
-
-        protected void cbKindOfSportList_Init(object sender, EventArgs e)
-        {
-            
-        }
-
-        protected void cbKindOfSportList_Load(object sender, EventArgs e)
-        {
-            
-        }
+        
 
         protected void cbKindOfSportList_DataBound(object sender, EventArgs e)
         {

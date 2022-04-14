@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 
 namespace MFKSHelper.SpeedRun.Element
 {
-    public partial class AthleteAdditionalKindOfSportList : System.Web.UI.UserControl
+    public partial class AthleteAdditionalKindOfSportList : System.Web.UI.UserControl, IAthleteCardControl
     {
         public AthleteCardDto AthleteCardDto { get; set; }
         
@@ -80,6 +80,11 @@ namespace MFKSHelper.SpeedRun.Element
             grid.Toolbars[0].GetItem("btAdd").Visible = AthleteCardDto?.IsEditable ?? false;
             grid.Columns["CommandColum"].Visible = AthleteCardDto?.IsEditable ?? false;
             grid.ExpandAll();
+        }
+
+        public void Refresh()
+        {
+            gvAthleteAdditionKindOfSport.DataBind();
         }
 
         //todo: Необходимо настроить обновление других компонентов при обновлении списка видов спорта
