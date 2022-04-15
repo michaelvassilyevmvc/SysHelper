@@ -48,14 +48,14 @@ namespace MFKSHelper.SpeedRun
                 ucAthleteAdditionalKindOfSportList,
                 ucAthleteFirmList,
                 ucAthleteAdditionalInfo,
+                ucAthleteContactInfo,
+                ucAthleteAntroInfo
             };
 
             ucList.ForEach(x => (x as IAthleteCardControl).AthleteCardDto = AthleteCardDto);
+
             PanelInfoRefresh();
         }
-
-
-
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -73,6 +73,8 @@ namespace MFKSHelper.SpeedRun
                 case "refreshKindOfSport":
                     Refresh(false);
                     break;
+
+                //AdditionalInfo
                 case "edit_athlete_additinal_info":
                     AthelteAdditionalInfoEditStart();
                     break;
@@ -82,9 +84,57 @@ namespace MFKSHelper.SpeedRun
                 case "cancel_athlete_additinal_info":
                     AthleteAdditionalInfoCancel();
                     break;
+
+                //ContactInfo
+                case "edit_athlete_contact_info":
+                    AthleteContactInfoEditStart();
+                    break;
+                case "save_athlete_contact_info":
+                    AthleteContactInfoSave();
+                    break;
+                case "cancel_athlete_contact_info":
+                    AthleteContactInfoCancel();
+                    break;
+
+                //AntroInfo
+                case "edit_athlete_antro_info":
+                    AthleteAntroInfoEditStart();
+                    break;
+                case "save_athlete_antro_info":
+                    AthleteAntroInfoSave();
+                    break;
+                case "cancel_athlete_antro_info":
+                    AthleteAntroInfoCancel();
+                    break;
             }
         }
 
+        #region Main
+        private void PanelInfoRefresh()
+        {
+            AthleteCardDto.AthleteStatisticsInfo = AthleteStatisticsInfoRepository.Get(AthleteCardDto.AthleteID);
+            List<ASPxRoundPanel> rpList = new List<ASPxRoundPanel>
+            {
+                rpMainInfo,
+                rpTrainerList,
+                rpFirmList,
+                rpAdditionalInfo,
+                rpAdditionalKindOfSportList,
+                rpContactInfo,
+                rpAntroInfo
+            };
+
+            if (!IsPostBack)
+                rpList.ForEach(x => { x.Collapsed = true; });
+
+            pbAthleteCardPercent.Value = AthleteCardDto?.AthleteStatisticsInfo?.Total ?? 0;
+            rpMainInfo.HeaderText = string.Format("Основная информация: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.Total ?? 0);
+            rpTrainerList.HeaderText = string.Format("Список тренеров: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.SportInfo ?? 0);
+            rpFirmList.HeaderText = string.Format("Список организаций: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.FirmList ?? 0);
+            rpAdditionalInfo.HeaderText = string.Format("Дополнительная информация: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.AdditionalInfo ?? 0);
+            rpContactInfo.HeaderText = string.Format("Контактная информация: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.PlaceOfPermanentResidence ?? 0);
+            rpAntroInfo.HeaderText = string.Format("Антропометрические данные спортсмена: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.Anthropometric ?? 0);
+        }
         private void Refresh(bool IsResetFilter)
         {
             ucAthleteMainInfo.Refresh(IsResetFilter);
@@ -94,19 +144,26 @@ namespace MFKSHelper.SpeedRun
                 AthleteCardDto.KindOfSportIDFilter = 0;
             }
 
-            
-
             List<UserControl> ucList = new List<UserControl>
             {
                 ucAthleteTrainerList,
-                ucAthleteAdditionalInfo
+                ucAthleteAdditionalInfo,
+                ucAthleteContactInfo,
+                ucAthleteAntroInfo
             };
 
             ucList.ForEach(x => { IAthleteCardControl cmp = (x as IAthleteCardControl); cmp.AthleteCardDto = AthleteCardDto; cmp.Refresh(); });
             ucAthleteAdditionalInfo.ShowEditMode(false);
+            ucAthleteContactInfo.ShowEditMode(false);
+            ucAthleteAntroInfo.ShowEditMode(false);
 
             PanelInfoRefresh();
         }
+
+        #endregion
+
+
+        #region AdditionalInfo
 
         private void AthelteAdditionalInfoEditStart()
         {
@@ -136,26 +193,70 @@ namespace MFKSHelper.SpeedRun
             cbPanel.ShowToastr("Отмена изменений", "Дополнительная информация", Classes.Main.ToasterMessageType.Info);
         }
 
-        private void PanelInfoRefresh()
+        #endregion
+
+        #region ContactInfo
+
+        private void AthleteContactInfoEditStart()
         {
-            AthleteCardDto.AthleteStatisticsInfo = AthleteStatisticsInfoRepository.Get(AthleteCardDto.AthleteID);
-            List<ASPxRoundPanel> rpList = new List<ASPxRoundPanel>
-            {
-                rpMainInfo,
-                rpTrainerList,
-                rpFirmList,
-                rpAdditionalInfo,
-                rpAdditionalKindOfSportList
-            };
-
-            if(!IsPostBack)
-                rpList.ForEach(x => { x.Collapsed = true; });
-
-            pbAthleteCardPercent.Value = AthleteCardDto?.AthleteStatisticsInfo?.Total ?? 0;
-            rpMainInfo.HeaderText = string.Format("Основная информация: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.Total ?? 0);
-            rpTrainerList.HeaderText = string.Format("Список тренеров: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.SportInfo ?? 0);
-            rpFirmList.HeaderText = string.Format("Список организаций: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.FirmList ?? 0);
-            rpAdditionalInfo.HeaderText = string.Format("Дополнительная информация: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.AdditionalInfo ?? 0);
+            ucAthleteContactInfo.AthleteCardDto = AthleteCardDto;
+            ucAthleteContactInfo.Refresh();
+            ucAthleteContactInfo.ShowEditMode(true);
         }
+
+        private void AthleteContactInfoSave()
+        {
+            try
+            {
+                ucAthleteContactInfo.Save();
+                PanelInfoRefresh();
+                cbPanel.ShowToastr("Сохранение прошло успешно", "Контактная информация", Classes.Main.ToasterMessageType.Success);
+            }
+            catch (Exception ex)
+            {
+                cbPanel.ShowToastr("Ошибка при сохранении. " + ex.Message, "Контактная информация", Classes.Main.ToasterMessageType.Error);
+            }
+        }
+
+        private void AthleteContactInfoCancel()
+        {
+            ucAthleteContactInfo.AthleteCardDto = AthleteCardDto;
+            ucAthleteContactInfo.Cancel();
+            cbPanel.ShowToastr("Отмена изменений", "Контактная информация", Classes.Main.ToasterMessageType.Info);
+        }
+
+        #endregion
+
+        #region AntroInfo
+        private void AthleteAntroInfoEditStart()
+        {
+            ucAthleteAntroInfo.AthleteCardDto = AthleteCardDto;
+            ucAthleteAntroInfo.Refresh();
+            ucAthleteAntroInfo.ShowEditMode(true);
+        }
+
+        private void AthleteAntroInfoSave()
+        {
+            try
+            {
+                ucAthleteAntroInfo.Save();
+                PanelInfoRefresh();
+                cbPanel.ShowToastr("Сохранение прошло успешно", "Антропометрические данные спортсмена", Classes.Main.ToasterMessageType.Success);
+            }
+            catch (Exception ex)
+            {
+                cbPanel.ShowToastr("Ошибка при сохранении. " + ex.Message, "Антропометрические данные спортсмена", Classes.Main.ToasterMessageType.Error);
+            }
+        }
+
+        private void AthleteAntroInfoCancel()
+        {
+            ucAthleteAntroInfo.AthleteCardDto = AthleteCardDto;
+            ucAthleteAntroInfo.Cancel();
+            cbPanel.ShowToastr("Отмена изменений", "Контактная информация", Classes.Main.ToasterMessageType.Info);
+        }
+        #endregion
+
+
     }
 }

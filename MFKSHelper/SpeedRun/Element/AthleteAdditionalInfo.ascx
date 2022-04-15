@@ -5,7 +5,68 @@
         <%: Scripts.Render("~/bundles/additionalInfo") %>
     </asp:PlaceHolder>
 
- <div style="width:100%;padding:10px;">
+ <div class="main-content-container">
+
+     <div class="row">
+                                            <div class="col-md-6">
+                                                <dx:ASPxMemo
+                                                    ID="tbPlace_of_permanent_residence"
+                                                    ClientInstanceName="tbPlace_of_permanent_residence"
+                                                    runat="server"
+                                                    Caption="Место постоянного проживания"
+                                                    MaxLength="512"
+                                                    NullText="почтовый адрес (страна, область, город, улица, дом, кв., индекс)"
+                                                    NullTextDisplayMode="UnfocusedAndFocused"
+                                                    Width="100%"
+                                                    Rows="3">
+                                                    <CaptionSettings Position="Top" />
+                                                    <CaptionCellStyle>
+                                                        <Paddings PaddingBottom="0px" />
+                                                    </CaptionCellStyle>
+                                                    <CaptionStyle Font-Bold="True">
+                                                    </CaptionStyle>
+                                                </dx:ASPxMemo>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <dx:ASPxTextBox
+                                                    ID="tbContact_phone_number"
+                                                    ClientInstanceName="tbContact_phone_number"
+                                                    runat="server"
+                                                    AutoResizeWithContainer="True"
+                                                    Caption="Контактный телефон"
+                                                    MaxLength="50"
+                                                    NullText="(Не указано)"
+                                                    NullTextDisplayMode="UnfocusedAndFocused"
+                                                    Width="100%">
+                                                    <CaptionSettings Position="Top" />
+                                                    <CaptionCellStyle>
+                                                        <Paddings PaddingBottom="0px" />
+                                                    </CaptionCellStyle>
+                                                    <CaptionStyle Font-Bold="True">
+                                                    </CaptionStyle>
+                                                </dx:ASPxTextBox>
+                                                <dx:ASPxTextBox
+                                                    ID="tbHome_phone_number"
+                                                    ClientInstanceName="tbHome_phone_number"
+                                                    runat="server"
+                                                    AutoResizeWithContainer="True"
+                                                    Caption="Домашний телефон"
+                                                    MaxLength="50"
+                                                    NullText="(Не указано)"
+                                                    NullTextDisplayMode="UnfocusedAndFocused"
+                                                    Width="100%">
+                                                    <CaptionSettings Position="Top" />
+                                                    <CaptionCellStyle>
+                                                        <Paddings PaddingBottom="0px" />
+                                                    </CaptionCellStyle>
+                                                    <CaptionStyle Font-Bold="True">
+                                                    </CaptionStyle>
+                                                </dx:ASPxTextBox>
+
+                                            </div>
+                                        </div>
+     
+
                                     <div class="row">
                                         <div class="col-md-12">
                                             <dx:ASPxTextBox

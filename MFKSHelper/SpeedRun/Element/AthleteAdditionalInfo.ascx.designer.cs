@@ -15,6 +15,33 @@ namespace MFKSHelper.SpeedRun.Element
     {
 
         /// <summary>
+        /// tbPlace_of_permanent_residence элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxMemo tbPlace_of_permanent_residence;
+
+        /// <summary>
+        /// tbContact_phone_number элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox tbContact_phone_number;
+
+        /// <summary>
+        /// tbHome_phone_number элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox tbHome_phone_number;
+
+        /// <summary>
         /// tbBirthplace элемент управления.
         /// </summary>
         /// <remarks>

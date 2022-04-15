@@ -130,5 +130,41 @@ namespace MFKSHelper.SpeedRun
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::MFKSHelper.SpeedRun.Element.AthleteAdditionalInfo ucAthleteAdditionalInfo;
+
+        /// <summary>
+        /// rpContactInfo элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxRoundPanel rpContactInfo;
+
+        /// <summary>
+        /// ucAthleteContactInfo элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::MFKSHelper.SpeedRun.Element.AthleteContactInfo ucAthleteContactInfo;
+
+        /// <summary>
+        /// rpAntroInfo элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxRoundPanel rpAntroInfo;
+
+        /// <summary>
+        /// ucAthleteAntroInfo элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::MFKSHelper.SpeedRun.Element.AthleteAntroInfo ucAthleteAntroInfo;
     }
 }

@@ -1,12 +1,9 @@
-﻿using MFKSHelper.SpeedRun.Models;
+﻿using DevExpress.Web;
+using MFKSHelper.SpeedRun.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
-using DevExpress.Web;
-using MFKSHelper.Extensions;
 
 namespace MFKSHelper.SpeedRun.BeforeElementPage
 {
@@ -27,10 +24,11 @@ namespace MFKSHelper.SpeedRun.BeforeElementPage
                 ViewState["AthleteCardDto"] = value;
             }
         }
-        public bool IsEditMode { 
+        public bool IsEditMode
+        {
             get
             {
-                if(ViewState["AdditionalInfoEdit"] != null)
+                if (ViewState["AdditionalInfoEdit"] != null)
                 {
                     return Convert.ToBoolean(ViewState["AdditionalInfoEdit"]);
                 }
@@ -57,10 +55,9 @@ namespace MFKSHelper.SpeedRun.BeforeElementPage
 
                 AthleteCardDto.AthleteInfo = AthleteInfoRepository.Get(AthleteCardDto.AthleteID);
                 AthleteCardDto.AthleteStatisticsInfo = AthleteStatisticsInfoRepository.Get(AthleteCardDto.AthleteID);
-           
+
                 Refresh();
                 ShowEditMode(false);
-                //ClientScript.RegisterStartupScript(this.GetType(), "toastr_message", "", false);
             }
         }
 
@@ -69,21 +66,21 @@ namespace MFKSHelper.SpeedRun.BeforeElementPage
             e.Command.Parameters["@Lang"].Value = Global.LangQuery;
         }
 
-        private void Refresh()
+        public void Refresh()
         {
             cbSocial_status.DataBind();
 
             var info = AthleteCardDto.AthleteInfo;
-            
+
 
             if (cbSocial_status.Items.Any())
             {
                 cbSocial_status.SelectedItem = cbSocial_status.Items.FirstOrDefault(x => (int)x.Value == info.SocialStatusID);
             }
 
-            if(info.Passport_Date_of_issue.HasValue) tePassport_Date_of_issue.Value = info.Passport_Date_of_issue.Value;
-            if(info.Identity_card_Date_of_issue.HasValue) teIdentity_card_Date_of_issue.Value = info.Identity_card_Date_of_issue.Value;
-            if(info.BC_Date_of_issue.HasValue) teBC_Date_of_issue.Value = info.BC_Date_of_issue.Value;
+            if (info.Passport_Date_of_issue.HasValue) tePassport_Date_of_issue.Value = info.Passport_Date_of_issue.Value;
+            if (info.Identity_card_Date_of_issue.HasValue) teIdentity_card_Date_of_issue.Value = info.Identity_card_Date_of_issue.Value;
+            if (info.BC_Date_of_issue.HasValue) teBC_Date_of_issue.Value = info.BC_Date_of_issue.Value;
 
             tbBirthplace.Text = info.Birthplace;
             tbEducation_info.Text = info.Education_info;
@@ -141,7 +138,7 @@ namespace MFKSHelper.SpeedRun.BeforeElementPage
             };
 
             wcList.ForEach(x => x.Enabled = isAllowEdit);
-            
+
         }
 
         protected void btAdditionalInfoStartEdit_Click(object sender, EventArgs e)
@@ -166,7 +163,7 @@ namespace MFKSHelper.SpeedRun.BeforeElementPage
                 ShowEditMode(false);
                 //this.ShowToastr("Сохранение изменений", "Дополнительная информация", Classes.Main.ToasterMessageType.Success);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 //this.ShowToastr("Ошибка при сохранении. "+ex.Message, "Дополнительная информация", Classes.Main.ToasterMessageType.Error);
             }

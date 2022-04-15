@@ -30,6 +30,7 @@ namespace MFKSHelper.SpeedRun.Element
         {
             if (!IsPostBack)
             {
+                ShowEditMode(false);
                 Refresh();
 
             }
@@ -137,21 +138,6 @@ namespace MFKSHelper.SpeedRun.Element
             wcList.ForEach(x => x.Enabled = isAllowEdit);
 
         }
-
-        //protected void btAdditionalInfoStartEdit_Click(object sender, EventArgs e)
-        //{
-        //    ShowEditMode(true);
-        //}
-
-        //protected void btAdditionalInfoSave_Click(object sender, EventArgs e)
-        //{
-        //    Save();
-        //}
-
-        //protected void btAdditionalInfoCancel_Click(object sender, EventArgs e)
-        //{
-        //    Cancel();
-        //}
 
         public void Save()
         {
