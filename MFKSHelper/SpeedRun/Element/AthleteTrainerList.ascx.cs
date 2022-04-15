@@ -40,7 +40,7 @@ namespace MFKSHelper.SpeedRun.Element
         {
             e.Command.Parameters["@AthleteID"].Value = AthleteCardDto?.AthleteID ?? 0;
             e.Command.Parameters["@KindOfSportID"].Value = AthleteCardDto?.KindOfSportIDFilter ?? 0;
-            e.Command.Parameters["@Lang"].Value = "Rus";
+            e.Command.Parameters["@Lang"].Value = Global.LangQuery;
         }
         protected void cbEditTemplate_Validation(object sender, ValidationEventArgs e)
         {

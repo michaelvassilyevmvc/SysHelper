@@ -25,13 +25,13 @@ namespace MFKSHelper.SpeedRun.BeforeElementPage
         protected void dsFirms_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
         {
             e.Command.Parameters["@RegionID"].Value = RegionID;
-            e.Command.Parameters["@Lang"].Value = "Rus";
+            e.Command.Parameters["@Lang"].Value = Global.LangQuery;
         }
 
         protected void dsAthletesFirmsList_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
         {
             e.Command.Parameters["@AthleteID"].Value = AthleteID;
-            e.Command.Parameters["@Lang"].Value = "Rus";
+            e.Command.Parameters["@Lang"].Value = Global.LangQuery;
         }
 
         #region Методы
@@ -74,7 +74,7 @@ namespace MFKSHelper.SpeedRun.BeforeElementPage
         protected void dsAthletesFirmsAssignmentList_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
         {
             e.Command.Parameters["@AthleteID"].Value = AthleteID;
-            e.Command.Parameters["@Lang"].Value = "Rus";
+            e.Command.Parameters["@Lang"].Value = Global.LangQuery;
         }
 
         protected void gvAthletesFirmsAssignment_List_RowUpdated(object sender, DevExpress.Web.Data.ASPxDataUpdatedEventArgs e)

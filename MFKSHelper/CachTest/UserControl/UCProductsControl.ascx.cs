@@ -20,7 +20,7 @@ namespace MFKSHelper.CachTest.UserControl
             SqlConnection con = new SqlConnection(CS);
             SqlDataAdapter da = new SqlDataAdapter("[Catalogs].GetAllKindOfSport", con);
             da.SelectCommand.CommandType = CommandType.StoredProcedure;
-            da.SelectCommand.Parameters.Add("@Lang", SqlDbType.NVarChar, 255).Value = "Rus";
+            da.SelectCommand.Parameters.Add("@Lang", SqlDbType.NVarChar, 255).Value = Global.LangQuery;
             DataSet DS = new DataSet();
             da.Fill(DS);
 

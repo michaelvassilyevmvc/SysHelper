@@ -20,13 +20,19 @@ namespace MFKSHelper.SpeedRun.Models
             }
         }
 
-        public static void Save(AthleteInfo athleteInfo)
+        public static void Save(AthleteInfo athleteInfo, LogData logData)
         {
+            
             using (IDbConnection db = new SqlConnection(Global.DefaultConnectionString))
             {
                 var query = @"dbo.AthleteInfo_Save";
                 var param = new
                 {
+                    Log_IP = logData.Log_IP,
+                    Log_SessionID = logData.Log_SessionID,
+                    Log_Login = logData.Log_Login,
+                    Log_ClientID = logData.Log_ClientID,
+                    Log_AuthorisationSessionID = logData.Log_AuthorisationSessionID,
                     ID = athleteInfo.ID,
                     FirmID = athleteInfo.FirmID,
                     Date_of_firm_entered = athleteInfo.Date_of_firm_entered,

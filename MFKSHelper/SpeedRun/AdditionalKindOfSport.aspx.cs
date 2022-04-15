@@ -3,10 +3,6 @@ using MFKSHelper.Classes.Main;
 using MFKSHelper.Extensions;
 using MFKSHelper.SpeedRun.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace MFKSHelper.SpeedRun
@@ -23,7 +19,7 @@ namespace MFKSHelper.SpeedRun
         protected void dsAthleteKindOfSportList_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
         {
             e.Command.Parameters["@AthleteID"].Value = AthleteID;
-            e.Command.Parameters["@Lang"].Value = "Rus";
+            e.Command.Parameters["@Lang"].Value = Global.LangQuery;
         }
 
         protected void dsAthleteKindOfSportList_Inserting(object sender, SqlDataSourceCommandEventArgs e)
@@ -52,7 +48,7 @@ namespace MFKSHelper.SpeedRun
         protected void dsAthleteKindOfSportListForAdding_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
         {
             e.Command.Parameters["@AthleteID"].Value = AthleteID;
-            e.Command.Parameters["@Lang"].Value = "Rus";
+            e.Command.Parameters["@Lang"].Value = Global.LangQuery;
         }
 
         protected void dsAthleteKindOfSportList_Deleting(object sender, SqlDataSourceCommandEventArgs e)

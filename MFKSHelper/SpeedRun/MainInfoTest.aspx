@@ -5,6 +5,8 @@
 <%@ Register Src="~/SpeedRun/Element/AthleteTrainerList.ascx" TagPrefix="uc1" TagName="AthleteTrainerList" %>
 <%@ Register Src="~/SpeedRun/Element/AthleteAdditionalKindOfSportList.ascx" TagPrefix="uc1" TagName="AthleteAdditionalKindOfSportList" %>
 <%@ Register Src="~/SpeedRun/Element/AthleteFirmList.ascx" TagPrefix="uc1" TagName="AthleteFirmList" %>
+<%@ Register Src="~/SpeedRun/Element/AthleteAdditionalInfo.ascx" TagPrefix="uc1" TagName="AthleteAdditionalInfo" %>
+
 
 
 
@@ -30,6 +32,7 @@
     <form id="form1" runat="server">
         <div>
             <dx:ASPxCallbackPanel ID="cbPanel" ClientInstanceName="cbPanel" runat="server" OnCallback="cbPanel_Callback" >
+                <ClientSideEvents EndCallback="Master.cp_EndCallback" />
                 <PanelCollection>
                     <dx:PanelContent>
                         <div class="p-10">
@@ -77,6 +80,17 @@
                                 <dx:PanelContent>
 
                                     <uc1:AthleteFirmList runat="server" id="ucAthleteFirmList" />
+
+                                </dx:PanelContent>
+                            </PanelCollection>
+                        </dx:ASPxRoundPanel>
+                            <br />
+
+                            <dx:ASPxRoundPanel ID="rpAdditionalInfo" runat="server" ShowCollapseButton="true" HeaderText="Дополнительная информация: {0}" Width="100%" >
+                            <PanelCollection>
+                                <dx:PanelContent>
+                                    <uc1:AthleteAdditionalInfo runat="server" id="ucAthleteAdditionalInfo" />
+                                    
 
                                 </dx:PanelContent>
                             </PanelCollection>

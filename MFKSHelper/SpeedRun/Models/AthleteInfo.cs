@@ -21,7 +21,7 @@ namespace MFKSHelper.SpeedRun.Models
         public DateTime Birth_date { get; set; }
         public string Birthplace { get; set; }
         public int Sex { get; set; }
-        public int NationID { get; set; }
+        public int? NationID { get; set; }
         public string Education_info { get; set; }
         public int KindsOfSportsID { get; set; }
         public string Subject_of_sport { get; set; }
@@ -44,7 +44,7 @@ namespace MFKSHelper.SpeedRun.Models
         public string Contact_phone_number { get; set; }
         public string Home_phone_number { get; set; }
         public DateTime? Career_completion_date { get; set; }
-        public long SocialStatusID { get; set; }
+        public long? SocialStatusID { get; set; }
 
 
     }

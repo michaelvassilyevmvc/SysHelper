@@ -27,11 +27,14 @@ namespace MFKSHelper
                     "~/Scripts/WebForms/MsAjax/MicrosoftAjaxApplicationServices.js",
                     "~/Scripts/WebForms/MsAjax/MicrosoftAjaxTimer.js",
                     "~/Scripts/WebForms/MsAjax/MicrosoftAjaxWebForms.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/toast").Include(
                 "~/Scripts/jquery-3.4.1.min.js",
                 "~/Scripts/toastr.min.js",
                 "~/Scripts/main.js"
                 ));
+
+            bundles.Add(new ScriptBundle("~/bundles/additionalInfo").Include("~/Scripts/athlete-additional-info.js"));
         
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                             "~/Scripts/modernizr-*"));

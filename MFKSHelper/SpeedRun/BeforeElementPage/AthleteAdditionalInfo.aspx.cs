@@ -66,7 +66,7 @@ namespace MFKSHelper.SpeedRun.BeforeElementPage
 
         protected void dsAthletes_social_status_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
         {
-            e.Command.Parameters["@Lang"].Value = "Rus";
+            e.Command.Parameters["@Lang"].Value = Global.LangQuery;
         }
 
         private void Refresh()
@@ -154,7 +154,15 @@ namespace MFKSHelper.SpeedRun.BeforeElementPage
             DataFromControls();
             try
             {
-                AthleteInfoRepository.Save(AthleteCardDto.AthleteInfo);
+                LogData logData = new LogData
+                {
+                    Log_IP = "",
+                    Log_SessionID = this.Session.SessionID,
+                    Log_Login = "stester",
+                    Log_ClientID = Global.CurrentUserFirmID.ToString(),
+                    Log_AuthorisationSessionID = null
+                };
+                AthleteInfoRepository.Save(AthleteCardDto.AthleteInfo, logData);
                 ShowEditMode(false);
                 //this.ShowToastr("Сохранение изменений", "Дополнительная информация", Classes.Main.ToasterMessageType.Success);
             }

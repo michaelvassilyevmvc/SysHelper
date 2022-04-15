@@ -23,7 +23,7 @@ namespace MFKSHelper.SpeedRun.Element
         protected void dsAthleteKindOfSportList_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
         {
             e.Command.Parameters["@AthleteID"].Value = AthleteCardDto?.AthleteID ?? 0;
-            e.Command.Parameters["@Lang"].Value = "Rus";
+            e.Command.Parameters["@Lang"].Value = Global.LangQuery;
         }
 
         protected void dsAthleteKindOfSportList_Inserting(object sender, SqlDataSourceCommandEventArgs e)
@@ -52,7 +52,7 @@ namespace MFKSHelper.SpeedRun.Element
         protected void dsAthleteKindOfSportListForAdding_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
         {
             e.Command.Parameters["@AthleteID"].Value = AthleteCardDto?.AthleteID ?? 0;
-            e.Command.Parameters["@Lang"].Value = "Rus";
+            e.Command.Parameters["@Lang"].Value = Global.LangQuery;
         }
 
         protected void dsAthleteKindOfSportList_Deleting(object sender, SqlDataSourceCommandEventArgs e)

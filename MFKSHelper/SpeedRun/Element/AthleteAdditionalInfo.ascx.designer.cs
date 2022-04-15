@@ -7,128 +7,164 @@
 // </автоматически создаваемое>
 //------------------------------------------------------------------------------
 
-namespace MFKSHelper.SpeedRun
+namespace MFKSHelper.SpeedRun.Element
 {
 
 
-    public partial class MainInfoTest
+    public partial class AthleteAdditionalInfo
     {
 
         /// <summary>
-        /// form1 элемент управления.
+        /// tbBirthplace элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::DevExpress.Web.ASPxTextBox tbBirthplace;
 
         /// <summary>
-        /// cbPanel элемент управления.
+        /// tbEducation_info элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxCallbackPanel cbPanel;
+        protected global::DevExpress.Web.ASPxMemo tbEducation_info;
 
         /// <summary>
-        /// pbAthleteCardPercent элемент управления.
+        /// cbSocial_status элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxProgressBar pbAthleteCardPercent;
+        protected global::DevExpress.Web.ASPxComboBox cbSocial_status;
 
         /// <summary>
-        /// rpMainInfo элемент управления.
+        /// tePassport_ID элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxRoundPanel rpMainInfo;
+        protected global::DevExpress.Web.ASPxTextBox tePassport_ID;
 
         /// <summary>
-        /// ucAthleteMainInfo элемент управления.
+        /// tePassport_Date_of_issue элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::MFKSHelper.SpeedRun.Element.AthleteMainInfo ucAthleteMainInfo;
+        protected global::DevExpress.Web.ASPxDateEdit tePassport_Date_of_issue;
 
         /// <summary>
-        /// rpTrainerList элемент управления.
+        /// tePassport_Issued_by элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxRoundPanel rpTrainerList;
+        protected global::DevExpress.Web.ASPxTextBox tePassport_Issued_by;
 
         /// <summary>
-        /// ucAthleteTrainerList элемент управления.
+        /// teIdentity_card_ID элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::MFKSHelper.SpeedRun.Element.AthleteTrainerList ucAthleteTrainerList;
+        protected global::DevExpress.Web.ASPxTextBox teIdentity_card_ID;
 
         /// <summary>
-        /// rpAdditionalKindOfSportList элемент управления.
+        /// teIdentity_card_Date_of_issue элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxRoundPanel rpAdditionalKindOfSportList;
+        protected global::DevExpress.Web.ASPxDateEdit teIdentity_card_Date_of_issue;
 
         /// <summary>
-        /// ucAthleteAdditionalKindOfSportList элемент управления.
+        /// tbIdentity_card_Issued_by элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::MFKSHelper.SpeedRun.Element.AthleteAdditionalKindOfSportList ucAthleteAdditionalKindOfSportList;
+        protected global::DevExpress.Web.ASPxTextBox tbIdentity_card_Issued_by;
 
         /// <summary>
-        /// rpFirmList элемент управления.
+        /// teBC_ID элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxRoundPanel rpFirmList;
+        protected global::DevExpress.Web.ASPxTextBox teBC_ID;
 
         /// <summary>
-        /// ucAthleteFirmList элемент управления.
+        /// teBC_Date_of_issue элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::MFKSHelper.SpeedRun.Element.AthleteFirmList ucAthleteFirmList;
+        protected global::DevExpress.Web.ASPxDateEdit teBC_Date_of_issue;
 
         /// <summary>
-        /// rpAdditionalInfo элемент управления.
+        /// teBC_Issued_by элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxRoundPanel rpAdditionalInfo;
+        protected global::DevExpress.Web.ASPxTextBox teBC_Issued_by;
 
         /// <summary>
-        /// ucAthleteAdditionalInfo элемент управления.
+        /// dvAdditionalInfoEdit элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::MFKSHelper.SpeedRun.Element.AthleteAdditionalInfo ucAthleteAdditionalInfo;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dvAdditionalInfoEdit;
+
+        /// <summary>
+        /// btAdditionalInfoStartEdit элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxButton btAdditionalInfoStartEdit;
+
+        /// <summary>
+        /// btAdditionalInfoSave элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxButton btAdditionalInfoSave;
+
+        /// <summary>
+        /// btAdditionalInfoCancel элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxButton btAdditionalInfoCancel;
+
+        /// <summary>
+        /// dsAthleteSocialStatusList элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource dsAthleteSocialStatusList;
     }
 }
