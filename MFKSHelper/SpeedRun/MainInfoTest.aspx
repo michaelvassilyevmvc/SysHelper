@@ -30,11 +30,23 @@
 </head>
 <body>
     <form id="form1" runat="server">
+       
         <div>
             <dx:ASPxCallbackPanel ID="cbPanel" ClientInstanceName="cbPanel" runat="server" OnCallback="cbPanel_Callback" >
                 <ClientSideEvents EndCallback="Master.cp_EndCallback" />
                 <PanelCollection>
                     <dx:PanelContent>
+                        <div class="p-10">
+                            <dx:ASPxCheckBox
+                                ID="cbEditable"
+                                ClientInstanceName="cbEditable"
+                                runat="server"
+                                Checked="true"
+                                AutoPostBack="false"
+                                Text="Редактируемое?">
+                                <ClientSideEvents ValueChanged="function(s,e){cbPanel.PerformCallback('permissions_change');}" />
+                            </dx:ASPxCheckBox>
+                        </div>
                         <div class="p-10">
                             <dx:ASPxProgressBar
                                 ID="pbAthleteCardPercent"

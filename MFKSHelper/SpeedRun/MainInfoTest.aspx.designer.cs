@@ -33,6 +33,15 @@ namespace MFKSHelper.SpeedRun
         protected global::DevExpress.Web.ASPxCallbackPanel cbPanel;
 
         /// <summary>
+        /// cbEditable элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxCheckBox cbEditable;
+
+        /// <summary>
         /// pbAthleteCardPercent элемент управления.
         /// </summary>
         /// <remarks>

@@ -68,6 +68,10 @@ namespace MFKSHelper.SpeedRun
         {
             switch (e.Parameter)
             {
+                case "permissions_change":
+                    AthleteCardDto.IsEditable = cbEditable.Checked;
+                    Refresh(true);
+                    break;
                 case "refresh":
                 case "refreshAthlete":
                     Refresh(true);
@@ -263,8 +267,15 @@ namespace MFKSHelper.SpeedRun
             ucAthleteAntroInfo.Cancel();
             cbPanel.ShowToastr("Отмена изменений", "Контактная информация", Classes.Main.ToasterMessageType.Info);
         }
+
         #endregion
 
-
+        protected void cbEditable_CheckedChanged(object sender, EventArgs e)
+        {
+            ASPxCheckBox cb = sender as ASPxCheckBox;
+            Global.CurrentUserEditable = cb.Checked;
+            AthleteCardDto.IsEditable = Global.CurrentUserEditable;
+            Refresh(true);
+        }
     }
 }

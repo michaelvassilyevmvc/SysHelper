@@ -173,6 +173,7 @@ namespace MFKSHelper.SpeedRun.Element
         public void Refresh()
         {
             gvAthletes_performance.DataBind();
+            SetEditEnabled();
         }
 
         protected void dsAthletes_performance_Inserting(object sender, SqlDataSourceCommandEventArgs e)

@@ -17,7 +17,7 @@ namespace MFKSHelper
     {
         public static int CurrentUserFirmID = 22;
         public static int CurrentUserRegionID = 1;
-        public static bool CurrentUserEditable = false;
+        public static bool CurrentUserEditable = true;
         public static string LangQuery = "Rus";
 
         public static int AnotherRegionFirmID
