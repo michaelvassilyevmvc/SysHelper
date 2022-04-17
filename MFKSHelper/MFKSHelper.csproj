@@ -372,6 +372,7 @@
     <Content Include="Scripts\athlete-additional-info.js" />
     <Content Include="Scripts\athlete-antro-info.js" />
     <Content Include="Scripts\athlete-contact-info.js" />
+    <Content Include="Scripts\athlete-parent-info.js" />
     <Content Include="Scripts\handlebars.amd.js" />
     <Content Include="Scripts\handlebars.amd.min.js" />
     <Content Include="Scripts\handlebars.js" />
@@ -394,6 +395,7 @@
     <Content Include="SpeedRun\Element\AthleteContactInfo.ascx" />
     <Content Include="SpeedRun\Element\AthleteFirmList.ascx" />
     <Content Include="SpeedRun\Element\AthleteMainInfo.ascx" />
+    <Content Include="SpeedRun\Element\AthleteParentsInfo.ascx" />
     <Content Include="SpeedRun\Element\AthleteTrainerList.ascx" />
     <Content Include="SpeedRun\Element\AthleteAntroInfo.ascx" />
     <Content Include="SpeedRun\MainInfoTest.aspx" />
@@ -842,6 +844,13 @@
     <Compile Include="SpeedRun\Element\AthleteMainInfo.ascx.designer.cs">
       <DependentUpon>AthleteMainInfo.ascx</DependentUpon>
     </Compile>
+    <Compile Include="SpeedRun\Element\AthleteParentsInfo.ascx.cs">
+      <DependentUpon>AthleteParentsInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SpeedRun\Element\AthleteParentsInfo.ascx.designer.cs">
+      <DependentUpon>AthleteParentsInfo.ascx</DependentUpon>
+    </Compile>
     <Compile Include="SpeedRun\Element\AthleteTrainerList.ascx.cs">
       <DependentUpon>AthleteTrainerList.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -871,6 +880,9 @@
     <Compile Include="SpeedRun\Models\AthleteStatisticsInfoRepository.cs" />
     <Compile Include="SpeedRun\Models\IAthleteCardControl.cs" />
     <Compile Include="SpeedRun\Models\LogData.cs" />
+    <Compile Include="SpeedRun\Models\RenderUserControlsOverride.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="SpeedRun\Repository\Repository.cs" />
     <Compile Include="SpeedRun\SpeedGrid.aspx.cs">
       <DependentUpon>SpeedGrid.aspx</DependentUpon>

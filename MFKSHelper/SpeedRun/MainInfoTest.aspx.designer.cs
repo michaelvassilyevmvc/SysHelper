@@ -166,5 +166,23 @@ namespace MFKSHelper.SpeedRun
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::MFKSHelper.SpeedRun.Element.AthleteAntroInfo ucAthleteAntroInfo;
+
+        /// <summary>
+        /// rpParentInfo элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxRoundPanel rpParentInfo;
+
+        /// <summary>
+        /// ucAthleteParentsInfo элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::MFKSHelper.SpeedRun.Element.AthleteParentsInfo ucAthleteParentsInfo;
     }
 }

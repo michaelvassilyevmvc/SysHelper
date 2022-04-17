@@ -8,6 +8,8 @@
 <%@ Register Src="~/SpeedRun/Element/AthleteAdditionalInfo.ascx" TagPrefix="uc1" TagName="AthleteAdditionalInfo" %>
 <%@ Register Src="~/SpeedRun/Element/AthleteContactInfo.ascx" TagPrefix="uc1" TagName="AthleteContactInfo" %>
 <%@ Register Src="~/SpeedRun/Element/AthleteAntroInfo.ascx" TagPrefix="uc1" TagName="AthleteAntroInfo" %>
+<%@ Register Src="~/SpeedRun/Element/AthleteParentsInfo.ascx" TagPrefix="uc1" TagName="AthleteParentsInfo" %>
+
 
 
 
@@ -113,6 +115,15 @@
                                 <PanelCollection>
                                     <dx:PanelContent>
                                         <uc1:AthleteAntroInfo runat="server" id="ucAthleteAntroInfo" />
+                                    </dx:PanelContent>
+                                </PanelCollection>
+                            </dx:ASPxRoundPanel>
+                            <br />
+
+                            <dx:ASPxRoundPanel ID="rpParentInfo" runat="server" ShowCollapseButton="true" HeaderText="Данные о родителях, опекунах, законных представителях: {0}" Width="100%">
+                                <PanelCollection>
+                                    <dx:PanelContent>
+                                        <uc1:AthleteParentsInfo runat="server" id="ucAthleteParentsInfo" />
                                     </dx:PanelContent>
                                 </PanelCollection>
                             </dx:ASPxRoundPanel>
