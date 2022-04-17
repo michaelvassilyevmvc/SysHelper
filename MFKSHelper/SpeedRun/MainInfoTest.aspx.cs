@@ -50,7 +50,8 @@ namespace MFKSHelper.SpeedRun
                 ucAthleteAdditionalInfo,
                 ucAthleteContactInfo,
                 ucAthleteAntroInfo,
-                ucAthleteParentsInfo
+                ucAthleteParentsInfo,
+                ucAthletePerformance
             };
 
             ucList.ForEach(x => (x as IAthleteCardControl).AthleteCardDto = AthleteCardDto);
@@ -123,7 +124,8 @@ namespace MFKSHelper.SpeedRun
                 rpAdditionalKindOfSportList,
                 rpContactInfo,
                 rpAntroInfo,
-                rpParentInfo
+                rpParentInfo,
+                rpPerformance
             };
 
             if (!IsPostBack)
@@ -137,6 +139,7 @@ namespace MFKSHelper.SpeedRun
             rpContactInfo.HeaderText = string.Format("Контактная информация: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.PlaceOfPermanentResidence ?? 0);
             rpAntroInfo.HeaderText = string.Format("Антропометрические данные спортсмена: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.Anthropometric ?? 0);
             rpParentInfo.HeaderText = string.Format("Данные о родителях, опекунах, законных представителях: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.ParentsInfo ?? 0);
+            rpPerformance.HeaderText = string.Format("Выступления на областных, республиканских и международных соревнованиях и учебно-тренировочных сборах: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.AthletesPerformance ?? 0);
         }
         private void Refresh(bool IsResetFilter)
         {
@@ -153,7 +156,8 @@ namespace MFKSHelper.SpeedRun
                 ucAthleteAdditionalInfo,
                 ucAthleteContactInfo,
                 ucAthleteAntroInfo,
-                ucAthleteParentsInfo
+                ucAthleteParentsInfo,
+                ucAthletePerformance
             };
 
             ucList.ForEach(x => { IAthleteCardControl cmp = (x as IAthleteCardControl); cmp.AthleteCardDto = AthleteCardDto; cmp.Refresh(); });

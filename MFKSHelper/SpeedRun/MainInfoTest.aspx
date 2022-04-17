@@ -9,13 +9,7 @@
 <%@ Register Src="~/SpeedRun/Element/AthleteContactInfo.ascx" TagPrefix="uc1" TagName="AthleteContactInfo" %>
 <%@ Register Src="~/SpeedRun/Element/AthleteAntroInfo.ascx" TagPrefix="uc1" TagName="AthleteAntroInfo" %>
 <%@ Register Src="~/SpeedRun/Element/AthleteParentsInfo.ascx" TagPrefix="uc1" TagName="AthleteParentsInfo" %>
-
-
-
-
-
-
-
+<%@ Register Src="~/SpeedRun/Element/AthletePerformance.ascx" TagPrefix="uc1" TagName="AthletePerformance" %>
 
 
 <!DOCTYPE html>
@@ -129,6 +123,14 @@
                             </dx:ASPxRoundPanel>
                             <br />
 
+                            <dx:ASPxRoundPanel ID="rpPerformance" runat="server" ShowCollapseButton="true" HeaderText="Выступления на областных, республиканских и международных соревнованиях и учебно-тренировочных сборах: {0}" Width="100%">
+                                <PanelCollection>
+                                    <dx:PanelContent>
+                                        <uc1:AthletePerformance runat="server" id="ucAthletePerformance" />
+                                    </dx:PanelContent>
+                                </PanelCollection>
+                            </dx:ASPxRoundPanel>
+                            <br />
 
                         </div>
                         

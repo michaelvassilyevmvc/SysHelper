@@ -36,7 +36,23 @@ body {
     width: 100%;
     padding: 10px;
 }
+.lbl-year {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 36px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.spin-year{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 
+.spin-year__caption{
+    margin-right:10px;
+    margin-left:20px;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .jumbotron {
