@@ -169,18 +169,6 @@
 							VisibleIndex="3" 
 							Name="cbEvents_Completed_gvAthletes_performance">
 							<PropertiesComboBox DataSourceID="dsEvents_CompletedSelect" TextField="Name" ValueField="ID"></PropertiesComboBox>
-							<%--<PropertiesComboBox ClientInstanceName="cbEvents_Completed_gvAthletes_performance">
-								<ClientSideEvents 
-									ButtonClick="Athletes_performance.cbEvents_Completed_gvAthletesperformanceClick" 
-									Init="Athletes_performance.cbEvents_Completed_gvAthletes_performance_Init" />
-								<DropDownButton Visible="False">
-								</DropDownButton>
-								<Buttons>
-									<dx:EditButton Text="...">
-									</dx:EditButton>
-								</Buttons>
-								
-							</PropertiesComboBox>--%>
 							<EditItemTemplate>
 									<dx:ASPxComboBox 
 										ID="cbEventsCompletedList" 
@@ -362,7 +350,6 @@
 													<ClientSideEvents ValueChanged="function(s,e){ cbPanel.PerformCallback('refresh'); }" />
 												</dx:ASPxSpinEdit>
 													</div>
-												<%--gvAthletes_performance.Refresh();--%>
 											</Template>
 										</dx:GridViewToolbarItem>
 								<dx:GridViewToolbarItem Command="New" Name="btAdd" Text="Добавить"></dx:GridViewToolbarItem>

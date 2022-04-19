@@ -51,7 +51,8 @@ namespace MFKSHelper.SpeedRun
                 ucAthleteContactInfo,
                 ucAthleteAntroInfo,
                 ucAthleteParentsInfo,
-                ucAthletePerformance
+                ucAthletePerformance,
+                ucAthleteMedicalInfo
             };
 
             ucList.ForEach(x => (x as IAthleteCardControl).AthleteCardDto = AthleteCardDto);
@@ -115,6 +116,14 @@ namespace MFKSHelper.SpeedRun
             }
         }
 
+        protected void cbEditable_CheckedChanged(object sender, EventArgs e)
+        {
+            ASPxCheckBox cb = sender as ASPxCheckBox;
+            Global.CurrentUserEditable = cb.Checked;
+            AthleteCardDto.IsEditable = Global.CurrentUserEditable;
+            Refresh(true);
+        }
+
         #region Main
         private void PanelInfoRefresh()
         {
@@ -129,7 +138,8 @@ namespace MFKSHelper.SpeedRun
                 rpContactInfo,
                 rpAntroInfo,
                 rpParentInfo,
-                rpPerformance
+                rpPerformance,
+                rpMedicalInfo
             };
 
             if (!IsPostBack)
@@ -144,6 +154,8 @@ namespace MFKSHelper.SpeedRun
             rpAntroInfo.HeaderText = string.Format("Антропометрические данные спортсмена: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.Anthropometric ?? 0);
             rpParentInfo.HeaderText = string.Format("Данные о родителях, опекунах, законных представителях: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.ParentsInfo ?? 0);
             rpPerformance.HeaderText = string.Format("Выступления на областных, республиканских и международных соревнованиях и учебно-тренировочных сборах: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.AthletesPerformance ?? 0);
+            rpMedicalInfo.HeaderText = string.Format("Медицинская карточка: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.AthletesMedicalCard ?? 0);
+
         }
         private void Refresh(bool IsResetFilter)
         {
@@ -161,7 +173,8 @@ namespace MFKSHelper.SpeedRun
                 ucAthleteContactInfo,
                 ucAthleteAntroInfo,
                 ucAthleteParentsInfo,
-                ucAthletePerformance
+                ucAthletePerformance,
+                ucAthleteMedicalInfo
             };
 
             ucList.ForEach(x => { IAthleteCardControl cmp = (x as IAthleteCardControl); cmp.AthleteCardDto = AthleteCardDto; cmp.Refresh(); });
@@ -270,12 +283,6 @@ namespace MFKSHelper.SpeedRun
 
         #endregion
 
-        protected void cbEditable_CheckedChanged(object sender, EventArgs e)
-        {
-            ASPxCheckBox cb = sender as ASPxCheckBox;
-            Global.CurrentUserEditable = cb.Checked;
-            AthleteCardDto.IsEditable = Global.CurrentUserEditable;
-            Refresh(true);
-        }
+        
     }
 }

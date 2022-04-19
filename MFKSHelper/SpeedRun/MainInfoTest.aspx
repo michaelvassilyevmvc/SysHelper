@@ -10,6 +10,8 @@
 <%@ Register Src="~/SpeedRun/Element/AthleteAntroInfo.ascx" TagPrefix="uc1" TagName="AthleteAntroInfo" %>
 <%@ Register Src="~/SpeedRun/Element/AthleteParentsInfo.ascx" TagPrefix="uc1" TagName="AthleteParentsInfo" %>
 <%@ Register Src="~/SpeedRun/Element/AthletePerformance.ascx" TagPrefix="uc1" TagName="AthletePerformance" %>
+<%@ Register Src="~/SpeedRun/Element/AthleteMedicalInfo.ascx" TagPrefix="uc1" TagName="AthleteMedicalInfo" %>
+
 
 
 <!DOCTYPE html>
@@ -143,12 +145,19 @@
                                 </PanelCollection>
                             </dx:ASPxRoundPanel>
                             <br />
-
-                        </div>
-                        
+                            
+                            <dx:ASPxRoundPanel ID="rpMedicalInfo" runat="server" ShowCollapseButton="true" HeaderText="Медицинская карточка: {0}" Width="100%">
+                                <PanelCollection>
+                                    <dx:PanelContent>
+                                        <uc1:AthleteMedicalInfo runat="server" id="ucAthleteMedicalInfo" />
+                                    </dx:PanelContent>
+                                </PanelCollection>
+                            </dx:ASPxRoundPanel>
+                            <br />
 
                          </dx:PanelContent>
                 </PanelCollection>
+                        
             </dx:ASPxCallbackPanel>
         </div>
     </form>

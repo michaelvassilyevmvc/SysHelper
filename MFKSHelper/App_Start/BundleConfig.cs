@@ -39,6 +39,7 @@ namespace MFKSHelper
             bundles.Add(new ScriptBundle("~/bundles/antroInfo").Include("~/Scripts/athlete-antro-info.js"));
             bundles.Add(new ScriptBundle("~/bundles/parentInfo").Include("~/Scripts/athlete-parent-info.js"));
             bundles.Add(new ScriptBundle("~/bundles/performance").Include("~/Scripts/athlete-performance.js"));
+            bundles.Add(new ScriptBundle("~/bundles/medicalInfo").Include("~/Scripts/athlete-medical-info.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                             "~/Scripts/modernizr-*"));

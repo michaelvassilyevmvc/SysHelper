@@ -45,6 +45,7 @@ namespace MFKSHelper.SpeedRun.Models
         public string Home_phone_number { get; set; }
         public DateTime? Career_completion_date { get; set; }
         public long? SocialStatusID { get; set; }
+        public DateTime MedicalInfoLastDate { get; set; }
 
 
     }
