@@ -34,6 +34,7 @@ namespace MFKSHelper
                 "~/Scripts/main.js"
                 ));
 
+            bundles.Add(new ScriptBundle("~/bundles/sportInfo").Include("~/Scripts/sport-info.js"));
             bundles.Add(new ScriptBundle("~/bundles/additionalInfo").Include("~/Scripts/athlete-additional-info.js"));
             bundles.Add(new ScriptBundle("~/bundles/contactInfo").Include("~/Scripts/athlete-contact-info.js"));
             bundles.Add(new ScriptBundle("~/bundles/antroInfo").Include("~/Scripts/athlete-antro-info.js"));

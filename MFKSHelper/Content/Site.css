@@ -57,6 +57,14 @@ body {
 .bottom-block{
     margin:10px;
 }
+.my-20{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.my-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .jumbotron {

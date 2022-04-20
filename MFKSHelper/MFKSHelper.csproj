@@ -398,6 +398,7 @@
     <Content Include="SpeedRun\Element\AthleteFirmList.ascx" />
     <Content Include="SpeedRun\Element\AthleteMainInfo.ascx" />
     <Content Include="SpeedRun\Element\AthleteMedicalInfo.ascx" />
+    <Content Include="SpeedRun\Element\AthleteOFPInfo.ascx" />
     <Content Include="SpeedRun\Element\AthleteParentsInfo.ascx" />
     <Content Include="SpeedRun\Element\AthletePerformance.ascx" />
     <Content Include="SpeedRun\Element\AthleteTrainerList.ascx" />
@@ -854,6 +855,13 @@
     </Compile>
     <Compile Include="SpeedRun\Element\AthleteMedicalInfo.ascx.designer.cs">
       <DependentUpon>AthleteMedicalInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SpeedRun\Element\AthleteOFPInfo.ascx.cs">
+      <DependentUpon>AthleteOFPInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SpeedRun\Element\AthleteOFPInfo.ascx.designer.cs">
+      <DependentUpon>AthleteOFPInfo.ascx</DependentUpon>
     </Compile>
     <Compile Include="SpeedRun\Element\AthleteParentsInfo.ascx.cs">
       <DependentUpon>AthleteParentsInfo.ascx</DependentUpon>

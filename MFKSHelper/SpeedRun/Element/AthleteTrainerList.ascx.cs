@@ -28,13 +28,14 @@ namespace MFKSHelper.SpeedRun.Element
             e.Command.Parameters["@Log_IP"].Value = "";
             e.Command.Parameters["@Log_SessionID"].Value = this.Session.SessionID;
             e.Command.Parameters["@Log_Login"].Value = "stester";
-            e.Command.Parameters["@Log_ClientID"].Value = 22;
+            e.Command.Parameters["@Log_ClientID"].Value = Global.CurrentUserFirmID;
             e.Command.Parameters["@Log_AuthorisationSessionID"].Value = null;
         }
 
         protected void dsAthleteKindOfSportList_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
         {
             e.Command.Parameters["@AthleteID"].Value = AthleteCardDto?.AthleteID ?? 0;
+            e.Command.Parameters["@Lang"].Value = Global.LangQuery;
         }
         protected void dsAthleteTrainerList_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
         {

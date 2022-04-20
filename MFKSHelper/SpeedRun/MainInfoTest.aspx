@@ -11,6 +11,8 @@
 <%@ Register Src="~/SpeedRun/Element/AthleteParentsInfo.ascx" TagPrefix="uc1" TagName="AthleteParentsInfo" %>
 <%@ Register Src="~/SpeedRun/Element/AthletePerformance.ascx" TagPrefix="uc1" TagName="AthletePerformance" %>
 <%@ Register Src="~/SpeedRun/Element/AthleteMedicalInfo.ascx" TagPrefix="uc1" TagName="AthleteMedicalInfo" %>
+<%@ Register Src="~/SpeedRun/Element/AthleteOFPInfo.ascx" TagPrefix="uc1" TagName="AthleteOFPInfo" %>
+
 
 
 
@@ -68,8 +70,8 @@
                                     </dx:PanelContent>
                                 </PanelCollection>
                             </dx:ASPxRoundPanel>
-                            <br />
-                             <dx:ASPxRoundPanel ID="rpTrainerList" runat="server" ShowCollapseButton="true" HeaderText="Список тренеров: {0}" Width="100%" >
+                            
+                             <dx:ASPxRoundPanel ID="rpTrainerList" runat="server" ShowCollapseButton="true" HeaderText="Список тренеров: {0}" Width="100%" CssClass="my-20" >
                                 <PanelCollection>
                                     <dx:PanelContent>
 
@@ -78,8 +80,8 @@
                                     </dx:PanelContent>
                                 </PanelCollection>
                             </dx:ASPxRoundPanel>
-                            <br />
-                            <dx:ASPxRoundPanel ID="rpAdditionalKindOfSportList" runat="server" ShowCollapseButton="true" HeaderText="Дополнительные виды спорта" Width="100%" >
+                           
+                            <dx:ASPxRoundPanel ID="rpAdditionalKindOfSportList" runat="server" ShowCollapseButton="true" HeaderText="Дополнительные виды спорта" Width="100%" CssClass="my-20" >
                                 <PanelCollection>
                                     <dx:PanelContent>
 
@@ -88,8 +90,8 @@
                                     </dx:PanelContent>
                                 </PanelCollection>
                             </dx:ASPxRoundPanel>
-                             <br />
-                            <dx:ASPxRoundPanel ID="rpFirmList" runat="server" ShowCollapseButton="true" HeaderText="Список организаций: {0}" Width="100%" >
+                           
+                            <dx:ASPxRoundPanel ID="rpFirmList" runat="server" ShowCollapseButton="true" HeaderText="Список организаций: {0}" Width="100%"  CssClass="my-20" >
                             <PanelCollection>
                                 <dx:PanelContent>
 
@@ -98,63 +100,73 @@
                                 </dx:PanelContent>
                             </PanelCollection>
                         </dx:ASPxRoundPanel>
-                            <br />
-
-                            <dx:ASPxRoundPanel ID="rpAdditionalInfo" runat="server" ShowCollapseButton="true" HeaderText="Дополнительная информация: {0}" Width="100%">
+                            
+                            <dx:ASPxRoundPanel ID="rpAdditionalInfo" runat="server" ShowCollapseButton="true" HeaderText="Дополнительная информация: {0}" Width="100%"  CssClass="my-20">
                                 <PanelCollection>
                                     <dx:PanelContent>
                                         <uc1:AthleteAdditionalInfo runat="server" ID="ucAthleteAdditionalInfo" />
                                     </dx:PanelContent>
                                 </PanelCollection>
                             </dx:ASPxRoundPanel>
-                            <br />
+                            
 
 
-                            <dx:ASPxRoundPanel ID="rpContactInfo" runat="server" ShowCollapseButton="true" HeaderText="Контактная информация: {0}" Width="100%">
+                            <dx:ASPxRoundPanel ID="rpContactInfo" runat="server" ShowCollapseButton="true" HeaderText="Контактная информация: {0}" Width="100%" CssClass="my-20">
                                 <PanelCollection>
                                     <dx:PanelContent>
                                         <uc1:AthleteContactInfo runat="server" id="ucAthleteContactInfo" />
                                     </dx:PanelContent>
                                 </PanelCollection>
                             </dx:ASPxRoundPanel>
-                            <br />
+                            
 
-                            <dx:ASPxRoundPanel ID="rpAntroInfo" runat="server" ShowCollapseButton="true" HeaderText="Антропометрические данные спортсмена: {0}" Width="100%">
+                            <dx:ASPxRoundPanel ID="rpAntroInfo" runat="server" ShowCollapseButton="true" HeaderText="Антропометрические данные спортсмена: {0}" Width="100%" CssClass="my-20">
                                 <PanelCollection>
                                     <dx:PanelContent>
                                         <uc1:AthleteAntroInfo runat="server" id="ucAthleteAntroInfo" />
                                     </dx:PanelContent>
                                 </PanelCollection>
                             </dx:ASPxRoundPanel>
-                            <br />
+                            
 
-                            <dx:ASPxRoundPanel ID="rpParentInfo" runat="server" ShowCollapseButton="true" HeaderText="Данные о родителях, опекунах, законных представителях: {0}" Width="100%">
+                            <dx:ASPxRoundPanel ID="rpParentInfo" runat="server" ShowCollapseButton="true" HeaderText="Данные о родителях, опекунах, законных представителях: {0}" Width="100%" CssClass="my-20">
                                 <PanelCollection>
                                     <dx:PanelContent>
                                         <uc1:AthleteParentsInfo runat="server" id="ucAthleteParentsInfo" />
                                     </dx:PanelContent>
                                 </PanelCollection>
                             </dx:ASPxRoundPanel>
-                            <br />
+                            
 
-                            <dx:ASPxRoundPanel ID="rpPerformance" runat="server" ShowCollapseButton="true" HeaderText="Выступления на областных, республиканских и международных соревнованиях и учебно-тренировочных сборах: {0}" Width="100%">
+                            <dx:ASPxRoundPanel ID="rpPerformance" runat="server" ShowCollapseButton="true" HeaderText="Выступления на областных, республиканских и международных соревнованиях и учебно-тренировочных сборах: {0}" Width="100%" CssClass="my-20">
                                 <PanelCollection>
                                     <dx:PanelContent>
                                         <uc1:AthletePerformance runat="server" id="ucAthletePerformance" />
                                     </dx:PanelContent>
                                 </PanelCollection>
                             </dx:ASPxRoundPanel>
-                            <br />
                             
-                            <dx:ASPxRoundPanel ID="rpMedicalInfo" runat="server" ShowCollapseButton="true" HeaderText="Медицинская карточка: {0}" Width="100%">
+                            
+                            <dx:ASPxRoundPanel ID="rpMedicalInfo" runat="server" ShowCollapseButton="true" HeaderText="Медицинская карточка: {0}" Width="100%" CssClass="my-20">
                                 <PanelCollection>
                                     <dx:PanelContent>
                                         <uc1:AthleteMedicalInfo runat="server" id="ucAthleteMedicalInfo" />
                                     </dx:PanelContent>
                                 </PanelCollection>
                             </dx:ASPxRoundPanel>
-                            <br />
 
+                            <dx:ASPxRoundPanel ID="rpOFP" runat="server" ShowCollapseButton="true" HeaderText="Общефизическая подготовка: {0}" Width="100%" CssClass="my-20">
+                                <PanelCollection>
+                                    <dx:PanelContent>
+
+                                        <uc1:AthleteOFPInfo runat="server" id="ucAthleteOFPInfo" />
+                                        
+                                    </dx:PanelContent>
+                                </PanelCollection>
+                            </dx:ASPxRoundPanel>
+
+
+                            </div>
                          </dx:PanelContent>
                 </PanelCollection>
                         

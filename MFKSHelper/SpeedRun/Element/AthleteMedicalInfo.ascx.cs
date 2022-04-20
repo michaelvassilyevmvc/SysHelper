@@ -46,10 +46,15 @@ namespace MFKSHelper.SpeedRun.Element
         public void Refresh()
         {
             gvAthletes_medical_card.DataBind();
+            SetEditEnabled();
         }
 
         public void SetEditEnabled()
         {
+            var tmp = gvAthletes_medical_card.Toolbars[0].GetItem("btAdd");
+            gvAthletes_medical_card.Toolbars[0].GetItem("btAdd").Visible = AthleteCardDto?.IsEditable ?? false;
+            gvAthletes_medical_card.Columns["CommandColum"].Visible = AthleteCardDto?.IsEditable ?? false;
+            gvAthletes_medical_card.ExpandAll();
             gvAthletes_medical_card.SettingsDataSecurity.AllowInsert = AthleteCardDto?.IsEditable ?? false;
             gvAthletes_medical_card.SettingsDataSecurity.AllowDelete = AthleteCardDto?.IsEditable ?? false;
             gvAthletes_medical_card.SettingsDataSecurity.AllowEdit = AthleteCardDto?.IsEditable ?? false;

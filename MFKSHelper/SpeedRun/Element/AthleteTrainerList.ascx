@@ -1,7 +1,9 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="AthleteTrainerList.ascx.cs" Inherits="MFKSHelper.SpeedRun.Element.AthleteTrainerList" %>
 <%@ Register Assembly="DevExpress.Web.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
 
-<script src="/Scripts/sport-info.js"></script>
+<asp:PlaceHolder runat="server">
+    <%: Scripts.Render("~/bundles/sportInfo") %>
+</asp:PlaceHolder>
 
 			<dx:ASPxLoadingPanel
                                 ID="lpSportInfo"
@@ -192,6 +194,7 @@
 
                             <dx:GridViewDataComboBoxColumn FieldName="KindOfSportID" VisibleIndex="10" GroupIndex="0" Caption="Вид спорта">
                                 <PropertiesComboBox DataSourceID="dsAllKindOfSportData" TextField="Name" ValueField="ID">
+									<ItemStyle Wrap="True"></ItemStyle>
                                 </PropertiesComboBox>
                                 <EditFormSettings Visible="True" />
                                <EditItemTemplate>
@@ -489,7 +492,7 @@
 </asp:SqlDataSource>
 
             <asp:SqlDataSource ID="dsAllKindOfSportData" runat="server" ConnectionString='<%$ ConnectionStrings:MFKSConnectionString %>' 
-                SelectCommand="dbo.GetAllKindOfSport" SelectCommandType="StoredProcedure">
+                SelectCommand="GetAllKindOfSport" SelectCommandType="StoredProcedure">
                 <SelectParameters>
                     <asp:Parameter DefaultValue="Rus" Name="Lang" Type="String"></asp:Parameter>
                 </SelectParameters>

@@ -41,6 +41,7 @@ namespace MFKSHelper.SpeedRun
                 IsEditable = Global.CurrentUserEditable                
             };
             AthleteCardDto.AthleteInfo = AthleteInfoRepository.Get(AthleteCardDto.AthleteID);
+            AthleteCardDto.AthleteStatisticsInfo = AthleteStatisticsInfoRepository.Get(AthleteCardDto.AthleteID);
 
             List<UserControl> ucList = new List<UserControl>
             {
@@ -52,7 +53,8 @@ namespace MFKSHelper.SpeedRun
                 ucAthleteAntroInfo,
                 ucAthleteParentsInfo,
                 ucAthletePerformance,
-                ucAthleteMedicalInfo
+                ucAthleteMedicalInfo,
+                ucAthleteOFPInfo
             };
 
             ucList.ForEach(x => (x as IAthleteCardControl).AthleteCardDto = AthleteCardDto);
@@ -139,7 +141,8 @@ namespace MFKSHelper.SpeedRun
                 rpAntroInfo,
                 rpParentInfo,
                 rpPerformance,
-                rpMedicalInfo
+                rpMedicalInfo,
+                rpOFP
             };
 
             if (!IsPostBack)
@@ -155,6 +158,7 @@ namespace MFKSHelper.SpeedRun
             rpParentInfo.HeaderText = string.Format("Данные о родителях, опекунах, законных представителях: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.ParentsInfo ?? 0);
             rpPerformance.HeaderText = string.Format("Выступления на областных, республиканских и международных соревнованиях и учебно-тренировочных сборах: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.AthletesPerformance ?? 0);
             rpMedicalInfo.HeaderText = string.Format("Медицинская карточка: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.AthletesMedicalCard ?? 0);
+            rpOFP.HeaderText = string.Format("Общефизическая подготовка: {0}%", AthleteCardDto?.AthleteStatisticsInfo?.AthletesPerformanceCard ?? 0);
 
         }
         private void Refresh(bool IsResetFilter)
@@ -174,7 +178,8 @@ namespace MFKSHelper.SpeedRun
                 ucAthleteAntroInfo,
                 ucAthleteParentsInfo,
                 ucAthletePerformance,
-                ucAthleteMedicalInfo
+                ucAthleteMedicalInfo,
+                ucAthleteOFPInfo
             };
 
             ucList.ForEach(x => { IAthleteCardControl cmp = (x as IAthleteCardControl); cmp.AthleteCardDto = AthleteCardDto; cmp.Refresh(); });

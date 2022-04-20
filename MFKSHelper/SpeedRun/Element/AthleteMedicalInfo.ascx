@@ -389,7 +389,7 @@
 				</Toolbars>
 				<Templates>
 					<FooterRow>
-						<div>Срок учета (актуальности данных) до конца учебного года, установленного в вашей организации – <dx:ASPxLabel ID="lblLastDateMsg" runat="server" Font-Bold="true" Text="<%# AthleteCardDto?.AthleteInfo?.MedicalInfoLastDate.ToShortDateString() ?? DateTime.Now.ToShortDateString() %>" ></dx:ASPxLabel>  </div>
+						<div>Срок учета (актуальности данных) до конца учебного года, установленного в вашей организации – <dx:ASPxLabel ID="lblLastDateMsg" runat="server" Font-Bold="true" Text="<%# AthleteCardDto?.AthleteInfo?.MedicalInfoLastDate.ToShortDateString() %>" ></dx:ASPxLabel>  </div>
 					</FooterRow>
 				</Templates>
 				
