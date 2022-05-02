@@ -247,5 +247,23 @@ namespace MFKSHelper.SpeedRun
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::MFKSHelper.SpeedRun.Element.AthleteOFPInfo ucAthleteOFPInfo;
+
+        /// <summary>
+        /// rpSpecialNormsInfo элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxRoundPanel rpSpecialNormsInfo;
+
+        /// <summary>
+        /// ucAthleteSpecialNormsInfo элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::MFKSHelper.SpeedRun.Element.AthleteSpecialNormsInfo ucAthleteSpecialNormsInfo;
     }
 }

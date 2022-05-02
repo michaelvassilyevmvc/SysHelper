@@ -12,6 +12,8 @@
 <%@ Register Src="~/SpeedRun/Element/AthletePerformance.ascx" TagPrefix="uc1" TagName="AthletePerformance" %>
 <%@ Register Src="~/SpeedRun/Element/AthleteMedicalInfo.ascx" TagPrefix="uc1" TagName="AthleteMedicalInfo" %>
 <%@ Register Src="~/SpeedRun/Element/AthleteOFPInfo.ascx" TagPrefix="uc1" TagName="AthleteOFPInfo" %>
+<%@ Register Src="~/SpeedRun/Element/AthleteSpecialNormsInfo.ascx" TagPrefix="uc1" TagName="AthleteSpecialNormsInfo" %>
+
 
 
 
@@ -58,9 +60,9 @@
                                 runat="server"
                                 Width="100%"
                                 DisplayFormatString="Процент заполнения карточки: {0}"
-                                CssClass="text-align-center">
+                                CssClass="text-align-center my-20">
                             </dx:ASPxProgressBar>
-                            <br />
+                            
                             <dx:ASPxRoundPanel ID="rpMainInfo" runat="server" ShowCollapseButton="true"  HeaderText="Основная информация: {0}" Width="100%">
                                 <PanelCollection>
                                     <dx:PanelContent>
@@ -108,8 +110,6 @@
                                     </dx:PanelContent>
                                 </PanelCollection>
                             </dx:ASPxRoundPanel>
-                            
-
 
                             <dx:ASPxRoundPanel ID="rpContactInfo" runat="server" ShowCollapseButton="true" HeaderText="Контактная информация: {0}" Width="100%" CssClass="my-20">
                                 <PanelCollection>
@@ -118,7 +118,6 @@
                                     </dx:PanelContent>
                                 </PanelCollection>
                             </dx:ASPxRoundPanel>
-                            
 
                             <dx:ASPxRoundPanel ID="rpAntroInfo" runat="server" ShowCollapseButton="true" HeaderText="Антропометрические данные спортсмена: {0}" Width="100%" CssClass="my-20">
                                 <PanelCollection>
@@ -127,7 +126,6 @@
                                     </dx:PanelContent>
                                 </PanelCollection>
                             </dx:ASPxRoundPanel>
-                            
 
                             <dx:ASPxRoundPanel ID="rpParentInfo" runat="server" ShowCollapseButton="true" HeaderText="Данные о родителях, опекунах, законных представителях: {0}" Width="100%" CssClass="my-20">
                                 <PanelCollection>
@@ -136,7 +134,6 @@
                                     </dx:PanelContent>
                                 </PanelCollection>
                             </dx:ASPxRoundPanel>
-                            
 
                             <dx:ASPxRoundPanel ID="rpPerformance" runat="server" ShowCollapseButton="true" HeaderText="Выступления на областных, республиканских и международных соревнованиях и учебно-тренировочных сборах: {0}" Width="100%" CssClass="my-20">
                                 <PanelCollection>
@@ -145,7 +142,6 @@
                                     </dx:PanelContent>
                                 </PanelCollection>
                             </dx:ASPxRoundPanel>
-                            
                             
                             <dx:ASPxRoundPanel ID="rpMedicalInfo" runat="server" ShowCollapseButton="true" HeaderText="Медицинская карточка: {0}" Width="100%" CssClass="my-20">
                                 <PanelCollection>
@@ -160,6 +156,16 @@
                                     <dx:PanelContent>
 
                                         <uc1:AthleteOFPInfo runat="server" id="ucAthleteOFPInfo" />
+                                        
+                                    </dx:PanelContent>
+                                </PanelCollection>
+                            </dx:ASPxRoundPanel>
+
+                            <dx:ASPxRoundPanel ID="rpSpecialNormsInfo" runat="server" ShowCollapseButton="true" HeaderText="Контрольные нормативы: {0}" Width="100%" CssClass="my-20">
+                                <PanelCollection>
+                                    <dx:PanelContent>
+
+                                        <uc1:AthleteSpecialNormsInfo runat="server" id="ucAthleteSpecialNormsInfo" />
                                         
                                     </dx:PanelContent>
                                 </PanelCollection>

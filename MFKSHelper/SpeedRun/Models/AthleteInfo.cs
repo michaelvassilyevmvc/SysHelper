@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MFKSHelper.SpeedRun.Models
 {
@@ -47,6 +43,7 @@ namespace MFKSHelper.SpeedRun.Models
         public long? SocialStatusID { get; set; }
         public DateTime MedicalInfoLastDate { get; set; }
         public DateTime? OFPInfoLastDate { get; set; }
+        public DateTime? SpecialNormInfoLastDate { get; set; }
 
 
     }

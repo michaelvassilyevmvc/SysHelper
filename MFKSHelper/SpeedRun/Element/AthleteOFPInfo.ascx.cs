@@ -1,13 +1,10 @@
-﻿using MFKSHelper.SpeedRun.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using DevExpress.Web;
-using MFKSHelper.Extensions;
+﻿using DevExpress.Web;
 using MFKSHelper.Classes.Main;
+using MFKSHelper.Extensions;
+using MFKSHelper.SpeedRun.Models;
+using System;
+using System.Linq;
+using System.Web.UI.WebControls;
 
 namespace MFKSHelper.SpeedRun.Element
 {
@@ -154,31 +151,33 @@ namespace MFKSHelper.SpeedRun.Element
             e.Command.Parameters["@FirmID"].Value = Global.CurrentUserFirmID;
         }
 
-        public string GetOfpLastDate(DateTime? lastDate)
+        public string GetLastDate(DateTime? lastDate)
         {
-            if(AthleteCardDto == null)
+            if (AthleteCardDto == null)
             {
                 return LastDate;
             }
 
-            if (AthleteCardDto.AthleteStatisticsInfo.AthletesSpecialOlimpicsNorm != 0) { 
+            if (AthleteCardDto.AthleteStatisticsInfo.AthletesSpecialOlimpicsNorm != 0)
+            {
                 LastDate = "Статистика берется из контрольных нормативов";
-                return "Статистика берется из контрольных нормативов"; 
+                return "Статистика берется из контрольных нормативов";
             }
 
-            if (lastDate == null) 
+            if (lastDate == null)
             {
                 LastDate = "необходимо внести данные";
-                return "необходимо внести данные"; 
+                return "необходимо внести данные";
             }
 
-            if (DateTime.Today > lastDate.Value.Date) { 
+            if (DateTime.Today > lastDate.Value.Date)
+            {
                 LastDate = "обновите данные";
-                return "обновите данные"; 
+                return "обновите данные";
             }
 
             var total = 365 - (lastDate.Value.Date - DateTime.Today).TotalDays;
-            
+
             LastDate = string.Format("Осталось: {0} дней", total);
             return string.Format("Осталось: {0} дней", total);
         }

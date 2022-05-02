@@ -493,7 +493,7 @@
 				</Toolbars>
 				<Templates>
 					<FooterRow>
-						<div>Срок учета (актуальности данных) 12 месяцев с момента ввода - <dx:ASPxLabel ID="lblLastDateMsg" runat="server" Font-Bold="true" Text="<%# GetOfpLastDate(AthleteCardDto?.AthleteInfo?.OFPInfoLastDate) %>" ></dx:ASPxLabel> </div>
+						<div>Срок учета (актуальности данных) 12 месяцев с момента ввода - <dx:ASPxLabel ID="lblLastDateMsg" runat="server" Font-Bold="true" Text="<%# GetLastDate(AthleteCardDto?.AthleteInfo?.OFPInfoLastDate) %>" ></dx:ASPxLabel> </div>
 					</FooterRow>
 				</Templates>
 				<Styles>
