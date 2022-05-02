@@ -13,6 +13,8 @@
 <%@ Register Src="~/SpeedRun/Element/AthleteMedicalInfo.ascx" TagPrefix="uc1" TagName="AthleteMedicalInfo" %>
 <%@ Register Src="~/SpeedRun/Element/AthleteOFPInfo.ascx" TagPrefix="uc1" TagName="AthleteOFPInfo" %>
 <%@ Register Src="~/SpeedRun/Element/AthleteSpecialNormsInfo.ascx" TagPrefix="uc1" TagName="AthleteSpecialNormsInfo" %>
+<%@ Register Src="~/SpeedRun/Element/AthleteSpecialPerformanceCardInfo.ascx" TagPrefix="uc1" TagName="AthleteSpecialPerformanceCardInfo" %>
+
 
 
 
@@ -166,6 +168,16 @@
                                     <dx:PanelContent>
 
                                         <uc1:AthleteSpecialNormsInfo runat="server" id="ucAthleteSpecialNormsInfo" />
+                                        
+                                    </dx:PanelContent>
+                                </PanelCollection>
+                            </dx:ASPxRoundPanel>
+
+                            <dx:ASPxRoundPanel ID="rpSpecialPerformanceCard" runat="server" ShowCollapseButton="true" HeaderText="Специальная физическая подготовка" Width="100%" CssClass="my-20">
+                                <PanelCollection>
+                                    <dx:PanelContent>
+
+                                        <uc1:AthleteSpecialPerformanceCardInfo runat="server" ID="ucAthleteSpecialPerformanceCardInfo" />
                                         
                                     </dx:PanelContent>
                                 </PanelCollection>

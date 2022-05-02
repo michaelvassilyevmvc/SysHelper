@@ -55,7 +55,8 @@ namespace MFKSHelper.SpeedRun
                 ucAthletePerformance,
                 ucAthleteMedicalInfo,
                 ucAthleteOFPInfo,
-                ucAthleteSpecialNormsInfo
+                ucAthleteSpecialNormsInfo,
+                ucAthleteSpecialPerformanceCardInfo
             };
 
             ucList.ForEach(x => (x as IAthleteCardControl).AthleteCardDto = AthleteCardDto);
@@ -144,7 +145,8 @@ namespace MFKSHelper.SpeedRun
                 rpPerformance,
                 rpMedicalInfo,
                 rpOFP,
-                rpSpecialNormsInfo
+                rpSpecialNormsInfo,
+                rpSpecialPerformanceCard
             };
 
             if (!IsPostBack)
@@ -183,7 +185,8 @@ namespace MFKSHelper.SpeedRun
                 ucAthletePerformance,
                 ucAthleteMedicalInfo,
                 ucAthleteOFPInfo,
-                ucAthleteSpecialNormsInfo
+                ucAthleteSpecialNormsInfo,
+                ucAthleteSpecialPerformanceCardInfo
             };
 
             ucList.ForEach(x => { IAthleteCardControl cmp = (x as IAthleteCardControl); cmp.AthleteCardDto = AthleteCardDto; cmp.Refresh(); });

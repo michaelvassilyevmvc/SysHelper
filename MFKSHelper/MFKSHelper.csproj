@@ -376,6 +376,7 @@
     <Content Include="Scripts\athlete-parent-info.js" />
     <Content Include="Scripts\athlete-performance.js" />
     <Content Include="Scripts\athlete-special-norms-info.js" />
+    <Content Include="Scripts\athlete-special-performance-card.js" />
     <Content Include="Scripts\handlebars.amd.js" />
     <Content Include="Scripts\handlebars.amd.min.js" />
     <Content Include="Scripts\handlebars.js" />
@@ -403,6 +404,7 @@
     <Content Include="SpeedRun\Element\AthleteParentsInfo.ascx" />
     <Content Include="SpeedRun\Element\AthletePerformance.ascx" />
     <Content Include="SpeedRun\Element\AthleteSpecialNormsInfo.ascx" />
+    <Content Include="SpeedRun\Element\AthleteSpecialPerformanceCardInfo.ascx" />
     <Content Include="SpeedRun\Element\AthleteTrainerList.ascx" />
     <Content Include="SpeedRun\Element\AthleteAntroInfo.ascx" />
     <Content Include="SpeedRun\MainInfoTest.aspx" />
@@ -885,6 +887,13 @@
     </Compile>
     <Compile Include="SpeedRun\Element\AthleteSpecialNormsInfo.ascx.designer.cs">
       <DependentUpon>AthleteSpecialNormsInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SpeedRun\Element\AthleteSpecialPerformanceCardInfo.ascx.cs">
+      <DependentUpon>AthleteSpecialPerformanceCardInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SpeedRun\Element\AthleteSpecialPerformanceCardInfo.ascx.designer.cs">
+      <DependentUpon>AthleteSpecialPerformanceCardInfo.ascx</DependentUpon>
     </Compile>
     <Compile Include="SpeedRun\Element\AthleteTrainerList.ascx.cs">
       <DependentUpon>AthleteTrainerList.ascx</DependentUpon>

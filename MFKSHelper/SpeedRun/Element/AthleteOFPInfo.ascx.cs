@@ -176,7 +176,7 @@ namespace MFKSHelper.SpeedRun.Element
                 return "обновите данные";
             }
 
-            var total = 365 - (lastDate.Value.Date - DateTime.Today).TotalDays;
+            var total = (lastDate.Value.Date - DateTime.Today).TotalDays;
 
             LastDate = string.Format("Осталось: {0} дней", total);
             return string.Format("Осталось: {0} дней", total);

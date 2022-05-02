@@ -44,6 +44,7 @@ namespace MFKSHelper.SpeedRun.Models
         public DateTime MedicalInfoLastDate { get; set; }
         public DateTime? OFPInfoLastDate { get; set; }
         public DateTime? SpecialNormInfoLastDate { get; set; }
+        public DateTime? SpecialPerformanceCardInfoLastDate { get; set; }
 
 
     }

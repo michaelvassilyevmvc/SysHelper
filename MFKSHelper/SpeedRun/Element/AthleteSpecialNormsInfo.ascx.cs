@@ -16,11 +16,11 @@ namespace MFKSHelper.SpeedRun.Element
         {
             get
             {
-                return Convert.ToString(ViewState["LastDate"]);
+                return Convert.ToString(ViewState["LastSpecialPerformDate"]);
             }
             set
             {
-                ViewState["LastDate"] = value;
+                ViewState["LastSpecialPerformDate"] = value;
             }
         }
 
@@ -30,7 +30,6 @@ namespace MFKSHelper.SpeedRun.Element
             if (!IsPostBack)
             {
                 Refresh();
-                //gvAthletesKindsOfSport.ExpandAll();
             }
 
         }
@@ -106,8 +105,9 @@ namespace MFKSHelper.SpeedRun.Element
 
         #region Методы
 
-        public string GetLastDate(DateTime? lastDate)
+        public string GetLastDate()
         {
+            DateTime? lastDate = AthleteCardDto?.AthleteInfo?.SpecialNormInfoLastDate;
             if (AthleteCardDto == null)
             {
                 return LastDate;
@@ -127,7 +127,7 @@ namespace MFKSHelper.SpeedRun.Element
                 return "обновите данные";
             }
 
-            var total = 365 - (lastDate.Value.Date - DateTime.Today).TotalDays;
+            var total = (lastDate.Value.Date - DateTime.Today).TotalDays;
 
             LastDate = string.Format("Осталось: {0} дней", total);
             return string.Format("Осталось: {0} дней", total);

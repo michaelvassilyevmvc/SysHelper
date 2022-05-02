@@ -205,7 +205,7 @@
         </dx:ASPxGridView>
     </DetailRow>
     <FooterRow>
-        <div>Срок учета (актуальности данных) 12 месяцев с момента ввода - <dx:ASPxLabel ID="lblLastDateMsg" runat="server" Font-Bold="true" Text="<%# GetLastDate(AthleteCardDto?.AthleteInfo?.SpecialNormInfoLastDate) %>" ></dx:ASPxLabel> </div>
+        <div>Срок учета (актуальности данных) 12 месяцев с момента ввода - <dx:ASPxLabel ID="lblLastDateMsg" runat="server" Font-Bold="true" Text="<%# GetLastDate() %>" ></dx:ASPxLabel> </div>
     </FooterRow>
 </Templates>
     
